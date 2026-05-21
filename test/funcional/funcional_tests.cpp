@@ -52,29 +52,41 @@ void logisticalFuncionalTest() {
 }
 
 void complexFuncionalTest() {
-    // Dois sistemas e um fluxo de transferência.
-    // O fluxo transfere 10% da origem para o destino.
-    //
-    // Sistema A inicia com 100.
-    // Sistema B inicia com 0.
-    // Após 1 iteração:
-    // A = 90
-    // B = 10
+    System q1("Q1", 100.0);
+    System q2("Q2", 0.0);
+    System q3("Q3", 100.0);
+    System q4("Q4", 0.0);
+    System q5("Q5", 0.0);
 
-    System A("Sistema A", 100);
-    System B("Sistema B", 0);
-
-    ComplexFlow transferencia(&A, &B);
+    ComplexFlow f(&q1, &q2);
+    ComplexFlow g(&q1, &q3);
+    ComplexFlow r(&q2, &q5);
+    ComplexFlow t(&q2, &q3);
+    ComplexFlow u(&q3, &q4);
+    ComplexFlow v(&q4, &q1);
 
     Model model;
-    model.add(&A);
-    model.add(&B);
-    model.add(&transferencia);
 
-    model.run(0, 1);
+    model.add(&q1);
+    model.add(&q2);
+    model.add(&q3);
+    model.add(&q4);
+    model.add(&q5);
 
-    assert(almostEqual(A.getValue(), 90));
-    assert(almostEqual(B.getValue(), 10));
+    model.add(&f);
+    model.add(&g);
+    model.add(&r);
+    model.add(&t);
+    model.add(&u);
+    model.add(&v);
+
+    model.run(0, 100);
+
+    assert(almostEqual(q1.getValue(), 31.8513));
+    assert(almostEqual(q2.getValue(), 18.4003));
+    assert(almostEqual(q3.getValue(), 77.1143));
+    assert(almostEqual(q4.getValue(), 56.1728));
+    assert(almostEqual(q5.getValue(), 16.4612));
 
     cout << "complexFuncionalTest OK" << endl;
 }

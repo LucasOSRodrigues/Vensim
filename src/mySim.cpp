@@ -186,7 +186,7 @@ ComplexFlow& ComplexFlow::operator=(ComplexFlow&& other) noexcept {
 }
 
 double ComplexFlow::execute() {
-    return 0.1 * source->getValue();
+    return 0.01 * source->getValue();
 }
 
 Model::Model() = default;
