@@ -11,6 +11,10 @@ bool almostEqual(double a, double b, double tolerance = 0.0001) {
     return fabs(a - b) < tolerance;
 }
 
+bool isBetween(double value, double lower, double upper) {
+    return value >= lower && value <= upper;
+}
+
 void exponentialFuncionalTest() {
     // P inicial = 10, tempo = 10.
     // Esperado: 10 * 1.3^10 = aproximadamente 137.858491849.
@@ -42,8 +46,7 @@ void logisticalFuncionalTest() {
 
     model.run(0, 100);
 
-    assert(pop.getValue() > 69.9);
-    assert(pop.getValue() <= 70.0001);
+    assert(isBetween(pop.getValue(), 69.9, 70.0001));
 
     cout << "logisticalFuncionalTest OK" << endl;
 }
