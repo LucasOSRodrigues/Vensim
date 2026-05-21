@@ -14,16 +14,16 @@ void exponentialModel() {
     cout << "Tempo de simulacao: ";
     cin >> time;
 
-    System pop("Populacao", initialPopulation);
-    ExponentialFlow nascimento(nullptr, &pop);
+    System populacao("Populacao", initialPopulation);
+    ExponentialFlow nascimento(nullptr, &populacao);
 
     Model model;
-    model.add(&pop);
+    model.add(&populacao);
     model.add(&nascimento);
 
     model.run(0, time);
 
-    cout << "Populacao final: " << pop.getValue() << endl;
+    cout << "Populacao final: " << populacao.getValue() << endl;
 }
 
 void logisticModel() {
@@ -41,16 +41,16 @@ void logisticModel() {
     cout << "Tempo de simulacao: ";
     cin >> time;
 
-    System pop("Populacao", initialPopulation);
-    LogisticFlow nascimento(nullptr, &pop, pmax);
+    System populacao("Populacao", initialPopulation);
+    LogisticFlow nascimento(nullptr, &populacao, pmax);
 
     Model model;
-    model.add(&pop);
+    model.add(&populacao);
     model.add(&nascimento);
 
     model.run(0, time);
 
-    cout << "Populacao final: " << pop.getValue() << endl;
+    cout << "Populacao final: " << populacao.getValue() << endl;
 }
 
 int main() {
