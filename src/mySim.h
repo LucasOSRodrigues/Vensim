@@ -25,24 +25,24 @@ public:
 // Classe abstrata que representa um fluxo entre sistemas.
 class Flow {
 protected:
-    System* origem;
-    System* destino;
+    System* source;
+    System* sink;
 
 public:
-    Flow(System* origem, System* destino);
+    Flow(System* source, System* sink);
     virtual ~Flow();
 
     // Função virtual pura. Cada fluxo concreto define sua própria equação.
     virtual double execute() = 0;
 
-    System* getOrigem() const;
-    System* getDestino() const;
+    System* getSource() const;
+    System* getSink() const;
 };
 
 // Fluxo concreto para crescimento exponencial.
 class ExponentialFlow : public Flow {
 public:
-    ExponentialFlow(System* origem, System* destino);
+    ExponentialFlow(System* source, System* sink);
     double execute() override;
 };
 
@@ -52,14 +52,14 @@ private:
     double pmax;
 
 public:
-    LogisticFlow(System* origem, System* destino, double pmax);
+    LogisticFlow(System* source, System* sink, double pmax);
     double execute() override;
 };
 
 // Fluxo concreto usado no teste funcional complexo.
 class ComplexFlow : public Flow {
 public:
-    ComplexFlow(System* origem, System* destino);
+    ComplexFlow(System* source, System* sink);
     double execute() override;
 };
 

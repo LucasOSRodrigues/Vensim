@@ -19,44 +19,50 @@ double System::getValue() const {
     return value;
 }
 
-Flow::Flow(System* origem, System* destino)
-    : origem(origem), destino(destino) {}
+Flow::Flow(System* source, System* sink)
+    : source(source), sink(sink) {}
 
 Flow::~Flow() {}
 
-System* Flow::getOrigem() const {
-    return origem;
+System* Flow::getSource() const {
+    return source;
 }
 
-System* Flow::getDestino() const {
-    return destino;
+System* Flow::getSink() const {
+    return sink;
 }
 
-ExponentialFlow::ExponentialFlow(System* origem, System* destino)
-    : Flow(origem, destino) {}
+ExponentialFlow::ExponentialFlow(System* source, System* sink)
+    : Flow(source, sink) {}
 
 double ExponentialFlow::execute() {
     // Crescimento exponencial:
     // nascimento = 0.3 * P
-    return 0.3 * destino->getValue();
+    if (sink != nullptr) {
+        return 0.3 * sink->getValue();
+    }
+    return 0;
 }
 
-LogisticFlow::LogisticFlow(System* origem, System* destino, double pmax)
-    : Flow(origem, destino), pmax(pmax) {}
+LogisticFlow::LogisticFlow(System* source, System* sink, double pmax)
+    : Flow(source, sink), pmax(pmax) {}
 
 double LogisticFlow::execute() {
     // Crescimento logístico:
     // nascimento = 0.3 * P * (1 - P/Pmax)
-    double P = destino->getValue();
-    return 0.3 * P * (1 - P / pmax);
+    if (sink != nullptr) {
+        double P = sink->getValue();
+        return 0.3 * P * (1 - P / pmax);
+    }
+    return 0;
 }
 
-ComplexFlow::ComplexFlow(System* origem, System* destino)
-    : Flow(origem, destino) {}
+ComplexFlow::ComplexFlow(System* source, System* sink)
+    : Flow(source, sink) {}
 
 double ComplexFlow::execute() {
-    // Transfere 10% do valor da origem para o destino.
-    return 0.1 * origem->getValue();
+    // Transfere 10% do valor da source para o sink.
+    return 0.1 * source->getValue();
 }
 
 Model::Model() {}
@@ -84,17 +90,17 @@ void Model::run(int begin, int end) {
         for (size_t i = 0; i < flows.size(); i++) {
             Flow* flow = flows[i];
 
-            System* origem = flow->getOrigem();
-            System* destino = flow->getDestino();
+            System* source = flow->getSource();
+            System* sink = flow->getSink();
 
             double value = values[i];
 
-            if (origem != nullptr) {
-                origem->setValue(origem->getValue() - value);
+            if (source != nullptr) {
+                source->setValue(source->getValue() - value);
             }
 
-            if (destino != nullptr) {
-                destino->setValue(destino->getValue() + value);
+            if (sink != nullptr) {
+                sink->setValue(sink->getValue() + value);
             }
         }
     }
