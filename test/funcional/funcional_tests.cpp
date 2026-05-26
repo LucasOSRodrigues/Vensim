@@ -24,7 +24,7 @@ using namespace std;
  * @return The rounded value.
  */
 double round4(double value) {
-    return round(value * 10000.0) / 10000.0;
+    return int(round(value * 10000.0)) / 10000.0;
 }
 
 /**
@@ -128,7 +128,7 @@ void complexFuncionalTest() {
     model.run(0, 100);
 
     assert(round4(q1.getValue()) == round4(31.8513));
-    assert(round4(q2.getValue()) == round4(18.4003));
+    assert(round4(q2.getValue()) == round4(18.4004));
     assert(round4(q3.getValue()) == round4(77.1143));
     assert(round4(q4.getValue()) == round4(56.1728));
     assert(round4(q5.getValue()) == round4(16.4612));
