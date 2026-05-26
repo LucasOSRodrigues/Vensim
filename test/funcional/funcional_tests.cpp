@@ -3,12 +3,12 @@
 #include <iostream>
 
 #include "funcional_tests.h"
-#include "../../src/mySim.h"
+#include "../../src/MySim.h"
 
 using namespace std;
 
-bool almostEqual(double a, double b, double tolerance = 0.0001) {
-    return fabs(a - b) < tolerance;
+double round4(double value) {
+    return round(value * 10000.0) / 10000.0;
 }
 
 bool isBetween(double value, double lower, double upper) {
@@ -28,7 +28,7 @@ void exponentialFuncionalTest() {
 
     model.run(0, 10);
 
-    assert(almostEqual(pop.getValue(), 137.858491849));
+    assert(round4(pop.getValue()) == round4(137.858491849));
 
     cout << "exponentialFuncionalTest OK" << endl;
 }
@@ -82,11 +82,11 @@ void complexFuncionalTest() {
 
     model.run(0, 100);
 
-    assert(almostEqual(q1.getValue(), 31.8513));
-    assert(almostEqual(q2.getValue(), 18.4003));
-    assert(almostEqual(q3.getValue(), 77.1143));
-    assert(almostEqual(q4.getValue(), 56.1728));
-    assert(almostEqual(q5.getValue(), 16.4612));
+    assert(round4(q1.getValue()) == round4(31.8513));
+    assert(round4(q2.getValue()) == round4(18.4003));
+    assert(round4(q3.getValue()) == round4(77.1143));
+    assert(round4(q4.getValue()) == round4(56.1728));
+    assert(round4(q5.getValue()) == round4(16.4612));
 
     cout << "complexFuncionalTest OK" << endl;
 }

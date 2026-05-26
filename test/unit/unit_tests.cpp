@@ -3,7 +3,7 @@
 #include <iostream>
 
 #include "unit_tests.h"
-#include "../../src/mySim.h"
+#include "../../src/MySim.h"
 
 using namespace std;
 

@@ -2,7 +2,7 @@
 #define MAIN_UNIT_TESTS
 
 #include "unit_tests.h"
-#include "../../src/mySim.h"
+#include "../../src/MySim.h"
 
 int main() {
     systemUnitTest();
