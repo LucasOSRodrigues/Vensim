@@ -14,7 +14,7 @@ make
 make tests
 ```
 
-## Limpar bin
+## Limpar bins
 
 ```bash
 make clean

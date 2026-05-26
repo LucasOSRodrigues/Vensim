@@ -1,3 +1,13 @@
+/**
+ * @file funcional_tests.cpp
+ * @brief Implementation of functional tests for MySim framework.
+ *
+ * @details
+ * Contains the implementation of functional tests that validate the
+ * complete simulation workflows. Each test creates a model with systems
+ * and flows, runs the simulation, and verifies the results.
+ */
+
 #include <cassert>
 #include <cmath>
 #include <iostream>
@@ -7,14 +17,35 @@
 
 using namespace std;
 
+/**
+ * @brief Rounds a double value to 4 decimal places.
+ *
+ * @param value The value to round.
+ * @return The rounded value.
+ */
 double round4(double value) {
     return round(value * 10000.0) / 10000.0;
 }
 
+/**
+ * @brief Checks if a value is between two bounds (inclusive).
+ *
+ * @param value The value to check.
+ * @param lower Lower bound (inclusive).
+ * @param upper Upper bound (inclusive).
+ * @return True if lower <= value <= upper, false otherwise.
+ */
 bool isBetween(double value, double lower, double upper) {
     return value >= lower && value <= upper;
 }
 
+/**
+ * @brief Implementation of exponential functional test.
+ *
+ * Creates a simple model with one system (Population)
+ * and one exponential flow from null source to the system.
+ * Simulates 10 time units and verifies the result.
+ */
 void exponentialFuncionalTest() {
     // P inicial = 10, tempo = 10.
     // Esperado: 10 * 1.3^10 = aproximadamente 137.858491849.
@@ -33,6 +64,13 @@ void exponentialFuncionalTest() {
     cout << "exponentialFuncionalTest OK" << endl;
 }
 
+/**
+ * @brief Implementation of logistic functional test.
+ *
+ * Creates a model with one system and one logistic flow
+ * with population maximum limit. Simulates 100 time units
+ * and verifies that population converges to the maximum.
+ */
 void logisticalFuncionalTest() {
     // P inicial = 10, Pmax = 70, tempo = 100.
     // Esperado: população próxima de 70.
@@ -51,6 +89,13 @@ void logisticalFuncionalTest() {
     cout << "logisticalFuncionalTest OK" << endl;
 }
 
+/**
+ * @brief Implementation of complex functional test.
+ *
+ * Creates a complex network of 5 systems connected by 6 complex flows.
+ * This represents a more realistic system with multiple interconnected
+ * components. Simulates 100 time units and verifies all final values.
+ */
 void complexFuncionalTest() {
     System q1("Q1", 100.0);
     System q2("Q2", 0.0);

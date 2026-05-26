@@ -1,3 +1,13 @@
+/**
+ * @file unit_tests.cpp
+ * @brief Implementation of unit tests for MySim framework.
+ *
+ * @details
+ * Contains individual unit tests for System, ExponentialFlow,
+ * and LogisticFlow classes. Each test validates specific functionality
+ * in isolation from other components.
+ */
+
 #include <cassert>
 #include <cmath>
 #include <iostream>
@@ -7,10 +17,24 @@
 
 using namespace std;
 
+/**
+ * @brief Checks if two double values are almost equal within tolerance.
+ *
+ * @param a First value.
+ * @param b Second value.
+ * @param tolerance Maximum allowed difference (default: 0.0001).
+ * @return True if |a - b| < tolerance, false otherwise.
+ */
 bool almostEqualUnit(double a, double b, double tolerance = 0.0001) {
     return fabs(a - b) < tolerance;
 }
 
+/**
+ * @brief Implementation of System unit test.
+ *
+ * Tests System class initialization, name and value retrieval,
+ * and modification of both attributes.
+ */
 void systemUnitTest() {
     System s("Populacao", 100);
 
@@ -26,6 +50,12 @@ void systemUnitTest() {
     cout << "systemUnitTest OK" << endl;
 }
 
+/**
+ * @brief Implementation of ExponentialFlow unit test.
+ *
+ * Tests the execute() method of ExponentialFlow with
+ * null source and specific sink value.
+ */
 void exponentialFlowUnitTest() {
     System pop("Populacao", 100);
     ExponentialFlow flow(nullptr, &pop);
@@ -35,6 +65,12 @@ void exponentialFlowUnitTest() {
     cout << "exponentialFlowUnitTest OK" << endl;
 }
 
+/**
+ * @brief Implementation of LogisticFlow unit test.
+ *
+ * Tests the execute() method of LogisticFlow with
+ * null source, specific sink value and population maximum.
+ */
 void logisticFlowUnitTest() {
     System pop("Populacao", 10);
     LogisticFlow flow(nullptr, &pop, 70);
