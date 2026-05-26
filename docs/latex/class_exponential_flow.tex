@@ -1,0 +1,184 @@
+\doxysection{Exponential\+Flow Class Reference}
+\hypertarget{class_exponential_flow}{}\label{class_exponential_flow}\index{ExponentialFlow@{ExponentialFlow}}
+
+
+Implements a flow with exponential growth.  
+
+
+
+
+{\ttfamily \+\#include $<$Exponential\+Flow.\+h$>$}
+
+Inheritance diagram for Exponential\+Flow:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_exponential_flow}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_exponential_flow_a1f981db78e6635fd9837648960d8dc8d}{Exponential\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_exponential_flow_ad0330979d79035fa2af78908421e9095}{Exponential\+Flow}} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}sink)
+\begin{DoxyCompactList}\small\item\em Constructor with parameters. \end{DoxyCompactList}\item 
+\Hypertarget{class_exponential_flow_a47f85f24c8a74a00b025541e3ed950eb}\label{class_exponential_flow_a47f85f24c8a74a00b025541e3ed950eb} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Exponential\+Flow} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_exponential_flow_ad87b5541b7b6869039fb1f2d0c58fdea}{Exponential\+Flow}} (const \doxymbox{\hyperlink{class_exponential_flow}{Exponential\+Flow}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_exponential_flow}{Exponential\+Flow}} \& \doxymbox{\hyperlink{class_exponential_flow_a231385587bb12964a56e5e46ac2aa8e4}{operator=}} (const \doxymbox{\hyperlink{class_exponential_flow}{Exponential\+Flow}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_exponential_flow_aafb074830c5c18138913cb10da3b8782}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Calculates and returns the exponential flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_flow_acac9771d78055d356ac9e9d247bf319c}{Flow}} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}sink)
+\begin{DoxyCompactList}\small\item\em Constructor with parameters. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Flow} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_flow_a5a65e36c874c5cd5283ac32a33eb0a8b}{Flow}} (const \doxymbox{\hyperlink{class_flow}{Flow}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_flow}{Flow}} \& \doxymbox{\hyperlink{class_flow_a5f7550e37445bb6ae955beffd1fa857a}{operator=}} (const \doxymbox{\hyperlink{class_flow}{Flow}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_a1f3858f90d141807377c2640fb5dd0fc}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em Gets the source system of the flow. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_a17d9bd9c23d8949446709af6a4c0d6a6}{get\+Sink}} () const
+\begin{DoxyCompactList}\small\item\em Gets the sink system of the flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}
+\item 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_a026da8b33e2c09941531a3c25d61ba7d}{sink}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements a flow with exponential growth. 
+
+The \doxylink{class_exponential_flow}{Exponential\+Flow} calculates the value transferred through an exponential growth equation, where the transfer rate is proportional to the current value of the sink system.
+
+The formula used is:\+ flow = 0.\+3 \texorpdfstring{$\ast$}{*} sink\+\_\+value
+
+\begin{DoxyAuthor}{Author}
+Development Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024 
+\end{DoxyDate}
+
+
+\label{class_exponential_flow_doc-constructors}
+\Hypertarget{class_exponential_flow_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_exponential_flow_a1f981db78e6635fd9837648960d8dc8d}\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{ExponentialFlow()}{ExponentialFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_exponential_flow_a1f981db78e6635fd9837648960d8dc8d} 
+Exponential\+Flow::\+\+Exponential\+Flow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Implementation of the default constructor. \Hypertarget{class_exponential_flow_ad0330979d79035fa2af78908421e9095}\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{ExponentialFlow()}{ExponentialFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_exponential_flow_ad0330979d79035fa2af78908421e9095} 
+Exponential\+Flow::\+\+Exponential\+Flow (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{source}{, }\item[{\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{sink}{}\end{DoxyParamCaption})}
+
+
+
+Constructor with parameters. 
+
+Implementation of the constructor with parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Pointer to the source system. \\
+\hline
+{\em sink} & Pointer to the sink system. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_exponential_flow_ad87b5541b7b6869039fb1f2d0c58fdea}\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{ExponentialFlow()}{ExponentialFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_exponential_flow_ad87b5541b7b6869039fb1f2d0c58fdea} 
+Exponential\+Flow::\+\+Exponential\+Flow (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_exponential_flow}{Exponential\+Flow}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+Implementation of the copy constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxylink{class_exponential_flow}{Exponential\+Flow} object to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_exponential_flow_doc-func-members}
+\Hypertarget{class_exponential_flow_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_exponential_flow_aafb074830c5c18138913cb10da3b8782}\index{ExponentialFlow@{ExponentialFlow}!execute@{execute}}
+\index{execute@{execute}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_exponential_flow_aafb074830c5c18138913cb10da3b8782} 
+double Exponential\+Flow::\+execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates and returns the exponential flow. 
+
+Implementation of the \doxylink{class_exponential_flow_aafb074830c5c18138913cb10da3b8782}{execute()} method.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_flow}{Flow} value calculated as 0.\+3 \texorpdfstring{$\ast$}{*} sink\+\_\+value.
+\end{DoxyReturn}
+If the sink system is null, returns 0.
+
+Calculates the exponential flow as:\+ 0.\+3 \texorpdfstring{$\ast$}{*} sink\+\_\+value
+
+\begin{DoxyReturn}{Returns}
+Transfer value calculated by the exponential formula. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_flow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
+
+\Hypertarget{class_exponential_flow_a231385587bb12964a56e5e46ac2aa8e4}\index{ExponentialFlow@{ExponentialFlow}!operator=@{operator=}}
+\index{operator=@{operator=}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_exponential_flow_a231385587bb12964a56e5e46ac2aa8e4} 
+\doxymbox{\hyperlink{class_exponential_flow}{Exponential\+Flow}} \& Exponential\+Flow::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_exponential_flow}{Exponential\+Flow}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Assignment operator. 
+
+Implementation of the assignment operator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxylink{class_exponential_flow}{Exponential\+Flow} object to be assigned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the modified \doxylink{class_exponential_flow}{Exponential\+Flow} object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{_exponential_flow_8h}{Exponential\+Flow.\+h}}\item 
+src/\+\doxymbox{\hyperlink{_exponential_flow_8cpp}{Exponential\+Flow.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\doxysection{test/\+unit/\+unit\+\_\+tests.cpp File Reference}
+\hypertarget{unit__tests_8cpp}{}\label{unit__tests_8cpp}\index{test/unit/unit\_tests.cpp@{test/unit/unit\_tests.cpp}}
+
+
+Implementation of unit tests for My\+Sim framework.  
+
+
+{\ttfamily \+\#include $<$cassert$>$}\newline
+{\ttfamily \+\#include $<$cmath$>$}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include "{}unit\+\_\+tests.\+h"{}}\newline
+{\ttfamily \+\#include "{}../\+../\+src/\+\+My\+Sim.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{unit__tests_8cpp_a1d6a4cc4f0002fa8d219dc796cf470d9}{almost\+Equal\+Unit}} (double a, double b, double tolerance=0.\+0001)
+\begin{DoxyCompactList}\small\item\em Checks if two double values are almost equal within tolerance. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{unit__tests_8cpp_a6215575ec79c962399906ff839dc2c9d}{system\+Unit\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Implementation of \doxylink{class_system}{System} unit test. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{unit__tests_8cpp_a4a3765396d725bd0e97ff91d5aad49b3}{exponential\+Flow\+Unit\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Implementation of \doxylink{class_exponential_flow}{Exponential\+Flow} unit test. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{unit__tests_8cpp_afb6f89dd7ca883ede10e439ec8814ef5}{logistic\+Flow\+Unit\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Implementation of \doxylink{class_logistic_flow}{Logistic\+Flow} unit test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of unit tests for My\+Sim framework. 
+
+Contains individual unit tests for \doxylink{class_system}{System}, \doxylink{class_exponential_flow}{Exponential\+Flow}, and \doxylink{class_logistic_flow}{Logistic\+Flow} classes. Each test validates specific functionality in isolation from other components. 
+
+\label{unit__tests_8cpp_doc-func-members}
+\Hypertarget{unit__tests_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{unit__tests_8cpp_a1d6a4cc4f0002fa8d219dc796cf470d9}\index{unit\_tests.cpp@{unit\_tests.cpp}!almostEqualUnit@{almostEqualUnit}}
+\index{almostEqualUnit@{almostEqualUnit}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{almostEqualUnit()}{almostEqualUnit()}}
+{\footnotesize\ttfamily \label{unit__tests_8cpp_a1d6a4cc4f0002fa8d219dc796cf470d9} 
+bool almost\+Equal\+Unit (\begin{DoxyParamCaption}\item[{double}]{a}{, }\item[{double}]{b}{, }\item[{double}]{tolerance}{ = {\ttfamily 0.0001}}\end{DoxyParamCaption})}
+
+
+
+Checks if two double values are almost equal within tolerance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First value. \\
+\hline
+{\em b} & Second value. \\
+\hline
+{\em tolerance} & Maximum allowed difference (default:\+ 0.\+0001). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if \texorpdfstring{$\vert$}{|}a -\/ b\texorpdfstring{$\vert$}{|} \texorpdfstring{$<$}{<} tolerance, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{unit__tests_8cpp_a4a3765396d725bd0e97ff91d5aad49b3}\index{unit\_tests.cpp@{unit\_tests.cpp}!exponentialFlowUnitTest@{exponentialFlowUnitTest}}
+\index{exponentialFlowUnitTest@{exponentialFlowUnitTest}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{exponentialFlowUnitTest()}{exponentialFlowUnitTest()}}
+{\footnotesize\ttfamily \label{unit__tests_8cpp_a4a3765396d725bd0e97ff91d5aad49b3} 
+void exponential\+Flow\+Unit\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implementation of \doxylink{class_exponential_flow}{Exponential\+Flow} unit test. 
+
+Unit test for \doxylink{class_exponential_flow}{Exponential\+Flow} class.
+
+Tests the execute() method of \doxylink{class_exponential_flow}{Exponential\+Flow} with null source and specific sink value.
+
+Implementation of \doxylink{class_exponential_flow}{Exponential\+Flow} unit test.
+
+Validates \doxylink{class_exponential_flow}{Exponential\+Flow} execution method. Tests the formula:\+ flow = 0.\+3 \texorpdfstring{$\ast$}{*} sink\+\_\+value with sink value of 100, expecting result of 30. \Hypertarget{unit__tests_8cpp_afb6f89dd7ca883ede10e439ec8814ef5}\index{unit\_tests.cpp@{unit\_tests.cpp}!logisticFlowUnitTest@{logisticFlowUnitTest}}
+\index{logisticFlowUnitTest@{logisticFlowUnitTest}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{logisticFlowUnitTest()}{logisticFlowUnitTest()}}
+{\footnotesize\ttfamily \label{unit__tests_8cpp_afb6f89dd7ca883ede10e439ec8814ef5} 
+void logistic\+Flow\+Unit\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implementation of \doxylink{class_logistic_flow}{Logistic\+Flow} unit test. 
+
+Unit test for \doxylink{class_logistic_flow}{Logistic\+Flow} class.
+
+Tests the execute() method of \doxylink{class_logistic_flow}{Logistic\+Flow} with null source, specific sink value and population maximum.
+
+Implementation of \doxylink{class_logistic_flow}{Logistic\+Flow} unit test.
+
+Validates \doxylink{class_logistic_flow}{Logistic\+Flow} execution method. Tests the formula:\+ flow = 0.\+3 \texorpdfstring{$\ast$}{*} P \texorpdfstring{$\ast$}{*} (1 -\/ P/\+pmax) with P=10 and pmax=70. \Hypertarget{unit__tests_8cpp_a6215575ec79c962399906ff839dc2c9d}\index{unit\_tests.cpp@{unit\_tests.cpp}!systemUnitTest@{systemUnitTest}}
+\index{systemUnitTest@{systemUnitTest}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{systemUnitTest()}{systemUnitTest()}}
+{\footnotesize\ttfamily \label{unit__tests_8cpp_a6215575ec79c962399906ff839dc2c9d} 
+void system\+Unit\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implementation of \doxylink{class_system}{System} unit test. 
+
+Unit test for \doxylink{class_system}{System} class.
+
+Tests \doxylink{class_system}{System} class initialization, name and value retrieval, and modification of both attributes.
+
+Implementation of \doxylink{class_system}{System} unit test.
+
+Validates \doxylink{class_system}{System} creation, getters, and setters. Tests:\+
+\begin{DoxyItemize}
+\item \doxylink{class_system}{System} creation with name and value
+\item get\+Name() and get\+Value() methods
+\item set\+Name() and set\+Value() methods 
+\end{DoxyItemize}
