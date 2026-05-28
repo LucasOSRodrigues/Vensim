@@ -1,0 +1,7 @@
+<map id="LogisticFlow.h" name="LogisticFlow.h">
+<area shape="rect" id="Node000001" title="Definition of the LogisticFlow class." alt="" coords="87,5,191,32"/>
+<area shape="rect" id="Node000002" href="$_logistic_flow_8cpp.html" title="Implementation of the LogisticFlow class." alt="" coords="5,80,124,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,42,79,82,76,78,113,44"/>
+<area shape="rect" id="Node000003" href="$funcional__tests_8cpp.html" title="Implementation of functional tests for MySim framework." alt="" coords="148,80,282,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,40,205,80,199,80,162,45"/>
+</map>

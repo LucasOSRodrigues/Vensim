@@ -1,0 +1,9 @@
+<map id="Flow" name="Flow">
+<area shape="rect" id="Node000001" title="Abstract class that represents a flow between systems." alt="" coords="172,5,263,245"/>
+<area shape="rect" id="Node000002" href="$class_complex_flow.html" title="Implements a flow with specific calculation rule." alt="" coords="5,293,125,469"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,213,119,295,115,292,163,218"/>
+<area shape="rect" id="Node000003" href="$class_exponential_flow.html" title="Implements a flow with exponential growth." alt="" coords="149,293,285,469"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,258,220,295,215,293,216,262"/>
+<area shape="rect" id="Node000004" href="$class_logistic_flow.html" title="Implements a logistic flow with population limit." alt="" coords="309,293,422,469"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="271,215,318,294,312,293,269,220"/>
+</map>

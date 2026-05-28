@@ -22,9 +22,6 @@
  * during each iteration of the simulation. Subclasses implement
  * different transfer rules.
  *
- * @author Development Team
- * @version 1.0
- * @date 2024
  */
 class Flow {
 protected:

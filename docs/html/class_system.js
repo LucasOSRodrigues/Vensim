@@ -8,5 +8,7 @@ var class_system =
     [ "getValue", "class_system.html#aa7d17369d1034e7d8643a63f69d1901d", null ],
     [ "operator=", "class_system.html#ac6422081d08c3ac145a6d7c6d9f5bae7", null ],
     [ "setName", "class_system.html#aecfa79ded6c6a08f69ebaf55e758e5b4", null ],
-    [ "setValue", "class_system.html#a5343de0a45485edd88bc87f338fe9a19", null ]
+    [ "setValue", "class_system.html#a5343de0a45485edd88bc87f338fe9a19", null ],
+    [ "name", "class_system.html#a29fe2868c0d56fdebc67f1bef5d5cca3", null ],
+    [ "value", "class_system.html#a879687b1125ef20757c2a61345fedd00", null ]
 ];

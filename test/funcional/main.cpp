@@ -2,7 +2,6 @@
 #define MAIN_FUNCIONAL_TESTS
 
 #include "funcional_tests.h"
-#include "../../src/MySim.h"
 
 int main() {
     exponentialFuncionalTest();

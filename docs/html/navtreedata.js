@@ -24,13 +24,8 @@
 */
 var NAVTREE =
 [
-  [ "Vensim", "index.html", [
-    [ "MySim - Systems Dynamics Simulation Framework", "index.html", "index" ],
-    [ "MyVensim", "md__r_e_a_d_m_e.html", [
-      [ "Compilar", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
-      [ "Executar todos os testes", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
-      [ "Limpar bins", "md__r_e_a_d_m_e.html#autotoc_md3", null ]
-    ] ],
+  [ "Simulador - Sprint 3", "index.html", [
+    [ "MyVensim", "index.html", "index" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -45,7 +40,8 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
+        [ "Functions", "globals_func.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]

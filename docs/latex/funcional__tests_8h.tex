@@ -1,10 +1,17 @@
-\doxysection{test/\+funcional/\+funcional\+\_\+tests.h File Reference}
-\hypertarget{funcional__tests_8h}{}\label{funcional__tests_8h}\index{test/funcional/funcional\_tests.h@{test/funcional/funcional\_tests.h}}
+\doxysection{funcional\+\_\+tests.\+h File Reference}
+\hypertarget{funcional__tests_8h}{}\label{funcional__tests_8h}\index{funcional\_tests.h@{funcional\_tests.h}}
 
 
 Functional tests for the My\+Sim framework.  
 
 
+This graph shows which files directly or indirectly include this file:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{funcional__tests_8h__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -20,6 +27,10 @@ void \doxymbox{\hyperlink{funcional__tests_8h_a943dfe0c597a01c9760c140715fed527}
 Functional tests for the My\+Sim framework. 
 
 This file defines the interface for functional tests that validate the behavior of the entire simulation system with complete workflows. Tests verify population dynamics models with different flow types. 
+
+Definition in file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+
 
 \label{funcional__tests_8h_doc-func-members}
 \Hypertarget{funcional__tests_8h_doc-func-members}
@@ -49,7 +60,76 @@ Expected results:\+
 
 Functional test for complex flow network.
 
-Creates a complex network of 5 systems connected by 6 complex flows. This represents a more realistic system with multiple interconnected components. Simulates 100 time units and verifies all final values. \Hypertarget{funcional__tests_8h_a2c448ffaffdff4b03c825a01dffa6f27}\index{funcional\_tests.h@{funcional\_tests.h}!exponentialFuncionalTest@{exponentialFuncionalTest}}
+Creates a complex network of 5 systems connected by 6 complex flows. This represents a more realistic system with multiple interconnected components. Simulates 100 time units and verifies all final values. 
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00108}{108}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}\ q1(\textcolor{stringliteral}{"{}Q1"{}},\ 100.0);}
+\DoxyCodeLine{00110\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}\ q2(\textcolor{stringliteral}{"{}Q2"{}},\ 0.0);}
+\DoxyCodeLine{00111\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}\ q3(\textcolor{stringliteral}{"{}Q3"{}},\ 100.0);}
+\DoxyCodeLine{00112\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}\ q4(\textcolor{stringliteral}{"{}Q4"{}},\ 0.0);}
+\DoxyCodeLine{00113\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}\ q5(\textcolor{stringliteral}{"{}Q5"{}},\ 0.0);}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \doxymbox{\hyperlink{class_complex_flow}{ComplexFlow}}\ f(\&q1,\ \&q2);}
+\DoxyCodeLine{00116\ \ \ \ \ \doxymbox{\hyperlink{class_complex_flow}{ComplexFlow}}\ g(\&q1,\ \&q3);}
+\DoxyCodeLine{00117\ \ \ \ \ \doxymbox{\hyperlink{class_complex_flow}{ComplexFlow}}\ r(\&q2,\ \&q5);}
+\DoxyCodeLine{00118\ \ \ \ \ \doxymbox{\hyperlink{class_complex_flow}{ComplexFlow}}\ t(\&q2,\ \&q3);}
+\DoxyCodeLine{00119\ \ \ \ \ \doxymbox{\hyperlink{class_complex_flow}{ComplexFlow}}\ u(\&q3,\ \&q4);}
+\DoxyCodeLine{00120\ \ \ \ \ \doxymbox{\hyperlink{class_complex_flow}{ComplexFlow}}\ v(\&q4,\ \&q1);}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \doxymbox{\hyperlink{class_model}{Model}}\ model;}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&q1);}
+\DoxyCodeLine{00125\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&q2);}
+\DoxyCodeLine{00126\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&q3);}
+\DoxyCodeLine{00127\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&q4);}
+\DoxyCodeLine{00128\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&q5);}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&f);}
+\DoxyCodeLine{00131\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&g);}
+\DoxyCodeLine{00132\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&r);}
+\DoxyCodeLine{00133\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&t);}
+\DoxyCodeLine{00134\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&u);}
+\DoxyCodeLine{00135\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&v);}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a27269301c78fc4f54061c150f13ae123}{run}}(0,\ 100);}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \ \ assert(\doxymbox{\hyperlink{funcional__tests_8cpp_aa6ada142da95d4c7c576bc6d348776ed}{round4}}(q1.getValue())\ ==\ \doxymbox{\hyperlink{funcional__tests_8cpp_aa6ada142da95d4c7c576bc6d348776ed}{round4}}(31.8513));}
+\DoxyCodeLine{00140\ \ \ \ \ assert(\doxymbox{\hyperlink{funcional__tests_8cpp_aa6ada142da95d4c7c576bc6d348776ed}{round4}}(q2.getValue())\ ==\ \doxymbox{\hyperlink{funcional__tests_8cpp_aa6ada142da95d4c7c576bc6d348776ed}{round4}}(18.4003));}
+\DoxyCodeLine{00141\ \ \ \ \ assert(\doxymbox{\hyperlink{funcional__tests_8cpp_aa6ada142da95d4c7c576bc6d348776ed}{round4}}(q3.getValue())\ ==\ \doxymbox{\hyperlink{funcional__tests_8cpp_aa6ada142da95d4c7c576bc6d348776ed}{round4}}(77.1143));}
+\DoxyCodeLine{00142\ \ \ \ \ assert(\doxymbox{\hyperlink{funcional__tests_8cpp_aa6ada142da95d4c7c576bc6d348776ed}{round4}}(q4.getValue())\ ==\ \doxymbox{\hyperlink{funcional__tests_8cpp_aa6ada142da95d4c7c576bc6d348776ed}{round4}}(56.1728));}
+\DoxyCodeLine{00143\ \ \ \ \ assert(\doxymbox{\hyperlink{funcional__tests_8cpp_aa6ada142da95d4c7c576bc6d348776ed}{round4}}(q5.getValue())\ ==\ \doxymbox{\hyperlink{funcional__tests_8cpp_aa6ada142da95d4c7c576bc6d348776ed}{round4}}(16.4612));}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}complexFuncionalTest\ OK"{}}\ <<\ endl;}
+\DoxyCodeLine{00146\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_model_8cpp_source_l00046}{Model::\+add()}}, \doxymbox{\hyperlink{_system_8cpp_source_l00077}{System::\+get\+Value()}}, \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00035}{round4()}}, and \doxymbox{\hyperlink{_model_8cpp_source_l00069}{Model::\+run()}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{main_8cpp_source_l00006}{main()}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional__tests_8h_a943dfe0c597a01c9760c140715fed527_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{funcional__tests_8h_a943dfe0c597a01c9760c140715fed527_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{funcional__tests_8h_a2c448ffaffdff4b03c825a01dffa6f27}\index{funcional\_tests.h@{funcional\_tests.h}!exponentialFuncionalTest@{exponentialFuncionalTest}}
 \index{exponentialFuncionalTest@{exponentialFuncionalTest}!funcional\_tests.h@{funcional\_tests.h}}
 \doxysubsubsection{\texorpdfstring{exponentialFuncionalTest()}{exponentialFuncionalTest()}}
 {\footnotesize\ttfamily \label{funcional__tests_8h_a2c448ffaffdff4b03c825a01dffa6f27} 
@@ -67,7 +147,54 @@ Expected behavior:\+ P(10) = 10 \texorpdfstring{$\ast$}{*} 1.\+3\texorpdfstring{
 
 Functional test for exponential flow.
 
-Creates a simple model with one system (Population) and one exponential flow from null source to the system. Simulates 10 time units and verifies the result. \Hypertarget{funcional__tests_8h_a60914db64bde71b56d69320797266c29}\index{funcional\_tests.h@{funcional\_tests.h}!logisticalFuncionalTest@{logisticalFuncionalTest}}
+Creates a simple model with one system (Population) and one exponential flow from null source to the system. Simulates 10 time units and verifies the result. 
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00058}{58}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//\ P\ inicial\ =\ 10,\ tempo\ =\ 10.}}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{//\ Esperado:\ 10\ *\ 1.3\string^10\ =\ aproximadamente\ 137.858491849.}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}\ pop(\textcolor{stringliteral}{"{}Populacao"{}},\ 10);}
+\DoxyCodeLine{00063\ \ \ \ \ \doxymbox{\hyperlink{class_exponential_flow}{ExponentialFlow}}\ nascimento(\textcolor{keyword}{nullptr},\ \&pop);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \doxymbox{\hyperlink{class_model}{Model}}\ model;}
+\DoxyCodeLine{00066\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&pop);}
+\DoxyCodeLine{00067\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&nascimento);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a27269301c78fc4f54061c150f13ae123}{run}}(0,\ 10);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ assert(\doxymbox{\hyperlink{funcional__tests_8cpp_aa6ada142da95d4c7c576bc6d348776ed}{round4}}(pop.getValue())\ ==\ \doxymbox{\hyperlink{funcional__tests_8cpp_aa6ada142da95d4c7c576bc6d348776ed}{round4}}(137.858491849));}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}exponentialFuncionalTest\ OK"{}}\ <<\ endl;}
+\DoxyCodeLine{00074\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_model_8cpp_source_l00046}{Model::\+add()}}, \doxymbox{\hyperlink{_system_8cpp_source_l00077}{System::\+get\+Value()}}, \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00035}{round4()}}, and \doxymbox{\hyperlink{_model_8cpp_source_l00069}{Model::\+run()}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{main_8cpp_source_l00006}{main()}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional__tests_8h_a2c448ffaffdff4b03c825a01dffa6f27_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{funcional__tests_8h_a2c448ffaffdff4b03c825a01dffa6f27_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{funcional__tests_8h_a60914db64bde71b56d69320797266c29}\index{funcional\_tests.h@{funcional\_tests.h}!logisticalFuncionalTest@{logisticalFuncionalTest}}
 \index{logisticalFuncionalTest@{logisticalFuncionalTest}!funcional\_tests.h@{funcional\_tests.h}}
 \doxysubsubsection{\texorpdfstring{logisticalFuncionalTest()}{logisticalFuncionalTest()}}
 {\footnotesize\ttfamily \label{funcional__tests_8h_a60914db64bde71b56d69320797266c29} 
@@ -86,3 +213,49 @@ Expected behavior:\+ Population converges to approximately 70
 Functional test for logistic flow.
 
 Creates a model with one system and one logistic flow with population maximum limit. Simulates 100 time units and verifies that population converges to the maximum. 
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00083}{83}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{//\ P\ inicial\ =\ 10,\ Pmax\ =\ 70,\ tempo\ =\ 100.}}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{comment}{//\ Esperado:\ população\ próxima\ de\ 70.}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}\ pop(\textcolor{stringliteral}{"{}Populacao"{}},\ 10);}
+\DoxyCodeLine{00088\ \ \ \ \ \doxymbox{\hyperlink{class_logistic_flow}{LogisticFlow}}\ nascimento(\textcolor{keyword}{nullptr},\ \&pop,\ 70);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \doxymbox{\hyperlink{class_model}{Model}}\ model;}
+\DoxyCodeLine{00091\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&pop);}
+\DoxyCodeLine{00092\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&nascimento);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ model.\doxymbox{\hyperlink{class_model_a27269301c78fc4f54061c150f13ae123}{run}}(0,\ 100);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ assert(\doxymbox{\hyperlink{funcional__tests_8cpp_ad2b4c01be2c53afbb083be1bc94f4e38}{isBetween}}(pop.getValue(),\ 69.9,\ 70.0001));}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}logisticalFuncionalTest\ OK"{}}\ <<\ endl;}
+\DoxyCodeLine{00099\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_model_8cpp_source_l00046}{Model::\+add()}}, \doxymbox{\hyperlink{_system_8cpp_source_l00077}{System::\+get\+Value()}}, \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00047}{is\+Between()}}, and \doxymbox{\hyperlink{_model_8cpp_source_l00069}{Model::\+run()}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{main_8cpp_source_l00006}{main()}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional__tests_8h_a60914db64bde71b56d69320797266c29_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{funcional__tests_8h_a60914db64bde71b56d69320797266c29_icgraph}
+\end{center}
+\end{figure}

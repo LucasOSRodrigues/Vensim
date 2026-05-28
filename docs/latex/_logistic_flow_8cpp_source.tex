@@ -1,0 +1,35 @@
+\doxysection{Logistic\+Flow.\+cpp}
+\hypertarget{_logistic_flow_8cpp_source}{}\label{_logistic_flow_8cpp_source}\index{LogisticFlow.cpp@{LogisticFlow.cpp}}
+\doxymbox{\hyperlink{_logistic_flow_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_logistic_flow_8h}{LogisticFlow.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00015}\doxymbox{\hyperlink{class_logistic_flow_ab0f7906cfe1a27e18a4f558124e53ee0}{00015}}\ \doxymbox{\hyperlink{class_logistic_flow_ab0f7906cfe1a27e18a4f558124e53ee0}{LogisticFlow::LogisticFlow}}()\ :\ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(),\ \doxymbox{\hyperlink{class_logistic_flow_a36fdf71409ebcd9526f47b5e90b0ffad}{pmax}}(0.0)\ \{\}}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00020}\doxymbox{\hyperlink{class_logistic_flow_a4b30935bd972aff12bf16b3ee3f54e00}{00020}}\ \doxymbox{\hyperlink{class_logistic_flow_ab0f7906cfe1a27e18a4f558124e53ee0}{LogisticFlow::LogisticFlow}}(\doxymbox{\hyperlink{class_system}{System}}*\ \doxymbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}},\ \doxymbox{\hyperlink{class_system}{System}}*\ \doxymbox{\hyperlink{class_flow_a026da8b33e2c09941531a3c25d61ba7d}{sink}},\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_logistic_flow_a36fdf71409ebcd9526f47b5e90b0ffad}{pmax}})}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00021}00021\ \ \ \ \ :\ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(\doxymbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}},\ \doxymbox{\hyperlink{class_flow_a026da8b33e2c09941531a3c25d61ba7d}{sink}}),\ \doxymbox{\hyperlink{class_logistic_flow_a36fdf71409ebcd9526f47b5e90b0ffad}{pmax}}(\doxymbox{\hyperlink{class_logistic_flow_a36fdf71409ebcd9526f47b5e90b0ffad}{pmax}})\ \{\}}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00026}00026\ \doxymbox{\hyperlink{class_logistic_flow_a39d18cc1ab327715c4b8e0377cff8435}{LogisticFlow::\string~LogisticFlow}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00031}\doxymbox{\hyperlink{class_logistic_flow_a5cb786f5e252395010b54b16440775cd}{00031}}\ \doxymbox{\hyperlink{class_logistic_flow_ab0f7906cfe1a27e18a4f558124e53ee0}{LogisticFlow::LogisticFlow}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_logistic_flow_ab0f7906cfe1a27e18a4f558124e53ee0}{LogisticFlow}}\&\ other)}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00032}00032\ \ \ \ \ :\ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(other),\ \doxymbox{\hyperlink{class_logistic_flow_a36fdf71409ebcd9526f47b5e90b0ffad}{pmax}}(other.\doxymbox{\hyperlink{class_logistic_flow_a36fdf71409ebcd9526f47b5e90b0ffad}{pmax}})\ \{\}}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00037}\doxymbox{\hyperlink{class_logistic_flow_a2bf490b7a58b8312d3841b5d3b3955f5}{00037}}\ \doxymbox{\hyperlink{class_logistic_flow_ab0f7906cfe1a27e18a4f558124e53ee0}{LogisticFlow}}\&\ \doxymbox{\hyperlink{class_logistic_flow_a2bf490b7a58b8312d3841b5d3b3955f5}{LogisticFlow::operator=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_logistic_flow_ab0f7906cfe1a27e18a4f558124e53ee0}{LogisticFlow}}\&\ other)\ \{}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&other)\ \{}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_flow_a5f7550e37445bb6ae955beffd1fa857a}{Flow::operator=}}(other);}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_logistic_flow_a36fdf71409ebcd9526f47b5e90b0ffad}{pmax}}\ =\ other.\doxymbox{\hyperlink{class_logistic_flow_a36fdf71409ebcd9526f47b5e90b0ffad}{pmax}};}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00041}00041\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00043}00043\ \}}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00053}\doxymbox{\hyperlink{class_logistic_flow_ae0d2de87d6dbb8cfc2af6db5cd22e884}{00053}}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_logistic_flow_ae0d2de87d6dbb8cfc2af6db5cd22e884}{LogisticFlow::execute}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_flow_a026da8b33e2c09941531a3c25d61ba7d}{sink}}\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ P\ =\ \doxymbox{\hyperlink{class_flow_a026da8b33e2c09941531a3c25d61ba7d}{sink}}-\/>getValue();}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.3\ *\ P\ *\ (1\ -\/\ P\ /\ \doxymbox{\hyperlink{class_logistic_flow_a36fdf71409ebcd9526f47b5e90b0ffad}{pmax}});}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00057}00057\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00058}00058\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{_logistic_flow_8cpp_source_l00059}00059\ \}}
+
+\end{DoxyCode}

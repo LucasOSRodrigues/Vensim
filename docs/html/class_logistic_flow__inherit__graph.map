@@ -1,0 +1,5 @@
+<map id="LogisticFlow" name="LogisticFlow">
+<area shape="rect" id="Node000001" title="Implements a logistic flow with population limit." alt="" coords="5,293,118,469"/>
+<area shape="rect" id="Node000002" href="$class_flow.html" title="Abstract class that represents a flow between systems." alt="" coords="16,5,107,245"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,258,64,294,59,293,61,263"/>
+</map>

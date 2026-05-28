@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['flow_0',['Flow',['../class_flow.html',1,'Flow'],['../class_flow.html#ac9975e144e606242748197798e87dd32',1,'Flow::Flow()'],['../class_flow.html#acac9771d78055d356ac9e9d247bf319c',1,'Flow::Flow(System *source, System *sink)'],['../class_flow.html#a5a65e36c874c5cd5283ac32a33eb0a8b',1,'Flow::Flow(const Flow &amp;other)']]],
-  ['flow_2ecpp_1',['Flow.cpp',['../_flow_8cpp.html',1,'']]],
-  ['flow_2eh_2',['Flow.h',['../_flow_8h.html',1,'']]],
-  ['framework_3',['MySim - Systems Dynamics Simulation Framework',['../index.html',1,'']]],
-  ['funcional_5ftests_2ecpp_4',['funcional_tests.cpp',['../funcional__tests_8cpp.html',1,'']]],
-  ['funcional_5ftests_2eh_5',['funcional_tests.h',['../funcional__tests_8h.html',1,'']]]
+  ['getname_0',['getName',['../class_system.html#a47ece132a04247cd74aea11537830bd4',1,'System']]],
+  ['getsink_1',['getSink',['../class_flow.html#a17d9bd9c23d8949446709af6a4c0d6a6',1,'Flow']]],
+  ['getsource_2',['getSource',['../class_flow.html#a1f3858f90d141807377c2640fb5dd0fc',1,'Flow']]],
+  ['getvalue_3',['getValue',['../class_system.html#aa7d17369d1034e7d8643a63f69d1901d',1,'System']]]
 ];

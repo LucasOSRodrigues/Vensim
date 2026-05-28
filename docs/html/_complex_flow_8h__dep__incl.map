@@ -1,0 +1,7 @@
+<map id="ComplexFlow.h" name="ComplexFlow.h">
+<area shape="rect" id="Node000001" title="Definition of the ComplexFlow class." alt="" coords="88,5,200,32"/>
+<area shape="rect" id="Node000002" href="$_complex_flow_8cpp.html" title="Implementation of the ComplexFlow class." alt="" coords="5,80,131,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,42,83,82,79,78,117,44"/>
+<area shape="rect" id="Node000003" href="$funcional__tests_8cpp.html" title="Implementation of functional tests for MySim framework." alt="" coords="154,80,288,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,40,211,80,205,80,168,45"/>
+</map>

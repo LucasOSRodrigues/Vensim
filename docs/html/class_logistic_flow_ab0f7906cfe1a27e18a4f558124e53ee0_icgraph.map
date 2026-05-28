@@ -1,0 +1,9 @@
+<map id="LogisticFlow::LogisticFlow" name="LogisticFlow::LogisticFlow">
+<area shape="rect" id="Node000001" title="Default constructor." alt="" coords="237,56,412,83"/>
+<area shape="rect" id="Node000002" href="$class_logistic_flow.html#a5cb786f5e252395010b54b16440775cd" title="Copy constructor." alt="" coords="9,5,185,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,53,160,35,160,30,249,51"/>
+<area shape="rect" id="Node000003" href="$class_logistic_flow.html#a2bf490b7a58b8312d3841b5d3b3955f5" title="Assignment operator." alt="" coords="18,56,176,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,70,176,72,176,67,224,69"/>
+<area shape="rect" id="Node000004" href="$class_logistic_flow.html#a39d18cc1ab327715c4b8e0377cff8435" title="Virtual destructor." alt="" coords="5,107,189,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="249,86,161,109,160,103,244,87"/>
+</map>

@@ -23,10 +23,6 @@ using namespace std;
  * A system has an identifier name and a value that represents
  * its current state. Systems can be connected through flows
  * to transfer values between them during simulation execution.
- *
- * @author Development Team
- * @version 1.0
- * @date 2024
  */
 class System {
 private:

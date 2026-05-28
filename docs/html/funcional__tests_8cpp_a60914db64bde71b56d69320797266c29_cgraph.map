@@ -1,0 +1,18 @@
+<map id="logisticalFuncionalTest" name="logisticalFuncionalTest">
+<area shape="rect" id="Node000001" title="Implementation of logistic functional test." alt="" coords="5,81,159,108"/>
+<area shape="rect" id="Node000002" href="$class_model.html#a302d4ed93c6e6f9a0f728e021a91f821" title="Adds a system to the model." alt="" coords="207,5,292,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,78,206,37,203,41,115,83"/>
+<area shape="rect" id="Node000003" href="$class_system.html#aa7d17369d1034e7d8643a63f69d1901d" title="Gets the current value of the system." alt="" coords="340,56,464,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,86,326,73,323,77,160,91"/>
+<area shape="rect" id="Node000004" href="$funcional__tests_8cpp.html#ad2b4c01be2c53afbb083be1bc94f4e38" title="Checks if a value is between two bounds (inclusive)." alt="" coords="208,107,290,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="158,104,196,111,191,112,159,109"/>
+<area shape="rect" id="Node000005" href="$class_model.html#a27269301c78fc4f54061c150f13ae123" title="Executes the simulation in the specified time interval." alt="" coords="208,157,290,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="114,106,207,149,202,152,113,111"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="275,154,290,143,313,118,323,105,338,93,345,91,350,89,342,97,327,109,317,121,294,147,277,159"/>
+<area shape="rect" id="Node000006" href="$class_flow.html#a17d9bd9c23d8949446709af6a4c0d6a6" title="Gets the sink system of the flow." alt="" coords="352,107,453,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="290,155,343,139,348,138,292,160"/>
+<area shape="rect" id="Node000007" href="$class_flow.html#a1f3858f90d141807377c2640fb5dd0fc" title="Gets the source system of the flow." alt="" coords="344,157,460,184"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="291,168,331,170,326,171,291,173"/>
+<area shape="rect" id="Node000008" href="$class_system.html#a5343de0a45485edd88bc87f338fe9a19" title="Sets the value of the system state." alt="" coords="340,208,464,235"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="291,182,348,203,343,203,291,187"/>
+</map>

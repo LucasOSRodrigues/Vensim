@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['introduction_0',['Introduction',['../index.html#intro',1,'']]],
-  ['isbetween_1',['isBetween',['../funcional__tests_8cpp.html#ad2b4c01be2c53afbb083be1bc94f4e38',1,'funcional_tests.cpp']]]
+  ['limpar_20bins_0',['Limpar bins',['../index.html#autotoc_md3',1,'']]],
+  ['logisticalfuncionaltest_1',['logisticalFuncionalTest',['../funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29',1,'logisticalFuncionalTest():&#160;funcional_tests.cpp'],['../funcional__tests_8h.html#a60914db64bde71b56d69320797266c29',1,'logisticalFuncionalTest():&#160;funcional_tests.cpp']]],
+  ['logisticflow_2',['LogisticFlow',['../class_logistic_flow.html',1,'LogisticFlow'],['../class_logistic_flow.html#ab0f7906cfe1a27e18a4f558124e53ee0',1,'LogisticFlow::LogisticFlow()'],['../class_logistic_flow.html#a4b30935bd972aff12bf16b3ee3f54e00',1,'LogisticFlow::LogisticFlow(System *source, System *sink, double pmax)'],['../class_logistic_flow.html#a5cb786f5e252395010b54b16440775cd',1,'LogisticFlow::LogisticFlow(const LogisticFlow &amp;other)']]],
+  ['logisticflow_2ecpp_3',['LogisticFlow.cpp',['../_logistic_flow_8cpp.html',1,'']]],
+  ['logisticflow_2eh_4',['LogisticFlow.h',['../_logistic_flow_8h.html',1,'']]]
 ];

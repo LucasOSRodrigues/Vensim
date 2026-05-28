@@ -1,0 +1,10 @@
+<map id="round4" name="round4">
+<area shape="rect" id="Node000001" title="Rounds a double value to 4 decimal places." alt="" coords="319,31,379,57"/>
+<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Implementation of complex functional test." alt="" coords="111,5,262,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,37,263,33,263,28,306,37"/>
+<area shape="rect" id="Node000004" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Implementation of exponential functional test." alt="" coords="103,56,271,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="306,51,272,59,271,53,301,51"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,35,56,43,54,38,98,32"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="85,54,55,51,55,45,90,52"/>
+</map>

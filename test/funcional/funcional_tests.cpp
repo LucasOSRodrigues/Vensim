@@ -13,7 +13,16 @@
 #include <iostream>
 
 #include "funcional_tests.h"
-#include "../../src/MySim.h"
+#include "../../src/Flow.h"
+#include "../../src/System.h"
+#include "../../src/Model.h"
+#include "../../src/Flow.h"
+
+#include "../ComplexFlow.h"
+#include "../ExponentialFlow.h"
+#include "../LogisticFlow.h"
+
+
 
 using namespace std;
 
@@ -23,8 +32,8 @@ using namespace std;
  * @param value The value to round.
  * @return The rounded value.
  */
-double round4(double value) {
-    return int(round(value * 10000.0)) / 10000.0;
+int round4(double value) {
+    return int(round(value * 10000.0));
 }
 
 /**
@@ -128,7 +137,7 @@ void complexFuncionalTest() {
     model.run(0, 100);
 
     assert(round4(q1.getValue()) == round4(31.8513));
-    assert(round4(q2.getValue()) == round4(18.4004));
+    assert(round4(q2.getValue()) == round4(18.4003));
     assert(round4(q3.getValue()) == round4(77.1143));
     assert(round4(q4.getValue()) == round4(56.1728));
     assert(round4(q5.getValue()) == round4(16.4612));

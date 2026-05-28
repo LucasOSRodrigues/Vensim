@@ -6,5 +6,7 @@ var class_model =
     [ "add", "class_model.html#ab69613bde0ace81c92bbf519660ccb2c", null ],
     [ "add", "class_model.html#a302d4ed93c6e6f9a0f728e021a91f821", null ],
     [ "operator=", "class_model.html#aaa76b9c72b66fa245f6b7b92d1ecc032", null ],
-    [ "run", "class_model.html#a27269301c78fc4f54061c150f13ae123", null ]
+    [ "run", "class_model.html#a27269301c78fc4f54061c150f13ae123", null ],
+    [ "flows", "class_model.html#aa76c9411f1cf6da6f4c696b2feadcb1a", null ],
+    [ "systems", "class_model.html#ac7dea8829149e597d2671dbc0a538bf7", null ]
 ];

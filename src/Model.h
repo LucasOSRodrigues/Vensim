@@ -28,9 +28,6 @@ using namespace std;
  * evolution of the simulation, applying the transfer rules
  * between systems in each iteration.
  *
- * @author Development Team
- * @version 1.0
- * @date 2024
  */
 class Model {
 private:

@@ -9,10 +9,22 @@ Implements a flow with specific calculation rule.
 
 {\ttfamily \+\#include $<$Complex\+Flow.\+h$>$}
 
-Inheritance diagram for Complex\+Flow:\+\begin{figure}[H]
+
+
+Inheritance diagram for Complex\+Flow:\+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_complex_flow}
+\includegraphics[width=170pt]{class_complex_flow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Complex\+Flow:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_complex_flow__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -22,8 +34,7 @@ Inheritance diagram for Complex\+Flow:\+\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_complex_flow_a7796d4f12c1eeeee70bc233d291a42f0}{Complex\+Flow}} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}sink)
 \begin{DoxyCompactList}\small\item\em Constructor with parameters. \end{DoxyCompactList}\item 
-\Hypertarget{class_complex_flow_a3ea63b4de8f10baefdbb71c52986cd74}\label{class_complex_flow_a3ea63b4de8f10baefdbb71c52986cd74} 
-virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Complex\+Flow} ()
+virtual \doxymbox{\hyperlink{class_complex_flow_a3ea63b4de8f10baefdbb71c52986cd74}{\texorpdfstring{$\sim$}{\string~}\+Complex\+Flow}} ()
 \begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_complex_flow_aaf08c069a2cea2f6e759ade91d925c10}{Complex\+Flow}} (const \doxymbox{\hyperlink{class_complex_flow}{Complex\+Flow}} \&other)
 \begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
@@ -38,7 +49,7 @@ double \doxymbox{\hyperlink{class_complex_flow_a744cb3029e9335038f3f8c1da6daea4d
 \begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_flow_acac9771d78055d356ac9e9d247bf319c}{Flow}} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}sink)
 \begin{DoxyCompactList}\small\item\em Constructor with parameters. \end{DoxyCompactList}\item 
-virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Flow} ()
+virtual \doxymbox{\hyperlink{class_flow_a5991efa6e8cf88c4ef2125cc727db333}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
 \begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_flow_a5a65e36c874c5cd5283ac32a33eb0a8b}{Flow}} (const \doxymbox{\hyperlink{class_flow}{Flow}} \&other)
 \begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
@@ -53,9 +64,9 @@ virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Flow} ()
 \begin{DoxyCompactItemize}
 \item 
 \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}
-\item 
+\begin{DoxyCompactList}\small\item\em Pointer to the source system of the flow. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_a026da8b33e2c09941531a3c25d61ba7d}{sink}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointer to the sink system of the flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -63,17 +74,10 @@ Implements a flow with specific calculation rule.
 
 The \doxylink{class_complex_flow}{Complex\+Flow} calculates the value transferred based on a specific rule that depends on the value of the source system.
 
-The formula used is:\+ flow = 0.\+01 \texorpdfstring{$\ast$}{*} source\+\_\+value
+The formula used is:\+ flow = 0.\+01 \texorpdfstring{$\ast$}{*} source\+\_\+value 
 
-\begin{DoxyAuthor}{Author}
-Development Team 
-\end{DoxyAuthor}
-\begin{DoxyVersion}{Version}
-1.\+0 
-\end{DoxyVersion}
-\begin{DoxyDate}{Date}
-2024 
-\end{DoxyDate}
+Definition at line \doxymbox{\hyperlink{_complex_flow_8h_source_l00025}{25}} of file \doxymbox{\hyperlink{_complex_flow_8h_source}{Complex\+Flow.\+h}}.
+
 
 
 \label{class_complex_flow_doc-constructors}
@@ -89,7 +93,38 @@ Complex\+Flow::\+\+Complex\+Flow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCapt
 
 Default constructor. 
 
-Implementation of the default constructor. \Hypertarget{class_complex_flow_a7796d4f12c1eeeee70bc233d291a42f0}\index{ComplexFlow@{ComplexFlow}!ComplexFlow@{ComplexFlow}}
+Implementation of the default constructor. 
+
+Definition at line \doxymbox{\hyperlink{_complex_flow_8cpp_source_l00015}{15}} of file \doxymbox{\hyperlink{_complex_flow_8cpp_source}{Complex\+Flow.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00015\ :\ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}()\ \{\}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_flow_8cpp_source_l00018}{Flow::\+\+Flow()}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{_complex_flow_8cpp_source_l00031}{Complex\+Flow()}}, \doxymbox{\hyperlink{_complex_flow_8cpp_source_l00037}{operator=()}}, and \doxymbox{\hyperlink{class_complex_flow_a3ea63b4de8f10baefdbb71c52986cd74}{\texorpdfstring{$\sim$}{\string~}\+Complex\+Flow()}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_complex_flow_a5842ce02ac6229830dbe8895b61891cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_flow_a5842ce02ac6229830dbe8895b61891cf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_complex_flow_a7796d4f12c1eeeee70bc233d291a42f0}\index{ComplexFlow@{ComplexFlow}!ComplexFlow@{ComplexFlow}}
 \index{ComplexFlow@{ComplexFlow}!ComplexFlow@{ComplexFlow}}
 \doxysubsubsection{\texorpdfstring{ComplexFlow()}{ComplexFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily \label{class_complex_flow_a7796d4f12c1eeeee70bc233d291a42f0} 
@@ -108,6 +143,47 @@ Implementation of the constructor with parameters.
 {\em sink} & Pointer to the sink system. \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{_complex_flow_8cpp_source_l00020}{20}} of file \doxymbox{\hyperlink{_complex_flow_8cpp_source}{Complex\+Flow.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ \ \ \ \ :\ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(\doxymbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}},\ \doxymbox{\hyperlink{class_flow_a026da8b33e2c09941531a3c25d61ba7d}{sink}})\ \{\}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_flow_8cpp_source_l00018}{Flow::\+\+Flow()}}, \doxymbox{\hyperlink{_flow_8h_source_l00029}{Flow::\+sink}}, and \doxymbox{\hyperlink{_flow_8h_source_l00028}{Flow::\+source}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_complex_flow_a7796d4f12c1eeeee70bc233d291a42f0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_complex_flow_a3ea63b4de8f10baefdbb71c52986cd74}\index{ComplexFlow@{ComplexFlow}!````~ComplexFlow@{\texorpdfstring{$\sim$}{\string~}ComplexFlow}}
+\index{````~ComplexFlow@{\texorpdfstring{$\sim$}{\string~}ComplexFlow}!ComplexFlow@{ComplexFlow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ComplexFlow()}{\string~ComplexFlow()}}
+{\footnotesize\ttfamily \label{class_complex_flow_a3ea63b4de8f10baefdbb71c52986cd74} 
+Complex\+Flow::\+\texorpdfstring{$\sim$}{\string~}\+Complex\+Flow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor. 
+
+
+
+References \doxymbox{\hyperlink{_complex_flow_8cpp_source_l00015}{Complex\+Flow()}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_flow_a3ea63b4de8f10baefdbb71c52986cd74_cgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_complex_flow_aaf08c069a2cea2f6e759ade91d925c10}\index{ComplexFlow@{ComplexFlow}!ComplexFlow@{ComplexFlow}}
 \index{ComplexFlow@{ComplexFlow}!ComplexFlow@{ComplexFlow}}
 \doxysubsubsection{\texorpdfstring{ComplexFlow()}{ComplexFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
@@ -125,6 +201,26 @@ Implementation of the copy constructor.
 {\em other} & \doxylink{class_complex_flow}{Complex\+Flow} object to be copied. \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{_complex_flow_8cpp_source_l00031}{31}} of file \doxymbox{\hyperlink{_complex_flow_8cpp_source}{Complex\+Flow.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032\ \ \ \ \ :\ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(other)\ \{\}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_complex_flow_8cpp_source_l00015}{Complex\+Flow()}}, and \doxymbox{\hyperlink{_flow_8cpp_source_l00018}{Flow::\+\+Flow()}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_flow_aaf08c069a2cea2f6e759ade91d925c10_cgraph}
+\end{center}
+\end{figure}
 
 
 \label{class_complex_flow_doc-func-members}
@@ -156,6 +252,21 @@ Transfer value calculated by the complex formula.
 
 Implements \doxymbox{\hyperlink{class_flow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
 
+
+
+Definition at line \doxymbox{\hyperlink{_complex_flow_8cpp_source_l00051}{51}} of file \doxymbox{\hyperlink{_complex_flow_8cpp_source}{Complex\+Flow.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \doxymbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}-\/>getValue();}
+\DoxyCodeLine{00053\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_flow_8h_source_l00028}{Flow::\+source}}.
+
 \Hypertarget{class_complex_flow_a6be113d8e13ab3330692c4f681a11875}\index{ComplexFlow@{ComplexFlow}!operator=@{operator=}}
 \index{operator=@{operator=}!ComplexFlow@{ComplexFlow}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
@@ -178,7 +289,32 @@ Reference to the modified \doxylink{class_complex_flow}{Complex\+Flow} object.
 \end{DoxyReturn}
 
 
+Definition at line \doxymbox{\hyperlink{_complex_flow_8cpp_source_l00037}{37}} of file \doxymbox{\hyperlink{_complex_flow_8cpp_source}{Complex\+Flow.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&other)\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_flow_a5f7550e37445bb6ae955beffd1fa857a}{Flow::operator=}}(other);}
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00042\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_complex_flow_8cpp_source_l00015}{Complex\+Flow()}}, and \doxymbox{\hyperlink{_flow_8cpp_source_l00042}{Flow::\+operator=()}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_flow_a6be113d8e13ab3330692c4f681a11875_cgraph}
+\end{center}
+\end{figure}
+
+
 The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
 \item 
-src/\+\doxymbox{\hyperlink{_complex_flow_8h}{Complex\+Flow.\+h}}\item 
-src/\+\doxymbox{\hyperlink{_complex_flow_8cpp}{Complex\+Flow.\+cpp}}\end{DoxyCompactItemize}
+\doxymbox{\hyperlink{_complex_flow_8h}{Complex\+Flow.\+h}}\item 
+\doxymbox{\hyperlink{_complex_flow_8cpp}{Complex\+Flow.\+cpp}}\end{DoxyCompactItemize}

@@ -5,8 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vensim: System Class Reference</title>
+<title>Simulador - Sprint 3: System Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -30,8 +31,9 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Vensim
+   <div id="projectname">Simulador - Sprint 3
    </div>
+   <div id="projectbrief">Documentação do simulador em C++ com Doxygen e Graphviz</div>
   </td>
  </tr>
  </tbody>
@@ -123,6 +125,12 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_system.h
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_system_8h_source.html">System.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Collaboration diagram for System:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_system__coll__graph.svg" width="98" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -130,9 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae317936c9bcf1374d61745572e0f2f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor of the <a class="el" href="class_system.html" title="Represents a system with variable state in the simulation.">System</a> class.  <br /></td></tr>
 <tr class="memitem:a50d3e361c713dd28322b616ee229d4f3" id="r_a50d3e361c713dd28322b616ee229d4f3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a50d3e361c713dd28322b616ee229d4f3">System</a> (const string &amp;name, double value)</td></tr>
 <tr class="memdesc:a50d3e361c713dd28322b616ee229d4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with parameters.  <br /></td></tr>
-<tr class="memitem:a3be70bb338e3f062f821173fd15680d0" id="r_a3be70bb338e3f062f821173fd15680d0"><td class="memItemLeft"><a id="a3be70bb338e3f062f821173fd15680d0" name="a3be70bb338e3f062f821173fd15680d0"></a>
-virtual&#160;</td><td class="memItemRight"><b>~System</b> ()</td></tr>
-<tr class="memdesc:a3be70bb338e3f062f821173fd15680d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
+<tr class="memitem:a3be70bb338e3f062f821173fd15680d0" id="r_a3be70bb338e3f062f821173fd15680d0"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a3be70bb338e3f062f821173fd15680d0">~System</a> ()</td></tr>
+<tr class="memdesc:a3be70bb338e3f062f821173fd15680d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
 <tr class="memitem:ae95d7374f80fdfaee096e95c1abc438c" id="r_ae95d7374f80fdfaee096e95c1abc438c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae95d7374f80fdfaee096e95c1abc438c">System</a> (const <a class="el" href="class_system.html">System</a> &amp;other)</td></tr>
 <tr class="memdesc:ae95d7374f80fdfaee096e95c1abc438c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <br /></td></tr>
 <tr class="memitem:ac6422081d08c3ac145a6d7c6d9f5bae7" id="r_ac6422081d08c3ac145a6d7c6d9f5bae7"><td class="memItemLeft"><a class="el" href="class_system.html">System</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac6422081d08c3ac145a6d7c6d9f5bae7">operator=</a> (const <a class="el" href="class_system.html">System</a> &amp;other)</td></tr>
@@ -145,13 +152,19 @@ virtual&#160;</td><td class="memItemRight"><b>~System</b> ()</td></tr>
 <tr class="memdesc:a47ece132a04247cd74aea11537830bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the system.  <br /></td></tr>
 <tr class="memitem:aa7d17369d1034e7d8643a63f69d1901d" id="r_aa7d17369d1034e7d8643a63f69d1901d"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aa7d17369d1034e7d8643a63f69d1901d">getValue</a> () const</td></tr>
 <tr class="memdesc:aa7d17369d1034e7d8643a63f69d1901d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current value of the system.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a29fe2868c0d56fdebc67f1bef5d5cca3" id="r_a29fe2868c0d56fdebc67f1bef5d5cca3"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a29fe2868c0d56fdebc67f1bef5d5cca3">name</a></td></tr>
+<tr class="memdesc:a29fe2868c0d56fdebc67f1bef5d5cca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifier name of the system.  <br /></td></tr>
+<tr class="memitem:a879687b1125ef20757c2a61345fedd00" id="r_a879687b1125ef20757c2a61345fedd00"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a879687b1125ef20757c2a61345fedd00">value</a></td></tr>
+<tr class="memdesc:a879687b1125ef20757c2a61345fedd00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current value of the system state.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a system with variable state in the simulation. </p>
-<p>A system has an identifier name and a value that represents its current state. Systems can be connected through flows to transfer values between them during simulation execution.</p>
-<dl class="section author"><dt>Author</dt><dd>Development Team </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2024 </dd></dl>
+<p>A system has an identifier name and a value that represents its current state. Systems can be connected through flows to transfer values between them during simulation execution. </p>
+
+<p class="definition">Definition at line <a class="el" href="_system_8h_source.html#l00027">27</a> of file <a class="el" href="_system_8h_source.html">System.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae317936c9bcf1374d61745572e0f2f8a" name="ae317936c9bcf1374d61745572e0f2f8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae317936c9bcf1374d61745572e0f2f8a">&#9670;&#160;</a></span>System() <span class="overload">[1/3]</span></h2>
@@ -172,6 +185,21 @@ virtual&#160;</td><td class="memItemRight"><b>~System</b> ()</td></tr>
 <p>Implementation of the default constructor.</p>
 <p>Initializes the system with empty name and zero value.</p>
 <p>Initializes the name as empty string and value as 0.0. </p>
+
+<p class="definition">Definition at line <a class="el" href="_system_8cpp_source.html#l00017">17</a> of file <a class="el" href="_system_8cpp_source.html">System.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>: <a class="code hl_variable" href="#a29fe2868c0d56fdebc67f1bef5d5cca3">name</a>(<span class="stringliteral">&quot;&quot;</span>), <a class="code hl_variable" href="#a879687b1125ef20757c2a61345fedd00">value</a>(0.0) {}</div>
+<div class="ttc" id="aclass_system_html_a29fe2868c0d56fdebc67f1bef5d5cca3"><div class="ttname"><a href="#a29fe2868c0d56fdebc67f1bef5d5cca3">System::name</a></div><div class="ttdeci">string name</div><div class="ttdoc">Identifier name of the system.</div><div class="ttdef"><b>Definition</b> <a href="_system_8h_source.html#l00029">System.h:29</a></div></div>
+<div class="ttc" id="aclass_system_html_a879687b1125ef20757c2a61345fedd00"><div class="ttname"><a href="#a879687b1125ef20757c2a61345fedd00">System::value</a></div><div class="ttdeci">double value</div><div class="ttdoc">Current value of the system state.</div><div class="ttdef"><b>Definition</b> <a href="_system_8h_source.html#l00030">System.h:30</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_system_8h_source.html#l00029">name</a>, and <a class="el" href="_system_8h_source.html#l00030">value</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_system_8cpp_source.html#l00045">operator=()</a>, <a class="el" href="_system_8cpp_source.html#l00037">System()</a>, and <a class="el" href="#a3be70bb338e3f062f821173fd15680d0">~System()</a>.</p>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_system_ae317936c9bcf1374d61745572e0f2f8a_icgraph.svg" width="308" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -205,6 +233,46 @@ virtual&#160;</td><td class="memItemRight"><b>~System</b> ()</td></tr>
 </dl>
 <p>Initializes the system with the provided name and value. </p>
 
+<p class="definition">Definition at line <a class="el" href="_system_8cpp_source.html#l00024">24</a> of file <a class="el" href="_system_8cpp_source.html">System.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>    : <a class="code hl_variable" href="#a29fe2868c0d56fdebc67f1bef5d5cca3">name</a>(<a class="code hl_variable" href="#a29fe2868c0d56fdebc67f1bef5d5cca3">name</a>), <a class="code hl_variable" href="#a879687b1125ef20757c2a61345fedd00">value</a>(<a class="code hl_variable" href="#a879687b1125ef20757c2a61345fedd00">value</a>) {}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_system_8h_source.html#l00029">name</a>, and <a class="el" href="_system_8h_source.html#l00030">value</a>.</p>
+
+</div>
+</div>
+<a id="a3be70bb338e3f062f821173fd15680d0" name="a3be70bb338e3f062f821173fd15680d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be70bb338e3f062f821173fd15680d0">&#9670;&#160;</a></span>~System()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System::~System </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual destructor. </p>
+
+<p class="reference">References <a class="el" href="_system_8h_source.html#l00029">name</a>, <a class="el" href="_system_8cpp_source.html#l00017">System()</a>, and <a class="el" href="_system_8h_source.html#l00030">value</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_system_a3be70bb338e3f062f821173fd15680d0_cgraph.svg" width="306" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a id="ae95d7374f80fdfaee096e95c1abc438c" name="ae95d7374f80fdfaee096e95c1abc438c"></a>
@@ -232,6 +300,17 @@ virtual&#160;</td><td class="memItemRight"><b>~System</b> ()</td></tr>
 </dl>
 <p>Copies the name and state values from the original object. </p>
 
+<p class="definition">Definition at line <a class="el" href="_system_8cpp_source.html#l00037">37</a> of file <a class="el" href="_system_8cpp_source.html">System.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>    : <a class="code hl_variable" href="#a29fe2868c0d56fdebc67f1bef5d5cca3">name</a>(other.<a class="code hl_variable" href="#a29fe2868c0d56fdebc67f1bef5d5cca3">name</a>), <a class="code hl_variable" href="#a879687b1125ef20757c2a61345fedd00">value</a>(other.<a class="code hl_variable" href="#a879687b1125ef20757c2a61345fedd00">value</a>) {}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_system_8h_source.html#l00029">name</a>, <a class="el" href="_system_8cpp_source.html#l00017">System()</a>, and <a class="el" href="_system_8h_source.html#l00030">value</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_system_ae95d7374f80fdfaee096e95c1abc438c_cgraph.svg" width="298" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -254,6 +333,13 @@ virtual&#160;</td><td class="memItemRight"><b>~System</b> ()</td></tr>
 <p>Returns the name of the system.</p>
 <dl class="section return"><dt>Returns</dt><dd>Name of the system. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_system_8cpp_source.html#l00070">70</a> of file <a class="el" href="_system_8cpp_source.html">System.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>                             {</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a29fe2868c0d56fdebc67f1bef5d5cca3">name</a>;</div>
+<div class="line"><span class="lineno">   72</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_system_8h_source.html#l00029">name</a>.</p>
+
 </div>
 </div>
 <a id="aa7d17369d1034e7d8643a63f69d1901d" name="aa7d17369d1034e7d8643a63f69d1901d"></a>
@@ -274,6 +360,21 @@ virtual&#160;</td><td class="memItemRight"><b>~System</b> ()</td></tr>
 <p>Gets the current value of the system. </p>
 <p>Returns the current value of the system.</p>
 <dl class="section return"><dt>Returns</dt><dd>Current value of the state. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_system_8cpp_source.html#l00077">77</a> of file <a class="el" href="_system_8cpp_source.html">System.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>                              {</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a879687b1125ef20757c2a61345fedd00">value</a>;</div>
+<div class="line"><span class="lineno">   79</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_system_8h_source.html#l00030">value</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="funcional__tests_8cpp_source.html#l00108">complexFuncionalTest()</a>, <a class="el" href="funcional__tests_8cpp_source.html#l00058">exponentialFuncionalTest()</a>, <a class="el" href="funcional__tests_8cpp_source.html#l00083">logisticalFuncionalTest()</a>, and <a class="el" href="_model_8cpp_source.html#l00069">Model::run()</a>.</p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_system_aa7d17369d1034e7d8643a63f69d1901d_icgraph.svg" width="579" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -303,6 +404,23 @@ virtual&#160;</td><td class="memItemRight"><b>~System</b> ()</td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the modified <a class="el" href="class_system.html" title="Represents a system with variable state in the simulation.">System</a> object.</dd></dl>
 <p>Checks self-assignment before copying the values. </p>
 
+<p class="definition">Definition at line <a class="el" href="_system_8cpp_source.html#l00045">45</a> of file <a class="el" href="_system_8cpp_source.html">System.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                           {</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) {</div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_variable" href="#a29fe2868c0d56fdebc67f1bef5d5cca3">name</a> = other.<a class="code hl_variable" href="#a29fe2868c0d56fdebc67f1bef5d5cca3">name</a>;</div>
+<div class="line"><span class="lineno">   48</span>        <a class="code hl_variable" href="#a879687b1125ef20757c2a61345fedd00">value</a> = other.<a class="code hl_variable" href="#a879687b1125ef20757c2a61345fedd00">value</a>;</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   51</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_system_8h_source.html#l00029">name</a>, <a class="el" href="_system_8cpp_source.html#l00017">System()</a>, and <a class="el" href="_system_8h_source.html#l00030">value</a>.</p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_system_ac6422081d08c3ac145a6d7c6d9f5bae7_cgraph.svg" width="308" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a id="aecfa79ded6c6a08f69ebaf55e758e5b4" name="aecfa79ded6c6a08f69ebaf55e758e5b4"></a>
@@ -327,6 +445,13 @@ virtual&#160;</td><td class="memItemRight"><b>~System</b> ()</td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_system_8cpp_source.html#l00056">56</a> of file <a class="el" href="_system_8cpp_source.html">System.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>                                       {</div>
+<div class="line"><span class="lineno">   57</span>    this-&gt;<a class="code hl_variable" href="#a29fe2868c0d56fdebc67f1bef5d5cca3">name</a> = <a class="code hl_variable" href="#a29fe2868c0d56fdebc67f1bef5d5cca3">name</a>;</div>
+<div class="line"><span class="lineno">   58</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_system_8h_source.html#l00029">name</a>.</p>
 
 </div>
 </div>
@@ -353,11 +478,83 @@ virtual&#160;</td><td class="memItemRight"><b>~System</b> ()</td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_system_8cpp_source.html#l00063">63</a> of file <a class="el" href="_system_8cpp_source.html">System.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>                                  {</div>
+<div class="line"><span class="lineno">   64</span>    this-&gt;<a class="code hl_variable" href="#a879687b1125ef20757c2a61345fedd00">value</a> = <a class="code hl_variable" href="#a879687b1125ef20757c2a61345fedd00">value</a>;</div>
+<div class="line"><span class="lineno">   65</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_system_8h_source.html#l00030">value</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_model_8cpp_source.html#l00069">Model::run()</a>.</p>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_system_a5343de0a45485edd88bc87f338fe9a19_icgraph.svg" width="579" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a29fe2868c0d56fdebc67f1bef5d5cca3" name="a29fe2868c0d56fdebc67f1bef5d5cca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29fe2868c0d56fdebc67f1bef5d5cca3">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string System::name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Identifier name of the system. </p>
+
+<p class="definition">Definition at line <a class="el" href="_system_8h_source.html#l00029">29</a> of file <a class="el" href="_system_8h_source.html">System.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_system_8cpp_source.html#l00070">getName()</a>, <a class="el" href="_system_8cpp_source.html#l00045">operator=()</a>, <a class="el" href="_system_8cpp_source.html#l00056">setName()</a>, <a class="el" href="_system_8cpp_source.html#l00017">System()</a>, <a class="el" href="_system_8cpp_source.html#l00024">System()</a>, <a class="el" href="_system_8cpp_source.html#l00037">System()</a>, and <a class="el" href="#a3be70bb338e3f062f821173fd15680d0">~System()</a>.</p>
+
+</div>
+</div>
+<a id="a879687b1125ef20757c2a61345fedd00" name="a879687b1125ef20757c2a61345fedd00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a879687b1125ef20757c2a61345fedd00">&#9670;&#160;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double System::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Current value of the system state. </p>
+
+<p class="definition">Definition at line <a class="el" href="_system_8h_source.html#l00030">30</a> of file <a class="el" href="_system_8h_source.html">System.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_system_8cpp_source.html#l00077">getValue()</a>, <a class="el" href="_system_8cpp_source.html#l00045">operator=()</a>, <a class="el" href="_system_8cpp_source.html#l00063">setValue()</a>, <a class="el" href="_system_8cpp_source.html#l00017">System()</a>, <a class="el" href="_system_8cpp_source.html#l00024">System()</a>, <a class="el" href="_system_8cpp_source.html#l00037">System()</a>, and <a class="el" href="#a3be70bb338e3f062f821173fd15680d0">~System()</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/<a class="el" href="_system_8h_source.html">System.h</a></li>
-<li>src/<a class="el" href="_system_8cpp.html">System.cpp</a></li>
+<li><a class="el" href="_system_8h_source.html">System.h</a></li>
+<li><a class="el" href="_system_8cpp_source.html">System.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

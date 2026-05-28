@@ -5,8 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vensim: MySim - Systems Dynamics Simulation Framework</title>
+<title>Simulador - Sprint 3: MyVensim</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -30,8 +31,9 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Vensim
+   <div id="projectname">Simulador - Sprint 3
    </div>
+   <div id="projectbrief">Documentação do simulador em C++ com Doxygen e Graphviz</div>
   </td>
  </tr>
  </tbody>
@@ -115,43 +117,21 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">MySim - Systems Dynamics Simulation Framework </div></div>
+  <div class="headertitle"><div class="title">MyVensim </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1 class="doxsection"><a class="anchor" id="intro"></a>
-Introduction</h1>
-<p>MySim is a C++ framework for simulating dynamic systems using the concept of stocks and flows, similar to the Systems Dynamics approach of Vensim software.</p>
-<h1 class="doxsection"><a class="anchor" id="components"></a>
-Main Components</h1>
-<ul>
-<li><b><a class="el" href="class_system.html" title="Represents a system with variable state in the simulation.">System</a></b>: Represents a stock (accumulator) that maintains a value over time.</li>
-<li><b><a class="el" href="class_flow.html" title="Abstract class that represents a flow between systems.">Flow</a></b>: Abstract class for different types of transfer flows.</li>
-<li><b><a class="el" href="class_exponential_flow.html" title="Implements a flow with exponential growth.">ExponentialFlow</a></b>: Implements exponential growth.</li>
-<li><b><a class="el" href="class_logistic_flow.html" title="Implements a logistic flow with population limit.">LogisticFlow</a></b>: Implements logistic growth with limit.</li>
-<li><b><a class="el" href="class_complex_flow.html" title="Implements a flow with specific calculation rule.">ComplexFlow</a></b>: Implements flow with specific rule.</li>
-<li><b><a class="el" href="class_model.html" title="Class responsible for executing the simulation.">Model</a></b>: Orchestrates the simulation, managing systems and flows.</li>
-</ul>
-<h1 class="doxsection"><a class="anchor" id="usage"></a>
-Basic Usage</h1>
-<p>Example of creating a simulation: </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_model.html">Model</a> sim;</div>
-<div class="line"><a class="code hl_class" href="class_system.html">System</a> stock1(<span class="stringliteral">&quot;Stock 1&quot;</span>, 100.0);</div>
-<div class="line"><a class="code hl_class" href="class_system.html">System</a> stock2(<span class="stringliteral">&quot;Stock 2&quot;</span>, 0.0);</div>
-<div class="line"><a class="code hl_class" href="class_exponential_flow.html">ExponentialFlow</a> flow(&amp;stock1, &amp;stock2);</div>
-<div class="line"> </div>
-<div class="line">sim.<a class="code hl_function" href="class_model.html#a302d4ed93c6e6f9a0f728e021a91f821">add</a>(&amp;stock1);</div>
-<div class="line">sim.<a class="code hl_function" href="class_model.html#a302d4ed93c6e6f9a0f728e021a91f821">add</a>(&amp;stock2);</div>
-<div class="line">sim.<a class="code hl_function" href="class_model.html#a302d4ed93c6e6f9a0f728e021a91f821">add</a>(&amp;flow);</div>
-<div class="line">sim.<a class="code hl_function" href="class_model.html#a27269301c78fc4f54061c150f13ae123">run</a>(0, 100);</div>
-<div class="ttc" id="aclass_exponential_flow_html"><div class="ttname"><a href="class_exponential_flow.html">ExponentialFlow</a></div><div class="ttdoc">Implements a flow with exponential growth.</div><div class="ttdef"><b>Definition</b> ExponentialFlow.h:30</div></div>
-<div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Class responsible for executing the simulation.</div><div class="ttdef"><b>Definition</b> Model.h:35</div></div>
-<div class="ttc" id="aclass_model_html_a27269301c78fc4f54061c150f13ae123"><div class="ttname"><a href="class_model.html#a27269301c78fc4f54061c150f13ae123">Model::run</a></div><div class="ttdeci">void run(int begin, int end)</div><div class="ttdoc">Executes the simulation in the specified time interval.</div><div class="ttdef"><b>Definition</b> Model.cpp:69</div></div>
-<div class="ttc" id="aclass_model_html_a302d4ed93c6e6f9a0f728e021a91f821"><div class="ttname"><a href="class_model.html#a302d4ed93c6e6f9a0f728e021a91f821">Model::add</a></div><div class="ttdeci">void add(System *system)</div><div class="ttdoc">Adds a system to the model.</div><div class="ttdef"><b>Definition</b> Model.cpp:46</div></div>
-<div class="ttc" id="aclass_system_html"><div class="ttname"><a href="class_system.html">System</a></div><div class="ttdoc">Represents a system with variable state in the simulation.</div><div class="ttdef"><b>Definition</b> System.h:31</div></div>
-</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Development Team </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2024</dd></dl>
-<p>Bundles all simulator classes for easy framework utilization. </p>
-</div></div><!-- PageDoc -->
+<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a></p>
+<p>Projeto da disciplina Engenharia de Software I.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+Compilar</h1>
+<div class="fragment"><div class="line">make</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+Executar todos os testes</h1>
+<div class="fragment"><div class="line">make tests</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+Limpar bins</h1>
+<div class="fragment"><div class="line">make clean</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->

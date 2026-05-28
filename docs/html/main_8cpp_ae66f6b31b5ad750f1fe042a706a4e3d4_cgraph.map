@@ -1,0 +1,33 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,127,55,153"/>
+<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Implementation of complex functional test." alt="" coords="111,76,262,103"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,129,102,112,126,106,122,110,104,117,57,133"/>
+<area shape="rect" id="Node000010" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Implementation of exponential functional test." alt="" coords="103,127,271,153"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="54,138,89,138,85,142,56,142"/>
+<area shape="rect" id="Node000011" href="$funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Implementation of logistic functional test." alt="" coords="110,177,264,204"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="55,146,104,163,126,171,121,173,102,168,56,151"/>
+<area shape="rect" id="Node000003" href="$class_model.html#a302d4ed93c6e6f9a0f728e021a91f821" title="Adds a system to the model." alt="" coords="319,127,404,153"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="235,101,307,123,302,124,236,106"/>
+<area shape="rect" id="Node000004" href="$class_system.html#aa7d17369d1034e7d8643a63f69d1901d" title="Gets the current value of the system." alt="" coords="452,101,577,128"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="203,73,239,47,289,20,318,10,347,4,376,4,405,11,433,26,458,45,497,89,492,88,455,49,430,30,403,16,376,9,347,9,319,15,292,25,242,51,206,77"/>
+<area shape="rect" id="Node000005" href="$funcional__tests_8cpp.html#aa6ada142da95d4c7c576bc6d348776ed" title="Rounds a double value to 4 decimal places." alt="" coords="332,25,392,52"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="235,73,319,50,315,53,237,78"/>
+<area shape="rect" id="Node000006" href="$class_model.html#a27269301c78fc4f54061c150f13ae123" title="Executes the simulation in the specified time interval." alt="" coords="320,228,403,255"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="250,100,273,112,298,135,319,161,350,214,345,213,315,165,294,139,269,117,250,106"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="380,225,403,207,451,163,482,139,487,137,454,167,406,211,383,230"/>
+<area shape="rect" id="Node000007" href="$class_flow.html#a17d9bd9c23d8949446709af6a4c0d6a6" title="Gets the sink system of the flow." alt="" coords="464,228,565,255"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="403,239,451,241,446,241,403,244"/>
+<area shape="rect" id="Node000008" href="$class_flow.html#a1f3858f90d141807377c2640fb5dd0fc" title="Gets the source system of the flow." alt="" coords="456,279,573,305"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="404,252,460,273,455,273,403,257"/>
+<area shape="rect" id="Node000009" href="$class_system.html#a5343de0a45485edd88bc87f338fe9a19" title="Sets the value of the system state." alt="" coords="452,177,577,204"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="403,225,455,210,460,209,404,230"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="271,137,306,139,301,141,272,142"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="246,123,319,112,439,110,434,112,319,117,248,129"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="244,124,270,112,294,92,317,69,328,63,332,60,321,72,298,96,272,117,247,128"/>
+<area shape="poly" id="edge14_Node000010_Node000006" title=" " alt="" coords="245,151,272,163,309,188,340,217,335,217,305,192,270,168,245,156"/>
+<area shape="poly" id="edge16_Node000011_Node000003" title=" " alt="" coords="235,174,307,155,302,157,237,179"/>
+<area shape="poly" id="edge17_Node000011_Node000004" title=" " alt="" coords="263,185,332,177,404,163,441,149,474,136,479,134,443,154,405,168,333,183,264,190"/>
+<area shape="poly" id="edge19_Node000011_Node000006" title=" " alt="" coords="236,202,308,225,303,226,235,207"/>
+<area shape="rect" id="Node000012" href="$funcional__tests_8cpp.html#ad2b4c01be2c53afbb083be1bc94f4e38" title="Checks if a value is between two bounds (inclusive)." alt="" coords="320,279,403,305"/>
+<area shape="poly" id="edge18_Node000011_Node000012" title=" " alt="" coords="213,202,327,270,321,271,211,207"/>
+</map>

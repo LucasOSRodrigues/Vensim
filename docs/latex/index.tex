@@ -1,38 +1,25 @@
-\chapter{My\+Sim -\/ Systems Dynamics Simulation Framework }
-\hypertarget{index}{}\label{index}\index{MySim -\/ Systems Dynamics Simulation Framework@{MySim -\/ Systems Dynamics Simulation Framework}}
-\hypertarget{index_intro}{}\doxysection{\texorpdfstring{Introduction}{Introduction}}\label{index_intro}
-My\+Sim is a C++ framework for simulating dynamic systems using the concept of stocks and flows, similar to the Systems Dynamics approach of Vensim software.\hypertarget{index_components}{}\doxysection{\texorpdfstring{Main Components}{Main Components}}\label{index_components}
+\chapter{My\+Vensim }
+\hypertarget{index}{}\label{index}\index{MyVensim@{MyVensim}}
+\label{index_md__r_e_a_d_m_e}%
+\Hypertarget{index_md__r_e_a_d_m_e}%
 
-\begin{DoxyItemize}
-\item {\bfseries{\doxylink{class_system}{System}}}:\+ Represents a stock (accumulator) that maintains a value over time.
-\item {\bfseries{\doxylink{class_flow}{Flow}}}:\+ Abstract class for different types of transfer flows.
-\item {\bfseries{\doxylink{class_exponential_flow}{Exponential\+Flow}}}:\+ Implements exponential growth.
-\item {\bfseries{\doxylink{class_logistic_flow}{Logistic\+Flow}}}:\+ Implements logistic growth with limit.
-\item {\bfseries{\doxylink{class_complex_flow}{Complex\+Flow}}}:\+ Implements flow with specific rule.
-\item {\bfseries{\doxylink{class_model}{Model}}}:\+ Orchestrates the simulation, managing systems and flows.
-\end{DoxyItemize}\hypertarget{index_usage}{}\doxysection{\texorpdfstring{Basic Usage}{Basic Usage}}\label{index_usage}
-Example of creating a simulation:\+ 
+
+Projeto da disciplina Engenharia de Software I.\hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Compilar}{Compilar}}\label{index_autotoc_md1}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\doxymbox{\hyperlink{class_model}{Model}}\ sim;}
-\DoxyCodeLine{\doxymbox{\hyperlink{class_system}{System}}\ stock1(\textcolor{stringliteral}{"{}Stock\ 1"{}},\ 100.0);}
-\DoxyCodeLine{\doxymbox{\hyperlink{class_system}{System}}\ stock2(\textcolor{stringliteral}{"{}Stock\ 2"{}},\ 0.0);}
-\DoxyCodeLine{\doxymbox{\hyperlink{class_exponential_flow}{ExponentialFlow}}\ flow(\&stock1,\ \&stock2);}
-\DoxyCodeLine{}
-\DoxyCodeLine{sim.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&stock1);}
-\DoxyCodeLine{sim.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&stock2);}
-\DoxyCodeLine{sim.\doxymbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&flow);}
-\DoxyCodeLine{sim.\doxymbox{\hyperlink{class_model_a27269301c78fc4f54061c150f13ae123}{run}}(0,\ 100);}
+\DoxyCodeLine{make}
 
 \end{DoxyCode}
+\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Executar todos os testes}{Executar todos os testes}}\label{index_autotoc_md2}
 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ tests}
 
-\begin{DoxyAuthor}{Author}
-Development Team 
-\end{DoxyAuthor}
-\begin{DoxyVersion}{Version}
-1.\+0 
-\end{DoxyVersion}
-\begin{DoxyDate}{Date}
-2024
-\end{DoxyDate}
-Bundles all simulator classes for easy framework utilization. 
+\end{DoxyCode}
+\hypertarget{index_autotoc_md3}{}\doxysection{\texorpdfstring{Limpar bins}{Limpar bins}}\label{index_autotoc_md3}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ clean}
+
+\end{DoxyCode}
+ 
