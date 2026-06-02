@@ -14,9 +14,9 @@
  */
 void unit_Model_defaultConstructor(void) {
     ModelImpl m;
-    // The model should be created without errors
-    // (no direct way to verify it's empty without getters, but we test it doesn't crash)
-    assert(true);
+    // The model should be created with zero systems and flows
+    assert(m.getSystemCount() == 0);
+    assert(m.getFlowCount() == 0);
 }
 
 /**
@@ -31,8 +31,9 @@ void unit_Model_copyConstructor(void) {
     original.add(s1);
 
     ModelImpl copy(original);
-    // Verify the copy doesn't crash and works
-    assert(true);
+    // Verify the copy has the same number of systems
+    assert(copy.getSystemCount() == 1);
+    assert(copy.getFlowCount() == 0);
 
     delete s1;
 }
@@ -62,9 +63,12 @@ void unit_Model_assignmentOperator(void) {
     ModelImpl m2;
     m2 = m1;
 
-    // Test self-assignment
+    // Verify assignment copied the system
+    assert(m2.getSystemCount() == 1);
+
+    // Test self-assignment (should not change anything)
     m2 = m2;
-    assert(true);
+    assert(m2.getSystemCount() == 1);
 
     delete s1;
 }
@@ -82,11 +86,13 @@ void unit_Model_addSystem(void) {
     System* s3 = new SystemImpl("Tank3", 75.0);
 
     m.add(s1);
-    m.add(s2);
-    m.add(s3);
+    assert(m.getSystemCount() == 1);
 
-    // Verify systems were added (model should not crash during run)
-    assert(true);
+    m.add(s2);
+    assert(m.getSystemCount() == 2);
+
+    m.add(s3);
+    assert(m.getSystemCount() == 3);
 
     delete s1;
     delete s2;
@@ -108,9 +114,9 @@ void unit_Model_addFlow(void) {
     m.add(source);
     m.add(sink);
 
-    // Note: Flow is abstract, so we cannot create instances directly
-    // This test verifies the model structure is correct
-    assert(true);
+    // Verify initial state before adding flows
+    assert(m.getSystemCount() == 2);
+    assert(m.getFlowCount() == 0);
 
     delete source;
     delete sink;
@@ -133,14 +139,16 @@ void unit_Model_run(void) {
 
     // Test running simulation with valid interval
     m.run(0, 10);
+    // Verify systems are still accessible after run
+    assert(m.getSystemCount() == 2);
 
     // Test with begin == end (no iterations)
     m.run(5, 5);
+    assert(m.getSystemCount() == 2);
 
     // Test with larger time interval
     m.run(0, 100);
-
-    assert(true);
+    assert(m.getSystemCount() == 2);
 
     delete s1;
     delete s2;

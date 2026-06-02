@@ -22,6 +22,9 @@ public:
     void add(System* system) override;
     void add(Flow* flow) override;
     void run(int begin, int end) override;
+
+    size_t getSystemCount() const;
+    size_t getFlowCount() const;
 };
 
 #endif

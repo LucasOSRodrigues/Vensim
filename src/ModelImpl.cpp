@@ -49,3 +49,11 @@ void ModelImpl::run(int begin, int end) {
         }
     }
 }
+
+size_t ModelImpl::getSystemCount() const {
+    return systems.size();
+}
+
+size_t ModelImpl::getFlowCount() const {
+    return flows.size();
+}
