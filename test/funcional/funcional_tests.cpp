@@ -15,7 +15,9 @@
 #include "funcional_tests.h"
 #include "../../src/Flow.h"
 #include "../../src/System.h"
+#include "../../src/SystemImpl.h"
 #include "../../src/Model.h"
+#include "../../src/ModelImpl.h"
 #include "../../src/Flow.h"
 
 #include "../ComplexFlow.h"
@@ -59,10 +61,10 @@ void exponentialFuncionalTest() {
     // P inicial = 10, tempo = 10.
     // Esperado: 10 * 1.3^10 = aproximadamente 137.858491849.
 
-    System pop("Populacao", 10);
+    SystemImpl pop("Populacao", 10);
     ExponentialFlow nascimento(nullptr, &pop);
 
-    Model model;
+    ModelImpl model;
     model.add(&pop);
     model.add(&nascimento);
 
@@ -84,10 +86,10 @@ void logisticalFuncionalTest() {
     // P inicial = 10, Pmax = 70, tempo = 100.
     // Esperado: população próxima de 70.
 
-    System pop("Populacao", 10);
+    SystemImpl pop("Populacao", 10);
     LogisticFlow nascimento(nullptr, &pop, 70);
 
-    Model model;
+    ModelImpl model;
     model.add(&pop);
     model.add(&nascimento);
 
@@ -106,11 +108,11 @@ void logisticalFuncionalTest() {
  * components. Simulates 100 time units and verifies all final values.
  */
 void complexFuncionalTest() {
-    System q1("Q1", 100.0);
-    System q2("Q2", 0.0);
-    System q3("Q3", 100.0);
-    System q4("Q4", 0.0);
-    System q5("Q5", 0.0);
+    SystemImpl q1("Q1", 100.0);
+    SystemImpl q2("Q2", 0.0);
+    SystemImpl q3("Q3", 100.0);
+    SystemImpl q4("Q4", 0.0);
+    SystemImpl q5("Q5", 0.0);
 
     ComplexFlow f(&q1, &q2);
     ComplexFlow g(&q1, &q3);
@@ -119,7 +121,7 @@ void complexFuncionalTest() {
     ComplexFlow u(&q3, &q4);
     ComplexFlow v(&q4, &q1);
 
-    Model model;
+    ModelImpl model;
 
     model.add(&q1);
     model.add(&q2);

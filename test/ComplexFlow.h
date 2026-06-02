@@ -10,7 +10,7 @@
 #ifndef COMPLEXFLOW_H
 #define COMPLEXFLOW_H
 
-#include "../src/Flow.h"
+#include "../src/FlowImpl.h"
 
 /**
  * @class ComplexFlow
@@ -22,7 +22,7 @@
  *
  * The formula used is: flow = 0.01 * source_value
  */
-class ComplexFlow : public Flow {
+class ComplexFlow : public FlowImpl {
 public:
     /**
      * @brief Default constructor.

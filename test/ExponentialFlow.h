@@ -10,7 +10,7 @@
 #ifndef EXPONENTIALFLOW_H
 #define EXPONENTIALFLOW_H
 
-#include "../src/Flow.h"
+#include "../src/FlowImpl.h"
 
 /**
  * @class ExponentialFlow
@@ -24,7 +24,7 @@
  * The formula used is: flow = 0.3 * sink_value
  *
  */
-class ExponentialFlow : public Flow {
+class ExponentialFlow : public FlowImpl {
 public:
     /**
      * @brief Default constructor.

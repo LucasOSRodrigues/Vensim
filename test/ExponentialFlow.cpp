@@ -12,13 +12,13 @@
 /**
  * @brief Implementation of the default constructor.
  */
-ExponentialFlow::ExponentialFlow() : Flow() {}
+ExponentialFlow::ExponentialFlow() : FlowImpl() {}
 
 /**
  * @brief Implementation of the constructor with parameters.
  */
 ExponentialFlow::ExponentialFlow(System* source, System* sink)
-    : Flow(source, sink) {}
+    : FlowImpl(source, sink) {}
 
 /**
  * @brief Virtual destructor.
@@ -29,14 +29,14 @@ ExponentialFlow::~ExponentialFlow() = default;
  * @brief Implementation of the copy constructor.
  */
 ExponentialFlow::ExponentialFlow(const ExponentialFlow& other)
-    : Flow(other) {}
+    : FlowImpl(other) {}
 
 /**
  * @brief Implementation of the assignment operator.
  */
 ExponentialFlow& ExponentialFlow::operator=(const ExponentialFlow& other) {
     if (this != &other) {
-        Flow::operator=(other);
+        FlowImpl::operator=(other);
     }
     return *this;
 }

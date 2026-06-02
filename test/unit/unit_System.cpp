@@ -2,18 +2,19 @@
 #include <string>
 #include "unit_System.h"
 #include "../../src/System.h"
+#include "../../src/SystemImpl.h"
 
 using namespace std;
 
 /**
  * @brief Test the default constructor of System.
  *
- * Tests that a System created with the default constructor has:
+ * Tests that a SystemImpl created with the default constructor has:
  * - Empty name
  * - Value of 0.0
  */
 void unit_System_defaultConstructor(void) {
-    System s;
+    SystemImpl s;
     assert(s.getName() == "");
     assert(s.getValue() == 0.0);
 }
@@ -21,15 +22,15 @@ void unit_System_defaultConstructor(void) {
 /**
  * @brief Test the parameterized constructor of System.
  *
- * Tests that a System created with parameters is initialized correctly
+ * Tests that a SystemImpl created with parameters is initialized correctly
  * with the provided name and value.
  */
 void unit_System_parameterizedConstructor(void) {
-    System s1("Tank", 100.0);
+    SystemImpl s1("Tank", 100.0);
     assert(s1.getName() == "Tank");
     assert(s1.getValue() == 100.0);
 
-    System s2("Reservoir", 50.5);
+    SystemImpl s2("Reservoir", 50.5);
     assert(s2.getName() == "Reservoir");
     assert(s2.getValue() == 50.5);
 }
@@ -37,12 +38,12 @@ void unit_System_parameterizedConstructor(void) {
 /**
  * @brief Test the copy constructor of System.
  *
- * Tests that a System created as a copy of another System
+ * Tests that a SystemImpl created as a copy of another System
  * has the same name and value.
  */
 void unit_System_copyConstructor(void) {
-    System original("Source", 75.0);
-    System copy(original);
+    SystemImpl original("Source", 75.0);
+    SystemImpl copy(original);
 
     assert(copy.getName() == "Source");
     assert(copy.getValue() == 75.0);
@@ -57,10 +58,10 @@ void unit_System_copyConstructor(void) {
  * @brief Test the destructor of System.
  *
  * Tests that the destructor can be called without errors.
- * Since System doesn't manage dynamic memory, this is a simple test.
+ * Since SystemImpl doesn't manage dynamic memory, this is a simple test.
  */
 void unit_System_destructor(void) {
-    System* s = new System("Test", 10.0);
+    System* s = new SystemImpl("Test", 10.0);
     delete s;
     // If no errors occur, the destructor works correctly
 }
@@ -69,11 +70,11 @@ void unit_System_destructor(void) {
  * @brief Test the assignment operator of System.
  *
  * Tests that the assignment operator correctly copies the name and value
- * from one System to another, and handles self-assignment properly.
+ * from one SystemImpl to another, and handles self-assignment properly.
  */
 void unit_System_assignmentOperator(void) {
-    System s1("Original", 30.0);
-    System s2("Other", 50.0);
+    SystemImpl s1("Original", 30.0);
+    SystemImpl s2("Other", 50.0);
 
     s2 = s1;
     assert(s2.getName() == "Original");
@@ -91,7 +92,7 @@ void unit_System_assignmentOperator(void) {
  * Tests that setName correctly updates the name of the System.
  */
 void unit_System_setName(void) {
-    System s("InitialName", 10.0);
+    SystemImpl s("InitialName", 10.0);
     assert(s.getName() == "InitialName");
 
     s.setName("NewName");
@@ -107,7 +108,7 @@ void unit_System_setName(void) {
  * Tests that setValue correctly updates the value of the System.
  */
 void unit_System_setValue(void) {
-    System s("TestSystem", 0.0);
+    SystemImpl s("TestSystem", 0.0);
     assert(s.getValue() == 0.0);
 
     s.setValue(100.0);
@@ -126,10 +127,10 @@ void unit_System_setValue(void) {
  * Tests that getName correctly returns the name of the System.
  */
 void unit_System_getName(void) {
-    System s1("MySystem", 10.0);
+    SystemImpl s1("MySystem", 10.0);
     assert(s1.getName() == "MySystem");
 
-    System s2;
+    SystemImpl s2;
     assert(s2.getName() == "");
 
     s2.setName("AnotherSystem");
@@ -142,10 +143,10 @@ void unit_System_getName(void) {
  * Tests that getValue correctly returns the current value of the System.
  */
 void unit_System_getValue(void) {
-    System s1("Tank", 100.0);
+    SystemImpl s1("Tank", 100.0);
     assert(s1.getValue() == 100.0);
 
-    System s2;
+    SystemImpl s2;
     assert(s2.getValue() == 0.0);
 
     s2.setValue(75.5);
@@ -153,7 +154,7 @@ void unit_System_getValue(void) {
 }
 
 /**
- * @brief Runs all unit tests for the System class.
+ * @brief Runs all unit tests for the SystemImpl class.
  */
 void run_unit_test_System(void) {
     unit_System_defaultConstructor();

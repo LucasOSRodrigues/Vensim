@@ -12,13 +12,13 @@
 /**
  * @brief Implementation of the default constructor.
  */
-LogisticFlow::LogisticFlow() : Flow(), pmax(0.0) {}
+LogisticFlow::LogisticFlow() : FlowImpl(), pmax(0.0) {}
 
 /**
  * @brief Implementation of the constructor with parameters.
  */
 LogisticFlow::LogisticFlow(System* source, System* sink, double pmax)
-    : Flow(source, sink), pmax(pmax) {}
+    : FlowImpl(source, sink), pmax(pmax) {}
 
 /**
  * @brief Virtual destructor.
@@ -29,14 +29,14 @@ LogisticFlow::~LogisticFlow() = default;
  * @brief Implementation of the copy constructor.
  */
 LogisticFlow::LogisticFlow(const LogisticFlow& other)
-    : Flow(other), pmax(other.pmax) {}
+    : FlowImpl(other), pmax(other.pmax) {}
 
 /**
  * @brief Implementation of the assignment operator.
  */
 LogisticFlow& LogisticFlow::operator=(const LogisticFlow& other) {
     if (this != &other) {
-        Flow::operator=(other);
+        FlowImpl::operator=(other);
         pmax = other.pmax;
     }
     return *this;

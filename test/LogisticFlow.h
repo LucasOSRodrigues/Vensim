@@ -10,7 +10,7 @@
 #ifndef LOGISTICFLOW_H
 #define LOGISTICFLOW_H
 
-#include "../src/Flow.h"
+#include "../src/FlowImpl.h"
 
 /**
  * @class LogisticFlow
@@ -24,7 +24,7 @@
  * where P is the current value of the sink system and pmax is the maximum population.
  *
  */
-class LogisticFlow : public Flow {
+class LogisticFlow : public FlowImpl {
 private:
     double pmax;  /**< Maximum population that limits growth */
 

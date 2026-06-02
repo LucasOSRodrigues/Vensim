@@ -12,13 +12,13 @@
 /**
  * @brief Implementation of the default constructor.
  */
-ComplexFlow::ComplexFlow() : Flow() {}
+ComplexFlow::ComplexFlow() : FlowImpl() {}
 
 /**
  * @brief Implementation of the constructor with parameters.
  */
 ComplexFlow::ComplexFlow(System* source, System* sink)
-    : Flow(source, sink) {}
+    : FlowImpl(source, sink) {}
 
 /**
  * @brief Virtual destructor.
@@ -29,14 +29,14 @@ ComplexFlow::~ComplexFlow() = default;
  * @brief Implementation of the copy constructor.
  */
 ComplexFlow::ComplexFlow(const ComplexFlow& other)
-    : Flow(other) {}
+    : FlowImpl(other) {}
 
 /**
  * @brief Implementation of the assignment operator.
  */
 ComplexFlow& ComplexFlow::operator=(const ComplexFlow& other) {
     if (this != &other) {
-        Flow::operator=(other);
+        FlowImpl::operator=(other);
     }
     return *this;
 }
