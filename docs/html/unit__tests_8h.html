@@ -5,8 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vensim: test/unit/unit_tests.h File Reference</title>
+<title>Simulador - Sprint 3: unit_tests.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -30,8 +31,9 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Vensim
+   <div id="projectname">Simulador - Sprint 3
    </div>
+   <div id="projectbrief">Documentação do simulador em C++ com Doxygen e Graphviz</div>
   </td>
  </tr>
  </tbody>
@@ -119,94 +121,57 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('unit__tests_8h
 </div><!--header-->
 <div class="contents">
 
-<p>Unit tests for individual components of MySim framework.  
+<p>Unit tests for global functions.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="unit__tests_8h__dep__incl.svg" width="214" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 <p><a href="unit__tests_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6215575ec79c962399906ff839dc2c9d" id="r_a6215575ec79c962399906ff839dc2c9d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6215575ec79c962399906ff839dc2c9d">systemUnitTest</a> ()</td></tr>
-<tr class="memdesc:a6215575ec79c962399906ff839dc2c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="class_system.html" title="Represents a system with variable state in the simulation.">System</a> class.  <br /></td></tr>
-<tr class="memitem:a4a3765396d725bd0e97ff91d5aad49b3" id="r_a4a3765396d725bd0e97ff91d5aad49b3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4a3765396d725bd0e97ff91d5aad49b3">exponentialFlowUnitTest</a> ()</td></tr>
-<tr class="memdesc:a4a3765396d725bd0e97ff91d5aad49b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="class_exponential_flow.html" title="Implements a flow with exponential growth.">ExponentialFlow</a> class.  <br /></td></tr>
-<tr class="memitem:afb6f89dd7ca883ede10e439ec8814ef5" id="r_afb6f89dd7ca883ede10e439ec8814ef5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afb6f89dd7ca883ede10e439ec8814ef5">logisticFlowUnitTest</a> ()</td></tr>
-<tr class="memdesc:afb6f89dd7ca883ede10e439ec8814ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="class_logistic_flow.html" title="Implements a logistic flow with population limit.">LogisticFlow</a> class.  <br /></td></tr>
+<tr class="memitem:a5cbd9a74b7ac13b1d8d9c2e262a52939" id="r_a5cbd9a74b7ac13b1d8d9c2e262a52939"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5cbd9a74b7ac13b1d8d9c2e262a52939">run_unit_test_globals</a> (void)</td></tr>
+<tr class="memdesc:a5cbd9a74b7ac13b1d8d9c2e262a52939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs all unit tests for global functions.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Unit tests for individual components of MySim framework. </p>
-<p>This file defines the interface for unit tests that validate the behavior of individual classes and methods in isolation. Tests cover basic functionality of <a class="el" href="class_system.html" title="Represents a system with variable state in the simulation.">System</a> and <a class="el" href="class_flow.html" title="Abstract class that represents a flow between systems.">Flow</a> classes. </p>
+<div class="textblock"><p>Unit tests for global functions. </p>
+<p>This file contains declarations for unit tests of global functions (functions not belonging to any class). </p>
+
+<p class="definition">Definition in file <a class="el" href="unit__tests_8h_source.html">unit_tests.h</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a4a3765396d725bd0e97ff91d5aad49b3" name="a4a3765396d725bd0e97ff91d5aad49b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a3765396d725bd0e97ff91d5aad49b3">&#9670;&#160;</a></span>exponentialFlowUnitTest()</h2>
+<a id="a5cbd9a74b7ac13b1d8d9c2e262a52939" name="a5cbd9a74b7ac13b1d8d9c2e262a52939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cbd9a74b7ac13b1d8d9c2e262a52939">&#9670;&#160;</a></span>run_unit_test_globals()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void exponentialFlowUnitTest </td>
+          <td class="memname">void run_unit_test_globals </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unit test for <a class="el" href="class_exponential_flow.html" title="Implements a flow with exponential growth.">ExponentialFlow</a> class. </p>
-<p>Implementation of <a class="el" href="class_exponential_flow.html" title="Implements a flow with exponential growth.">ExponentialFlow</a> unit test.</p>
-<p>Validates <a class="el" href="class_exponential_flow.html" title="Implements a flow with exponential growth.">ExponentialFlow</a> execution method. Tests the formula: flow = 0.3 * sink_value with sink value of 100, expecting result of 30.</p>
-<p>Unit test for <a class="el" href="class_exponential_flow.html" title="Implements a flow with exponential growth.">ExponentialFlow</a> class.</p>
-<p>Tests the execute() method of <a class="el" href="class_exponential_flow.html" title="Implements a flow with exponential growth.">ExponentialFlow</a> with null source and specific sink value. </p>
+<p>Runs all unit tests for global functions. </p>
 
+<p class="definition">Definition at line <a class="el" href="unit__tests_8cpp_source.html#l00018">18</a> of file <a class="el" href="unit__tests_8cpp_source.html">unit_tests.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>                                 {</div>
+<div class="line"><span class="lineno">   19</span>    <span class="comment">// No global functions to test yet</span></div>
+<div class="line"><span class="lineno">   20</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="unit_2main_8cpp_source.html#l00028">main()</a>.</p>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="unit__tests_8h_a5cbd9a74b7ac13b1d8d9c2e262a52939_icgraph.svg" width="252" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<a id="afb6f89dd7ca883ede10e439ec8814ef5" name="afb6f89dd7ca883ede10e439ec8814ef5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb6f89dd7ca883ede10e439ec8814ef5">&#9670;&#160;</a></span>logisticFlowUnitTest()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void logisticFlowUnitTest </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unit test for <a class="el" href="class_logistic_flow.html" title="Implements a logistic flow with population limit.">LogisticFlow</a> class. </p>
-<p>Implementation of <a class="el" href="class_logistic_flow.html" title="Implements a logistic flow with population limit.">LogisticFlow</a> unit test.</p>
-<p>Validates <a class="el" href="class_logistic_flow.html" title="Implements a logistic flow with population limit.">LogisticFlow</a> execution method. Tests the formula: flow = 0.3 * P * (1 - P/pmax) with P=10 and pmax=70.</p>
-<p>Unit test for <a class="el" href="class_logistic_flow.html" title="Implements a logistic flow with population limit.">LogisticFlow</a> class.</p>
-<p>Tests the execute() method of <a class="el" href="class_logistic_flow.html" title="Implements a logistic flow with population limit.">LogisticFlow</a> with null source, specific sink value and population maximum. </p>
-
-</div>
-</div>
-<a id="a6215575ec79c962399906ff839dc2c9d" name="a6215575ec79c962399906ff839dc2c9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6215575ec79c962399906ff839dc2c9d">&#9670;&#160;</a></span>systemUnitTest()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void systemUnitTest </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unit test for <a class="el" href="class_system.html" title="Represents a system with variable state in the simulation.">System</a> class. </p>
-<p>Implementation of <a class="el" href="class_system.html" title="Represents a system with variable state in the simulation.">System</a> unit test.</p>
-<p>Validates <a class="el" href="class_system.html" title="Represents a system with variable state in the simulation.">System</a> creation, getters, and setters. Tests:</p><ul>
-<li><a class="el" href="class_system.html" title="Represents a system with variable state in the simulation.">System</a> creation with name and value</li>
-<li>getName() and getValue() methods</li>
-<li>setName() and setValue() methods</li>
-</ul>
-<p>Unit test for <a class="el" href="class_system.html" title="Represents a system with variable state in the simulation.">System</a> class.</p>
-<p>Tests <a class="el" href="class_system.html" title="Represents a system with variable state in the simulation.">System</a> class initialization, name and value retrieval, and modification of both attributes. </p>
 
 </div>
 </div>
@@ -223,7 +188,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>test</b></li><li class="navelem"><b>unit</b></li><li class="navelem"><a href="unit__tests_8h.html">unit_tests.h</a></li>
+    <li class="navelem"><a href="dir_13e138d54eb8818da29c3992edef070a.html">test</a></li><li class="navelem"><a href="dir_6a07fdbc4b50e86806a88566ca8f66e4.html">unit</a></li><li class="navelem"><a href="unit__tests_8h.html">unit_tests.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
   </ul>
 </div>

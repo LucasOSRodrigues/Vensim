@@ -13,13 +13,8 @@
 #include <iostream>
 
 #include "funcional_tests.h"
-#include "../../src/Flow.h"
-#include "../../src/System.h"
 #include "../../src/SystemImpl.h"
-#include "../../src/Model.h"
 #include "../../src/ModelImpl.h"
-#include "../../src/Flow.h"
-
 #include "../ComplexFlow.h"
 #include "../ExponentialFlow.h"
 #include "../LogisticFlow.h"
@@ -61,18 +56,23 @@ void exponentialFuncionalTest() {
     // P inicial = 10, tempo = 10.
     // Esperado: 10 * 1.3^10 = aproximadamente 137.858491849.
 
-    SystemImpl pop("Populacao", 10);
-    ExponentialFlow nascimento(nullptr, &pop);
+    System* pop = new SystemImpl("Populacao", 10);
+    Flow* nascimento = new ExponentialFlow(nullptr, pop);
 
-    ModelImpl model;
-    model.add(&pop);
-    model.add(&nascimento);
+    Model* model = new ModelImpl();
 
-    model.run(0, 10);
+    model->add(pop);
+    model->add(nascimento);
 
-    assert(round4(pop.getValue()) == round4(137.858491849));
+    model->run(0, 10);
+
+    assert(round4(pop->getValue()) == round4(137.858491849));
 
     cout << "exponentialFuncionalTest OK" << endl;
+
+    delete nascimento;
+    delete pop;
+    delete model;
 }
 
 /**
@@ -82,24 +82,29 @@ void exponentialFuncionalTest() {
  * with population maximum limit. Simulates 100 time units
  * and verifies that population converges to the maximum.
  */
+
 void logisticalFuncionalTest() {
     // P inicial = 10, Pmax = 70, tempo = 100.
     // Esperado: população próxima de 70.
 
-    SystemImpl pop("Populacao", 10);
-    LogisticFlow nascimento(nullptr, &pop, 70);
+    System* pop = new SystemImpl("Populacao", 10);
+    Flow* nascimento = new LogisticFlow(nullptr, pop, 70);
 
-    ModelImpl model;
-    model.add(&pop);
-    model.add(&nascimento);
+    Model* model = new ModelImpl();
 
-    model.run(0, 100);
+    model->add(pop);
+    model->add(nascimento);
 
-    assert(isBetween(pop.getValue(), 69.9, 70.0001));
+    model->run(0, 100);
+
+    assert(isBetween(pop->getValue(), 69.9, 70.0001));
 
     cout << "logisticalFuncionalTest OK" << endl;
-}
 
+    delete nascimento;
+    delete pop;
+    delete model;
+}
 /**
  * @brief Implementation of complex functional test.
  *
@@ -108,41 +113,41 @@ void logisticalFuncionalTest() {
  * components. Simulates 100 time units and verifies all final values.
  */
 void complexFuncionalTest() {
-    SystemImpl q1("Q1", 100.0);
-    SystemImpl q2("Q2", 0.0);
-    SystemImpl q3("Q3", 100.0);
-    SystemImpl q4("Q4", 0.0);
-    SystemImpl q5("Q5", 0.0);
+    System* q1 = new SystemImpl("Q1", 100.0);
+    System* q2 = new SystemImpl("Q2", 0.0);
+    System* q3 = new SystemImpl("Q3", 100.0);
+    System* q4 = new SystemImpl("Q4", 0.0);
+    System* q5 = new SystemImpl("Q5", 0.0);
 
-    ComplexFlow f(&q1, &q2);
-    ComplexFlow g(&q1, &q3);
-    ComplexFlow r(&q2, &q5);
-    ComplexFlow t(&q2, &q3);
-    ComplexFlow u(&q3, &q4);
-    ComplexFlow v(&q4, &q1);
+    Flow* f = new ComplexFlow(q1, q2);
+    Flow* g = new ComplexFlow(q1, q3);
+    Flow* r = new ComplexFlow(q2, q5);
+    Flow* t = new ComplexFlow(q2, q3);
+    Flow* u = new ComplexFlow(q3, q4);
+    Flow* v = new ComplexFlow(q4, q1);
 
-    ModelImpl model;
+    Model* model = new ModelImpl;
 
-    model.add(&q1);
-    model.add(&q2);
-    model.add(&q3);
-    model.add(&q4);
-    model.add(&q5);
+    model->add(q1);
+    model->add(q2);
+    model->add(q3);
+    model->add(q4);
+    model->add(q5);
 
-    model.add(&f);
-    model.add(&g);
-    model.add(&r);
-    model.add(&t);
-    model.add(&u);
-    model.add(&v);
+    model->add(f);
+    model->add(g);
+    model->add(r);
+    model->add(t);
+    model->add(u);
+    model->add(v);
 
-    model.run(0, 100);
+    model->run(0, 100);
 
-    assert(round4(q1.getValue()) == round4(31.8513));
-    assert(round4(q2.getValue()) == round4(18.4003));
-    assert(round4(q3.getValue()) == round4(77.1143));
-    assert(round4(q4.getValue()) == round4(56.1728));
-    assert(round4(q5.getValue()) == round4(16.4612));
+    assert(round4(q1->getValue()) == round4(31.8513));
+    assert(round4(q2->getValue()) == round4(18.4003));
+    assert(round4(q3->getValue()) == round4(77.1143));
+    assert(round4(q4->getValue()) == round4(56.1728));
+    assert(round4(q5->getValue()) == round4(16.4612));
 
     cout << "complexFuncionalTest OK" << endl;
 }

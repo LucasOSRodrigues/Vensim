@@ -1,0 +1,7 @@
+<map id="unit_System_setValue" name="unit_System_setValue">
+<area shape="rect" id="Node000001" title="Test the setValue method of System." alt="" coords="5,31,157,57"/>
+<area shape="rect" id="Node000002" href="$class_system_impl.html#abd3ff91586d4474c0a747dc5dd6e0268" title=" " alt="" coords="205,5,354,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,32,192,30,187,31,157,37"/>
+<area shape="rect" id="Node000003" href="$class_system_impl.html#a3ebff8dd869e1fab281375d5c2ef8362" title=" " alt="" coords="205,56,354,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,51,192,58,187,58,157,56"/>
+</map>

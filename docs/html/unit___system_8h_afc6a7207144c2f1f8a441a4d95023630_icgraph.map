@@ -1,0 +1,7 @@
+<map id="unit_System_parameterizedConstructor" name="unit_System_parameterizedConstructor">
+<area shape="rect" id="Node000001" title="Test the parameterized constructor of System." alt="" coords="299,5,482,48"/>
+<area shape="rect" id="Node000002" href="$unit___system_8cpp.html#aa41a15b7b91bd56d38b04018f568900b" title="Runs all unit tests for the SystemImpl class." alt="" coords="103,13,251,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,27,251,29,251,24,286,27"/>
+<area shape="rect" id="Node000003" href="$unit_2main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function that runs all unit tests." alt="" coords="5,13,55,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,28,56,29,55,24,90,26"/>
+</map>

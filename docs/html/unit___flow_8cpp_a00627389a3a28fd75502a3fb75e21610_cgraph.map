@@ -1,0 +1,7 @@
+<map id="unit_Flow_defaultConstructor" name="unit_Flow_defaultConstructor">
+<area shape="rect" id="Node000001" title="Test the default constructor of Flow." alt="" coords="5,31,197,57"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html#aa44e9925502fc009fae397f0d78c3e90" title=" " alt="" coords="252,5,378,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,30,239,27,234,28,197,35"/>
+<area shape="rect" id="Node000003" href="$class_flow_impl.html#a06c8ffdcfd36b04ddad091d2c043f5d0" title=" " alt="" coords="245,56,386,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,53,232,59,226,59,197,58"/>
+</map>

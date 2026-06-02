@@ -1,5 +1,7 @@
 <map id="ComplexFlow" name="ComplexFlow">
-<area shape="rect" id="Node000001" title="Implements a flow with specific calculation rule." alt="" coords="5,293,125,469"/>
-<area shape="rect" id="Node000002" href="$class_flow.html" title="Abstract class that represents a flow between systems." alt="" coords="20,5,111,245"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,258,68,294,63,293,65,263"/>
+<area shape="rect" id="Node000001" title="Implements a flow with specific calculation rule." alt="" coords="5,475,125,651"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html" title=" " alt="" coords="19,187,112,427"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,439,68,475,63,475,65,444"/>
+<area shape="rect" id="Node000003" href="$class_flow.html" title=" " alt="" coords="20,5,111,139"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="66,151,68,187,63,187,65,157"/>
 </map>

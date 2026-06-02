@@ -1,7 +1,9 @@
 <map id="ExponentialFlow.h" name="ExponentialFlow.h">
-<area shape="rect" id="Node000001" title="Definition of the ExponentialFlow class." alt="" coords="92,5,220,32"/>
+<area shape="rect" id="Node000001" title="Definition of the ExponentialFlow class." alt="" coords="174,5,301,32"/>
 <area shape="rect" id="Node000002" href="$_exponential_flow_8cpp.html" title="Implementation of the ExponentialFlow class." alt="" coords="5,80,147,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,42,91,82,88,77,128,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,39,105,82,103,77,193,38"/>
 <area shape="rect" id="Node000003" href="$funcional__tests_8cpp.html" title="Implementation of functional tests for MySim framework." alt="" coords="170,80,304,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,40,226,80,221,79,180,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,46,240,81,235,78,235,50"/>
+<area shape="rect" id="Node000004" href="$unit___flow_8cpp.html" title=" " alt="" coords="328,80,429,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="276,37,357,79,351,79,275,42"/>
 </map>

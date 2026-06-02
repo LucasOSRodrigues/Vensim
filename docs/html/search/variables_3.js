@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sink_0',['sink',['../class_flow.html#a026da8b33e2c09941531a3c25d61ba7d',1,'Flow']]],
-  ['source_1',['source',['../class_flow.html#a963ca162995d112f0f30322e2bb9de63',1,'Flow']]],
-  ['systems_2',['systems',['../class_model.html#ac7dea8829149e597d2671dbc0a538bf7',1,'Model']]]
+  ['sink_0',['sink',['../class_flow_impl.html#a80eb28a6148042f568e59b748839e124',1,'FlowImpl']]],
+  ['source_1',['source',['../class_flow_impl.html#a950987351656a518a1057b64c5f85af8',1,'FlowImpl']]],
+  ['systems_2',['systems',['../class_model_impl.html#a767e2054ecaaa8d1401ef2c962adc3e2',1,'ModelImpl']]]
 ];

@@ -1,0 +1,7 @@
+<map id="unit_Flow_assignmentOperator" name="unit_Flow_assignmentOperator">
+<area shape="rect" id="Node000001" title="Test the assignment operator of Flow." alt="" coords="5,31,207,57"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html#aa44e9925502fc009fae397f0d78c3e90" title=" " alt="" coords="262,5,388,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,30,249,27,244,28,207,35"/>
+<area shape="rect" id="Node000003" href="$class_flow_impl.html#a06c8ffdcfd36b04ddad091d2c043f5d0" title=" " alt="" coords="255,56,396,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,53,242,59,236,59,207,58"/>
+</map>
