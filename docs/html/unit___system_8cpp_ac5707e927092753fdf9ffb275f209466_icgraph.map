@@ -1,0 +1,7 @@
+<map id="unit_System_getName" name="unit_System_getName">
+<area shape="rect" id="Node000001" title="Test the getName method of System." alt="" coords="299,5,453,32"/>
+<area shape="rect" id="Node000002" href="$unit___system_8cpp.html#aa41a15b7b91bd56d38b04018f568900b" title="Runs all unit tests for the SystemImpl class." alt="" coords="103,5,251,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,19,251,21,251,16,286,19"/>
+<area shape="rect" id="Node000003" href="$unit_2main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function that runs all unit tests." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
+</map>

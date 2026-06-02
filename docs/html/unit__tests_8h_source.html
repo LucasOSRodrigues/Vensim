@@ -5,8 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vensim: test/unit/unit_tests.h Source File</title>
+<title>Simulador - Sprint 3: unit_tests.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -30,8 +31,9 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Vensim
+   <div id="projectname">Simulador - Sprint 3
    </div>
+   <div id="projectbrief">Documentação do simulador em C++ com Doxygen e Graphviz</div>
   </td>
  </tr>
  </tbody>
@@ -118,28 +120,22 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('unit__tests_8h
   <div class="headertitle"><div class="title">unit_tests.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="unit__tests_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef UNIT_TESTS_H</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define UNIT_TESTS_H</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__tests_8h.html#a6215575ec79c962399906ff839dc2c9d">systemUnitTest</a>();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__tests_8h.html#a4a3765396d725bd0e97ff91d5aad49b3">exponentialFlowUnitTest</a>();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__tests_8h.html#afb6f89dd7ca883ede10e439ec8814ef5">logisticFlowUnitTest</a>();</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aunit__tests_8h_html_a4a3765396d725bd0e97ff91d5aad49b3"><div class="ttname"><a href="unit__tests_8h.html#a4a3765396d725bd0e97ff91d5aad49b3">exponentialFlowUnitTest</a></div><div class="ttdeci">void exponentialFlowUnitTest()</div><div class="ttdoc">Unit test for ExponentialFlow class.</div><div class="ttdef"><b>Definition</b> unit_tests.cpp:59</div></div>
-<div class="ttc" id="aunit__tests_8h_html_a6215575ec79c962399906ff839dc2c9d"><div class="ttname"><a href="unit__tests_8h.html#a6215575ec79c962399906ff839dc2c9d">systemUnitTest</a></div><div class="ttdeci">void systemUnitTest()</div><div class="ttdoc">Unit test for System class.</div><div class="ttdef"><b>Definition</b> unit_tests.cpp:38</div></div>
-<div class="ttc" id="aunit__tests_8h_html_afb6f89dd7ca883ede10e439ec8814ef5"><div class="ttname"><a href="unit__tests_8h.html#afb6f89dd7ca883ede10e439ec8814ef5">logisticFlowUnitTest</a></div><div class="ttdeci">void logisticFlowUnitTest()</div><div class="ttdoc">Unit test for LogisticFlow class.</div><div class="ttdef"><b>Definition</b> unit_tests.cpp:74</div></div>
+<a href="unit__tests_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef UNIT_TESTS</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define UNIT_TESTS</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Runner function</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__tests_8h.html#a5cbd9a74b7ac13b1d8d9c2e262a52939">run_unit_test_globals</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif </span><span class="comment">// UNIT_TESTS</span></div>
+<div class="ttc" id="aunit__tests_8h_html_a5cbd9a74b7ac13b1d8d9c2e262a52939"><div class="ttname"><a href="unit__tests_8h.html#a5cbd9a74b7ac13b1d8d9c2e262a52939">run_unit_test_globals</a></div><div class="ttdeci">void run_unit_test_globals(void)</div><div class="ttdoc">Runs all unit tests for global functions.</div><div class="ttdef"><b>Definition</b> <a href="unit__tests_8cpp_source.html#l00018">unit_tests.cpp:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>test</b></li><li class="navelem"><b>unit</b></li><li class="navelem"><a href="unit__tests_8h.html">unit_tests.h</a></li>
+    <li class="navelem"><a href="dir_13e138d54eb8818da29c3992edef070a.html">test</a></li><li class="navelem"><a href="dir_6a07fdbc4b50e86806a88566ca8f66e4.html">unit</a></li><li class="navelem"><a href="unit__tests_8h.html">unit_tests.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
   </ul>
 </div>

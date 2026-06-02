@@ -15,7 +15,7 @@ Inheritance diagram for Exponential\+Flow:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=182pt]{class_exponential_flow__inherit__graph}
+\includegraphics[height=550pt]{class_exponential_flow__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -42,31 +42,36 @@ virtual \doxymbox{\hyperlink{class_exponential_flow_a47f85f24c8a74a00b025541e3ed
 \begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
 double \doxymbox{\hyperlink{class_exponential_flow_aafb074830c5c18138913cb10da3b8782}{execute}} () override
 \begin{DoxyCompactList}\small\item\em Calculates and returns the exponential flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_flow_impl}{Flow\+Impl}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_flow_impl_aa835ccb3c368c683aa95d660175a298b}{Flow\+Impl}} ()
+\item 
+\doxymbox{\hyperlink{class_flow_impl_a83fb65623b0aa0ef91df0f530052bd98}{Flow\+Impl}} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}sink)
+\item 
+virtual \doxymbox{\hyperlink{class_flow_impl_a2d91539593b336aee4a19048f8a82e8c}{\texorpdfstring{$\sim$}{\string~}\+Flow\+Impl}} ()
+\item 
+\doxymbox{\hyperlink{class_flow_impl_ae2665bc8877a901497212e04719c1d61}{Flow\+Impl}} (const \doxymbox{\hyperlink{class_flow_impl}{Flow\+Impl}} \&other)
+\item 
+\doxymbox{\hyperlink{class_flow_impl}{Flow\+Impl}} \& \doxymbox{\hyperlink{class_flow_impl_a49655b3810ecbea9407f860122e20dc4}{operator=}} (const \doxymbox{\hyperlink{class_flow_impl}{Flow\+Impl}} \&other)
+\item 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_impl_a06c8ffdcfd36b04ddad091d2c043f5d0}{get\+Source}} () const override
+\item 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_impl_aa44e9925502fc009fae397f0d78c3e90}{get\+Sink}} () const override
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_flow}{Flow}}}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}} ()
-\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{class_flow_acac9771d78055d356ac9e9d247bf319c}{Flow}} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}sink)
-\begin{DoxyCompactList}\small\item\em Constructor with parameters. \end{DoxyCompactList}\item 
-virtual \doxymbox{\hyperlink{class_flow_a5991efa6e8cf88c4ef2125cc727db333}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
-\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{class_flow_a5a65e36c874c5cd5283ac32a33eb0a8b}{Flow}} (const \doxymbox{\hyperlink{class_flow}{Flow}} \&other)
-\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{class_flow}{Flow}} \& \doxymbox{\hyperlink{class_flow_a5f7550e37445bb6ae955beffd1fa857a}{operator=}} (const \doxymbox{\hyperlink{class_flow}{Flow}} \&other)
-\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_a1f3858f90d141807377c2640fb5dd0fc}{get\+Source}} () const
-\begin{DoxyCompactList}\small\item\em Gets the source system of the flow. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_a17d9bd9c23d8949446709af6a4c0d6a6}{get\+Sink}} () const
-\begin{DoxyCompactList}\small\item\em Gets the sink system of the flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual \doxymbox{\hyperlink{class_flow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
-\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_flow}{Flow}}}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_flow_impl}{Flow\+Impl}}}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}
-\begin{DoxyCompactList}\small\item\em Pointer to the source system of the flow. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_a026da8b33e2c09941531a3c25d61ba7d}{sink}}
-\begin{DoxyCompactList}\small\item\em Pointer to the sink system of the flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_impl_a950987351656a518a1057b64c5f85af8}{source}}
+\item 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_flow_impl_a80eb28a6148042f568e59b748839e124}{sink}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -99,12 +104,12 @@ Definition at line \doxymbox{\hyperlink{_exponential_flow_8cpp_source_l00015}{15
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00015\ :\ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}()\ \{\}}
+\DoxyCodeLine{00015\ :\ \doxymbox{\hyperlink{class_flow_impl_aa835ccb3c368c683aa95d660175a298b}{FlowImpl}}()\ \{\}}
 
 \end{DoxyCode}
 
 
-References \doxymbox{\hyperlink{_flow_8cpp_source_l00018}{Flow::\+\+Flow()}}.
+References \doxymbox{\hyperlink{_flow_impl_8cpp_source_l00003}{Flow\+Impl::\+\+Flow\+Impl()}}.
 
 
 
@@ -114,7 +119,7 @@ Here is the call graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=346pt]{class_exponential_flow_a1f981db78e6635fd9837648960d8dc8d_cgraph}
+\includegraphics[width=350pt]{class_exponential_flow_a1f981db78e6635fd9837648960d8dc8d_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function:\+\nopagebreak
@@ -149,18 +154,18 @@ Definition at line \doxymbox{\hyperlink{_exponential_flow_8cpp_source_l00020}{20
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00021\ \ \ \ \ :\ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(\doxymbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}},\ \doxymbox{\hyperlink{class_flow_a026da8b33e2c09941531a3c25d61ba7d}{sink}})\ \{\}}
+\DoxyCodeLine{00021\ \ \ \ \ :\ \doxymbox{\hyperlink{class_flow_impl_aa835ccb3c368c683aa95d660175a298b}{FlowImpl}}(\doxymbox{\hyperlink{class_flow_impl_a950987351656a518a1057b64c5f85af8}{source}},\ \doxymbox{\hyperlink{class_flow_impl_a80eb28a6148042f568e59b748839e124}{sink}})\ \{\}}
 
 \end{DoxyCode}
 
 
-References \doxymbox{\hyperlink{_flow_8cpp_source_l00018}{Flow::\+\+Flow()}}, \doxymbox{\hyperlink{_flow_8h_source_l00029}{Flow::\+sink}}, and \doxymbox{\hyperlink{_flow_8h_source_l00028}{Flow::\+source}}.
+References \doxymbox{\hyperlink{_flow_impl_8cpp_source_l00003}{Flow\+Impl::\+\+Flow\+Impl()}}, \doxymbox{\hyperlink{_flow_impl_8h_source_l00009}{Flow\+Impl::\+sink}}, and \doxymbox{\hyperlink{_flow_impl_8h_source_l00008}{Flow\+Impl::\+source}}.
 
 Here is the call graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=346pt]{class_exponential_flow_ad0330979d79035fa2af78908421e9095_cgraph}
+\includegraphics[width=350pt]{class_exponential_flow_ad0330979d79035fa2af78908421e9095_cgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_exponential_flow_a47f85f24c8a74a00b025541e3ed950eb}\index{ExponentialFlow@{ExponentialFlow}!````~ExponentialFlow@{\texorpdfstring{$\sim$}{\string~}ExponentialFlow}}
@@ -207,12 +212,12 @@ Definition at line \doxymbox{\hyperlink{_exponential_flow_8cpp_source_l00031}{31
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00032\ \ \ \ \ :\ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(other)\ \{\}}
+\DoxyCodeLine{00032\ \ \ \ \ :\ \doxymbox{\hyperlink{class_flow_impl_aa835ccb3c368c683aa95d660175a298b}{FlowImpl}}(other)\ \{\}}
 
 \end{DoxyCode}
 
 
-References \doxymbox{\hyperlink{_exponential_flow_8cpp_source_l00015}{Exponential\+Flow()}}, and \doxymbox{\hyperlink{_flow_8cpp_source_l00018}{Flow::\+\+Flow()}}.
+References \doxymbox{\hyperlink{_exponential_flow_8cpp_source_l00015}{Exponential\+Flow()}}, and \doxymbox{\hyperlink{_flow_impl_8cpp_source_l00003}{Flow\+Impl::\+\+Flow\+Impl()}}.
 
 Here is the call graph for this function:\+\nopagebreak
 \begin{figure}[H]
@@ -230,7 +235,7 @@ Here is the call graph for this function:\+\nopagebreak
 \index{execute@{execute}!ExponentialFlow@{ExponentialFlow}}
 \doxysubsubsection{\texorpdfstring{execute()}{execute()}}
 {\footnotesize\ttfamily \label{class_exponential_flow_aafb074830c5c18138913cb10da3b8782} 
-double Exponential\+Flow::\+execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+double Exponential\+Flow::\+execute (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -250,7 +255,7 @@ Transfer value calculated by the exponential formula.
 \end{DoxyReturn}
 
 
-Implements \doxymbox{\hyperlink{class_flow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
+Implements \doxymbox{\hyperlink{class_flow_impl_a88d14f759988f1dcf393b83a93aea1f1}{Flow\+Impl}}.
 
 
 
@@ -259,8 +264,8 @@ Definition at line \doxymbox{\hyperlink{_exponential_flow_8cpp_source_l00051}{51
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_flow_a026da8b33e2c09941531a3c25d61ba7d}{sink}}\ !=\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.3\ *\ \doxymbox{\hyperlink{class_flow_a026da8b33e2c09941531a3c25d61ba7d}{sink}}-\/>getValue();}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_flow_impl_a80eb28a6148042f568e59b748839e124}{sink}}\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.3\ *\ \doxymbox{\hyperlink{class_flow_impl_a80eb28a6148042f568e59b748839e124}{sink}}-\/>getValue();}
 \DoxyCodeLine{00054\ \ \ \ \ \}}
 \DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
 \DoxyCodeLine{00056\ \}}
@@ -268,7 +273,7 @@ Definition at line \doxymbox{\hyperlink{_exponential_flow_8cpp_source_l00051}{51
 \end{DoxyCode}
 
 
-References \doxymbox{\hyperlink{_flow_8h_source_l00029}{Flow::\+sink}}.
+References \doxymbox{\hyperlink{_flow_impl_8h_source_l00009}{Flow\+Impl::\+sink}}.
 
 \Hypertarget{class_exponential_flow_a231385587bb12964a56e5e46ac2aa8e4}\index{ExponentialFlow@{ExponentialFlow}!operator=@{operator=}}
 \index{operator=@{operator=}!ExponentialFlow@{ExponentialFlow}}
@@ -298,7 +303,7 @@ Definition at line \doxymbox{\hyperlink{_exponential_flow_8cpp_source_l00037}{37
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
 \DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&other)\ \{}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_flow_a5f7550e37445bb6ae955beffd1fa857a}{Flow::operator=}}(other);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_flow_impl_a49655b3810ecbea9407f860122e20dc4}{FlowImpl::operator=}}(other);}
 \DoxyCodeLine{00040\ \ \ \ \ \}}
 \DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
 \DoxyCodeLine{00042\ \}}
@@ -306,7 +311,7 @@ Definition at line \doxymbox{\hyperlink{_exponential_flow_8cpp_source_l00037}{37
 \end{DoxyCode}
 
 
-References \doxymbox{\hyperlink{_exponential_flow_8cpp_source_l00015}{Exponential\+Flow()}}, and \doxymbox{\hyperlink{_flow_8cpp_source_l00042}{Flow::\+operator=()}}.
+References \doxymbox{\hyperlink{_exponential_flow_8cpp_source_l00015}{Exponential\+Flow()}}, and \doxymbox{\hyperlink{_flow_impl_8cpp_source_l00013}{Flow\+Impl::\+operator=()}}.
 
 Here is the call graph for this function:\+\nopagebreak
 \begin{figure}[H]

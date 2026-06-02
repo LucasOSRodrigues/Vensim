@@ -1,0 +1,12 @@
+<map id="SystemImpl::setName" name="SystemImpl::setName">
+<area shape="rect" id="Node000001" title=" " alt="" coords="501,31,654,57"/>
+<area shape="rect" id="Node000002" href="$unit___system_8cpp.html#ac5707e927092753fdf9ffb275f209466" title="Test the getName method of System." alt="" coords="299,5,453,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="483,33,453,31,453,26,489,32"/>
+<area shape="rect" id="Node000005" href="$unit___system_8cpp.html#ae92753cb0977ecd3217dc3540dc33e87" title="Test the setName method of System." alt="" coords="299,56,453,83"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="489,55,454,62,453,57,483,56"/>
+<area shape="rect" id="Node000003" href="$unit___system_8cpp.html#aa41a15b7b91bd56d38b04018f568900b" title="Runs all unit tests for the SystemImpl class." alt="" coords="103,31,251,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="281,31,252,37,251,32,286,30"/>
+<area shape="rect" id="Node000004" href="$unit_2main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function that runs all unit tests." alt="" coords="5,31,55,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="85,45,56,47,55,41,89,43"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="281,58,251,56,251,51,286,58"/>
+</map>
