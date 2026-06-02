@@ -1,8 +1,8 @@
 #include <assert.h>
 #include "unit_Flow.h"
+#include "mocks.h"
 #include "../../src/FlowImpl.h"
 #include "../../src/System.h"
-#include "../../src/SystemImpl.h"
 #include "../ExponentialFlow.h"
 
 /**
@@ -40,8 +40,8 @@ void unit_Flow_defaultConstructor(void) {
  * is initialized correctly with those pointers.
  */
 void unit_Flow_parameterizedConstructor(void) {
-    System* source = new SystemImpl("Source", 100.0);
-    System* sink = new SystemImpl("Sink", 0.0);
+    System* source = new MockSystem("Source", 100.0);
+    System* sink = new MockSystem("Sink", 0.0);
 
     TestFlow f(source, sink);
     assert(f.getSource() == source);
@@ -58,8 +58,8 @@ void unit_Flow_parameterizedConstructor(void) {
  * has the same source and sink pointers.
  */
 void unit_Flow_copyConstructor(void) {
-    System* source = new SystemImpl("Source", 100.0);
-    System* sink = new SystemImpl("Sink", 0.0);
+    System* source = new MockSystem("Source", 100.0);
+    System* sink = new MockSystem("Sink", 0.0);
 
     TestFlow original(source, sink);
     TestFlow copy(original);
@@ -77,8 +77,8 @@ void unit_Flow_copyConstructor(void) {
  * Tests that the destructor can be called without errors.
  */
 void unit_Flow_destructor(void) {
-    System* source = new SystemImpl("Source", 100.0);
-    System* sink = new SystemImpl("Sink", 0.0);
+    System* source = new MockSystem("Source", 100.0);
+    System* sink = new MockSystem("Sink", 0.0);
 
     TestFlow* f = new TestFlow(source, sink);
     delete f;
@@ -96,10 +96,10 @@ void unit_Flow_destructor(void) {
  * and handles self-assignment properly.
  */
 void unit_Flow_assignmentOperator(void) {
-    System* s1 = new SystemImpl("Source1", 100.0);
-    System* s2 = new SystemImpl("Sink1", 0.0);
-    System* s3 = new SystemImpl("Source2", 50.0);
-    System* s4 = new SystemImpl("Sink2", 25.0);
+    System* s1 = new MockSystem("Source1", 100.0);
+    System* s2 = new MockSystem("Sink1", 0.0);
+    System* s3 = new MockSystem("Source2", 50.0);
+    System* s4 = new MockSystem("Sink2", 25.0);
 
     TestFlow f1(s1, s2);
     TestFlow f2(s3, s4);
@@ -125,8 +125,8 @@ void unit_Flow_assignmentOperator(void) {
  * Tests that getSource correctly returns the source system pointer.
  */
 void unit_Flow_getSource(void) {
-    System* source = new SystemImpl("Source", 100.0);
-    System* sink = new SystemImpl("Sink", 0.0);
+    System* source = new MockSystem("Source", 100.0);
+    System* sink = new MockSystem("Sink", 0.0);
 
     TestFlow f1;
     assert(f1.getSource() == nullptr);
@@ -146,8 +146,8 @@ void unit_Flow_getSource(void) {
  * Tests that getSink correctly returns the sink system pointer.
  */
 void unit_Flow_getSink(void) {
-    System* source = new SystemImpl("Source", 100.0);
-    System* sink = new SystemImpl("Sink", 0.0);
+    System* source = new MockSystem("Source", 100.0);
+    System* sink = new MockSystem("Sink", 0.0);
 
     TestFlow f1;
     assert(f1.getSink() == nullptr);

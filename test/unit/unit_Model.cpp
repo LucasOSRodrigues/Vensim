@@ -1,9 +1,9 @@
 #include <assert.h>
 #include "unit_Model.h"
+#include "mocks.h"
 #include "../../src/Model.h"
 #include "../../src/ModelImpl.h"
 #include "../../src/System.h"
-#include "../../src/SystemImpl.h"
 #include "../../src/Flow.h"
 
 /**
@@ -27,7 +27,7 @@ void unit_Model_defaultConstructor(void) {
  */
 void unit_Model_copyConstructor(void) {
     ModelImpl original;
-    System* s1 = new SystemImpl("Tank1", 100.0);
+    System* s1 = new MockSystem("Tank1", 100.0);
     original.add(s1);
 
     ModelImpl copy(original);
@@ -57,7 +57,7 @@ void unit_Model_destructor(void) {
  */
 void unit_Model_assignmentOperator(void) {
     ModelImpl m1;
-    System* s1 = new SystemImpl("Tank1", 50.0);
+    System* s1 = new MockSystem("Tank1", 50.0);
     m1.add(s1);
 
     ModelImpl m2;
@@ -81,9 +81,9 @@ void unit_Model_assignmentOperator(void) {
 void unit_Model_addSystem(void) {
     ModelImpl m;
 
-    System* s1 = new SystemImpl("Tank1", 100.0);
-    System* s2 = new SystemImpl("Tank2", 50.0);
-    System* s3 = new SystemImpl("Tank3", 75.0);
+    System* s1 = new MockSystem("Tank1", 100.0);
+    System* s2 = new MockSystem("Tank2", 50.0);
+    System* s3 = new MockSystem("Tank3", 75.0);
 
     m.add(s1);
     assert(m.getSystemCount() == 1);
@@ -108,8 +108,8 @@ void unit_Model_addSystem(void) {
  */
 void unit_Model_addFlow(void) {
     ModelImpl m;
-    System* source = new SystemImpl("Source", 100.0);
-    System* sink = new SystemImpl("Sink", 0.0);
+    System* source = new MockSystem("Source", 100.0);
+    System* sink = new MockSystem("Sink", 0.0);
 
     m.add(source);
     m.add(sink);
@@ -131,8 +131,8 @@ void unit_Model_addFlow(void) {
 void unit_Model_run(void) {
     ModelImpl m;
 
-    System* s1 = new SystemImpl("Tank1", 100.0);
-    System* s2 = new SystemImpl("Tank2", 0.0);
+    System* s1 = new MockSystem("Tank1", 100.0);
+    System* s2 = new MockSystem("Tank2", 0.0);
 
     m.add(s1);
     m.add(s2);
