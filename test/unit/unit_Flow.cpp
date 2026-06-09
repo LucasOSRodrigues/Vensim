@@ -16,7 +16,6 @@ public:
     TestFlow() : FlowImpl() {}
     TestFlow(System* source, System* sink) : FlowImpl(source, sink) {}
     virtual double execute(void) {
-        // Simple implementation that returns a fixed value
         return 10.0;
     }
 };
