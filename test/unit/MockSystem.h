@@ -22,33 +22,21 @@ private:
     mutable vector<string> callHistory;  // Track method calls
 
 public:
-    MockSystem() : name(""), value(0.0) {}
+    MockSystem();
 
-    MockSystem(const string& n, double v) : name(n), value(v) {}
+    MockSystem(const string& n, double v);
 
-    virtual ~MockSystem() = default;
+    virtual ~MockSystem();
 
     // Setters
-    virtual void setName(const string& n) override {
-        callHistory.push_back("setName");
-        name = n;
-    }
+    virtual void setName(const string& n) override;
 
-    virtual void setValue(double v) override {
-        callHistory.push_back("setValue");
-        value = v;
-    }
+    virtual void setValue(double v) override;
 
     // Getters
-    virtual string getName() const override {
-        callHistory.push_back("getName");
-        return name;
-    }
+    virtual string getName() const override;
 
-    virtual double getValue() const override {
-        callHistory.push_back("getValue");
-        return value;
-    }
+    virtual double getValue() const override;
 
     // Mock-specific methods for testing
     /**
@@ -56,44 +44,25 @@ public:
      * @param methodName The name of the method to check
      * @return true if the method was called, false otherwise
      */
-    bool wasCalled(const string& methodName) const {
-        for (const auto& call : callHistory) {
-            if (call == methodName) {
-                return true;
-            }
-        }
-        return false;
-    }
+    bool wasCalled(const string& methodName) const;
 
     /**
      * @brief Get the number of times a method was called.
      * @param methodName The name of the method to check
      * @return The number of times the method was called
      */
-    int getCallCount(const string& methodName) const {
-        int count = 0;
-        for (const auto& call : callHistory) {
-            if (call == methodName) {
-                count++;
-            }
-        }
-        return count;
-    }
+    int getCallCount(const string& methodName) const;
 
     /**
      * @brief Clear the call history.
      */
-    void clearCallHistory() {
-        callHistory.clear();
-    }
+    void clearCallHistory();
 
     /**
      * @brief Get all calls made to this mock.
      * @return Vector of method names that were called
      */
-    vector<string> getCallHistory() const {
-        return callHistory;
-    }
+    vector<string> getCallHistory() const;
 };
 
 #endif // MOCK_SYSTEM_H
