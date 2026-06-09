@@ -24,54 +24,37 @@ private:
     mutable vector<string> callHistory;  // Track method calls
 
 public:
-    MockFlow()
-        : source(nullptr), sink(nullptr), executeReturnValue(0.0) {}
+    MockFlow();
 
-    MockFlow(System* src, System* snk, double returnValue = 0.0)
-        : source(src), sink(snk), executeReturnValue(returnValue) {}
+    MockFlow(System* src, System* snk, double returnValue = 0.0);
 
-    virtual ~MockFlow() = default;
+    virtual ~MockFlow();
 
     // Main interface method
-    virtual double execute() override {
-        callHistory.push_back("execute");
-        return executeReturnValue;
-    }
+    virtual double execute() override;
 
-    virtual System* getSource() const override {
-        callHistory.push_back("getSource");
-        return source;
-    }
+    virtual System* getSource() const override;
 
-    virtual System* getSink() const override {
-        callHistory.push_back("getSink");
-        return sink;
-    }
+    virtual System* getSink() const override;
 
     // Mock-specific setters for configuration
     /**
      * @brief Set the source system for this flow.
      * @param src Pointer to the source system
      */
-    void setSource(System* src) {
-        source = src;
-    }
+    void setSource(System* src);
 
     /**
      * @brief Set the sink system for this flow.
      * @param snk Pointer to the sink system
      */
-    void setSink(System* snk) {
-        sink = snk;
-    }
+    void setSink(System* snk);
 
     /**
      * @brief Set the return value for the execute() method.
      * @param value The value to be returned by execute()
      */
-    void setExecuteReturnValue(double value) {
-        executeReturnValue = value;
-    }
+    void setExecuteReturnValue(double value);
 
     // Mock-specific methods for testing/verification
     /**
@@ -79,53 +62,32 @@ public:
      * @param methodName The name of the method to check
      * @return true if the method was called, false otherwise
      */
-    bool wasCalled(const string& methodName) const {
-        for (const auto& call : callHistory) {
-            if (call == methodName) {
-                return true;
-            }
-        }
-        return false;
-    }
+    bool wasCalled(const string& methodName) const;
 
     /**
      * @brief Get the number of times a method was called.
      * @param methodName The name of the method to check
      * @return The number of times the method was called
      */
-    int getCallCount(const string& methodName) const {
-        int count = 0;
-        for (const auto& call : callHistory) {
-            if (call == methodName) {
-                count++;
-            }
-        }
-        return count;
-    }
+    int getCallCount(const string& methodName) const;
 
     /**
      * @brief Verify that execute was called a specific number of times.
      * @param times The expected number of times
      * @return true if execute was called exactly 'times' times
      */
-    bool executeCalledTimes(int times) const {
-        return getCallCount("execute") == times;
-    }
+    bool executeCalledTimes(int times) const;
 
     /**
      * @brief Clear the call history.
      */
-    void clearCallHistory() {
-        callHistory.clear();
-    }
+    void clearCallHistory();
 
     /**
      * @brief Get all calls made to this mock.
      * @return Vector of method names that were called
      */
-    vector<string> getCallHistory() const {
-        return callHistory;
-    }
+    vector<string> getCallHistory() const;
 };
 
 #endif // MOCK_FLOW_H
