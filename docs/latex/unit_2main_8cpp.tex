@@ -10,7 +10,9 @@ Main entry point for unit tests.
 {\ttfamily \+\#include "{}unit\+\_\+\+System.\+h"{}}\newline
 {\ttfamily \+\#include "{}unit\+\_\+\+Model.\+h"{}}\newline
 {\ttfamily \+\#include "{}unit\+\_\+\+Flow.\+h"{}}\newline
-Include dependency graph for unit/\+main.cpp:\+\nopagebreak
+{\ttfamily \+\#include "{}unit\+\_\+\+Handle\+Body.\+h"{}}\newline
+Include dependency graph for unit/\+main.cpp:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -33,7 +35,7 @@ Definition in file \doxymbox{\hyperlink{unit_2main_8cpp_source}{unit/\+main.\+cp
 
 
 
-\label{unit_2main_8cpp_doc-func-members}
+\label{doc-func-members}
 \Hypertarget{unit_2main_8cpp_doc-func-members}
 \doxysubsection{Function Documentation}
 \Hypertarget{unit_2main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\index{main.cpp@{main.cpp}!main@{main}}
@@ -49,9 +51,9 @@ Main function that runs all unit tests.
 This function:\+
 \begin{DoxyEnumerate}
 \item Runs all tests for global functions
-\item Runs all tests for the \doxylink{class_system}{System} class
-\item Runs all tests for the \doxylink{class_model}{Model} class
-\item Runs all tests for the \doxylink{class_flow}{Flow} class
+\item Runs all tests for the \doxylink{classSystem}{System} class
+\item Runs all tests for the \doxylink{classModel}{Model} class
+\item Runs all tests for the \doxylink{classFlow}{Flow} class
 \end{DoxyEnumerate}
 
 \begin{DoxyReturn}{Returns}
@@ -59,45 +61,50 @@ This function:\+
 \end{DoxyReturn}
 
 
-Definition at line \doxymbox{\hyperlink{unit_2main_8cpp_source_l00028}{28}} of file \doxymbox{\hyperlink{unit_2main_8cpp_source}{unit/\+main.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit_2main_8cpp_source_l00029}{29}} of file \doxymbox{\hyperlink{unit_2main_8cpp_source}{unit/\+main.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00029\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Starting\ unit\ tests..."{}}\ <<\ endl;}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Running\ global\ function\ tests..."{}}\ <<\ endl;}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{unit__tests_8cpp_a5cbd9a74b7ac13b1d8d9c2e262a52939}{run\_unit\_test\_globals}}();}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}✓\ Global\ function\ tests\ passed!"{}}\ <<\ endl;}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Running\ System\ class\ tests..."{}}\ <<\ endl;}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{unit___system_8cpp_aa41a15b7b91bd56d38b04018f568900b}{run\_unit\_test\_System}}();}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}✓\ System\ class\ tests\ passed!"{}}\ <<\ endl;}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Running\ Model\ class\ tests..."{}}\ <<\ endl;}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_a8d0dce91a7dab9a56d174c7f4d5fc508}{run\_unit\_test\_Model}}();}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}✓\ Model\ class\ tests\ passed!"{}}\ <<\ endl;}
-\DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Running\ Flow\ class\ tests..."{}}\ <<\ endl;}
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{unit___flow_8cpp_a7a974b6da4f54da9fbeccfcc8c6e2d71}{run\_unit\_test\_Flow}}();}
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}✓\ Flow\ class\ tests\ passed!"{}}\ <<\ endl;}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n✓\ All\ unit\ tests\ passed\ successfully!"{}}\ <<\ endl;}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
-\DoxyCodeLine{00050\ \ \ \ \ \}}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ exception\&\ e)\ \{}
-\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n✗\ Test\ execution\ failed:\ "{}}\ <<\ e.what()\ <<\ endl;}
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
-\DoxyCodeLine{00054\ \ \ \ \ \}}
-\DoxyCodeLine{00055\ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Starting\ unit\ tests..."{}}\ <<\ endl;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Running\ global\ function\ tests..."{}}\ <<\ endl;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{unit__tests_8cpp_a5cbd9a74b7ac13b1d8d9c2e262a52939}{run\_unit\_test\_globals}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}✓\ Global\ function\ tests\ passed!"{}}\ <<\ endl;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Running\ Handle-\/Body\ template\ tests..."{}}\ <<\ endl;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{unit__HandleBody_8cpp_a23ca9a273d3dc299abd69e5fc4fd5b2d}{run\_unit\_test\_HandleBody}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}✓\ Handle-\/Body\ template\ tests\ passed!"{}}\ <<\ endl;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Running\ System\ class\ tests..."{}}\ <<\ endl;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_aa41a15b7b91bd56d38b04018f568900b}{run\_unit\_test\_System}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}✓\ System\ class\ tests\ passed!"{}}\ <<\ endl;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Running\ Model\ class\ tests..."{}}\ <<\ endl;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{unit__Model_8cpp_a8d0dce91a7dab9a56d174c7f4d5fc508}{run\_unit\_test\_Model}}();}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}✓\ Model\ class\ tests\ passed!"{}}\ <<\ endl;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Running\ Flow\ class\ tests..."{}}\ <<\ endl;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{unit__Flow_8cpp_a7a974b6da4f54da9fbeccfcc8c6e2d71}{run\_unit\_test\_Flow}}();}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}✓\ Flow\ class\ tests\ passed!"{}}\ <<\ endl;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n✓\ All\ unit\ tests\ passed\ successfully!"{}}\ <<\ endl;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ exception\&\ e)\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n✗\ Test\ execution\ failed:\ "{}}\ <<\ e.what()\ <<\ endl;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \}}
 
 \end{DoxyCode}
 
 
-References \doxymbox{\hyperlink{unit___flow_8cpp_source_l00167}{run\+\_\+unit\+\_\+test\+\_\+\+Flow()}}, \doxymbox{\hyperlink{unit__tests_8cpp_source_l00018}{run\+\_\+unit\+\_\+test\+\_\+globals()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00152}{run\+\_\+unit\+\_\+test\+\_\+\+Model()}}, and \doxymbox{\hyperlink{unit___system_8cpp_source_l00159}{run\+\_\+unit\+\_\+test\+\_\+\+System()}}.
+References \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00165}{run\+\_\+unit\+\_\+test\+\_\+\+Flow()}}, \doxymbox{\hyperlink{unit__tests_8cpp_source_l00018}{run\+\_\+unit\+\_\+test\+\_\+globals()}}, \doxymbox{\hyperlink{unit__HandleBody_8cpp_source_l00070}{run\+\_\+unit\+\_\+test\+\_\+\+Handle\+Body()}}, \doxymbox{\hyperlink{unit__Model_8cpp_source_l00151}{run\+\_\+unit\+\_\+test\+\_\+\+Model()}}, and \doxymbox{\hyperlink{unit__System_8cpp_source_l00159}{run\+\_\+unit\+\_\+test\+\_\+\+System()}}.
 
-Here is the call graph for this function:\+\nopagebreak
+Here is the call graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

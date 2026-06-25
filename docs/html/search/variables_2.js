@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pmax_0',['pmax',['../class_logistic_flow.html#a36fdf71409ebcd9526f47b5e90b0ffad',1,'LogisticFlow']]]
+  ['flows_0',['flows',['../classModelBody.html#a275a4efed4bca08a5d995c6d532d4c41',1,'ModelBody']]]
 ];

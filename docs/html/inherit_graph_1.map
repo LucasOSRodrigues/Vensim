@@ -1,5 +1,17 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$class_model.html" title=" " alt="" coords="5,5,62,32"/>
-<area shape="rect" id="Node000001" href="$class_model_impl.html" title=" " alt="" coords="110,5,191,32"/>
-<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="77,16,112,18,107,19,77,21"/>
+<area shape="rect" id="Node000000" href="$classFlow.html" title=" " alt="" coords="60,136,112,164"/>
+<area shape="rect" id="Node000001" href="$classFlowImpl.html" title=" " alt="" coords="218,84,299,112"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="126,135,220,109,215,111,128,140"/>
+<area shape="rect" id="Node000007" href="$classMockFlow.html" title="Mock implementation of Flow interface for testing." alt="" coords="215,136,302,164"/>
+<area shape="poly" id="edge10_Node000000_Node000007" title=" " alt="" coords="128,147,217,149,212,151,128,152"/>
+<area shape="rect" id="Node000002" href="$classComplexFlow.html" title=" " alt="" coords="360,5,470,33"/>
+<area shape="poly" id="edge6_Node000001_Node000002" title=" " alt="" coords="294,73,349,43,374,35,379,33,351,48,297,78"/>
+<area shape="rect" id="Node000003" href="$classExponentialFlow.html" title=" " alt="" coords="350,57,479,85"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="314,86,352,82,347,83,315,91"/>
+<area shape="rect" id="Node000004" href="$classLogisticFlow.html" title=" " alt="" coords="364,109,466,137"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="314,104,366,115,360,115,314,110"/>
+<area shape="rect" id="Node000005" href="$classTestFlow.html" title="Concrete implementation of Flow for testing purposes." alt="" coords="376,161,454,189"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="297,117,351,146,380,161,375,161,349,151,296,122"/>
+<area shape="rect" id="Node000006" href="$classHandle.html" title=" " alt="" coords="5,84,167,112"/>
+<area shape="poly" id="edge11_Node000006_Node000001" title=" " alt="" coords="182,95,220,97,215,99,183,100"/>
 </map>

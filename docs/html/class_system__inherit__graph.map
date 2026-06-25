@@ -1,5 +1,7 @@
 <map id="System" name="System">
-<area shape="rect" id="Node000001" title=" " alt="" coords="18,5,103,160"/>
-<area shape="rect" id="Node000002" href="$class_system_impl.html" title=" " alt="" coords="5,208,115,469"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,172,63,208,58,208,60,177"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="82,5,195,181"/>
+<area shape="rect" id="Node000002" href="$class_mock_system.html" title="Mock implementation of System interface for testing." alt="" coords="5,229,130,555"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,193,109,230,104,229,114,198"/>
+<area shape="rect" id="Node000003" href="$class_system_impl.html" title=" " alt="" coords="154,272,264,512"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,193,184,272,178,272,162,198"/>
 </map>

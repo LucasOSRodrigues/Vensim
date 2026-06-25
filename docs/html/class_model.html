@@ -126,25 +126,35 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_model.ht
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model__inherit__graph.svg" width="111" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Collaboration diagram for Model:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model__coll__graph.svg" width="86" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model__coll__graph.svg" width="124" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af032d8433c87a0a3a431faf6563a1f03" id="r_af032d8433c87a0a3a431faf6563a1f03"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#af032d8433c87a0a3a431faf6563a1f03">~Model</a> ()</td></tr>
+<tr class="memitem:aa5365ab557ae47efffdf14ba7a46dac8" id="r_aa5365ab557ae47efffdf14ba7a46dac8"><td class="memItemLeft">virtual string&#160;</td><td class="memItemRight"><a class="el" href="#aa5365ab557ae47efffdf14ba7a46dac8">getName</a> () const =0</td></tr>
+<tr class="memitem:aa17012307c37e6527ae6b1d3fff540e0" id="r_aa17012307c37e6527ae6b1d3fff540e0"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aa17012307c37e6527ae6b1d3fff540e0">setName</a> (const string &amp;name)=0</td></tr>
 <tr class="memitem:afde6c25ab942f2eec7aedeaf8eec53fd" id="r_afde6c25ab942f2eec7aedeaf8eec53fd"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#afde6c25ab942f2eec7aedeaf8eec53fd">add</a> (<a class="el" href="class_system.html">System</a> *system)=0</td></tr>
 <tr class="memitem:ab7df81041f62f049cfc6e4d50dcaf721" id="r_ab7df81041f62f049cfc6e4d50dcaf721"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ab7df81041f62f049cfc6e4d50dcaf721">add</a> (<a class="el" href="class_flow.html">Flow</a> *flow)=0</td></tr>
+<tr class="memitem:a6b104d0394f9c52c334fe091f2a7ed8b" id="r_a6b104d0394f9c52c334fe091f2a7ed8b"><td class="memItemLeft">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a6b104d0394f9c52c334fe091f2a7ed8b">createSystem</a> (const string &amp;name=&quot;&quot;, double value=0.0)=0</td></tr>
+<tr class="memitem:a1adc3a9da8ae4ff6fd69b01e24889adb" id="r_a1adc3a9da8ae4ff6fd69b01e24889adb"><td class="memTemplParams" colspan="2">template&lt;typename FLOW_TYPE, typename... Args&gt; </td></tr>
+<tr class="memitem:a1adc3a9da8ae4ff6fd69b01e24889adb template"><td class="memItemLeft">FLOW_TYPE *&#160;</td><td class="memItemRight"><a class="el" href="#a1adc3a9da8ae4ff6fd69b01e24889adb">createFlow</a> (Args... args)</td></tr>
 <tr class="memitem:a2c91b25ab51d25d3c7e6ec40e6f7f150" id="r_a2c91b25ab51d25d3c7e6ec40e6f7f150"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a2c91b25ab51d25d3c7e6ec40e6f7f150">run</a> (int begin, int end)=0</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a761d898cd7975e92719915f122330886" id="r_a761d898cd7975e92719915f122330886"><td class="memItemLeft">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a761d898cd7975e92719915f122330886">createModel</a> (const string &amp;name=&quot;&quot;)</td></tr>
+<tr class="memitem:a25abe7087cc471a00d076aa75781ad48" id="r_a25abe7087cc471a00d076aa75781ad48"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a25abe7087cc471a00d076aa75781ad48">deleteModel</a> (const string &amp;name)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00007">7</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00010">10</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af032d8433c87a0a3a431faf6563a1f03" name="af032d8433c87a0a3a431faf6563a1f03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af032d8433c87a0a3a431faf6563a1f03">&#9670;&#160;</a></span>~Model()</h2>
@@ -169,8 +179,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00009">9</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    9</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00012">12</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -227,6 +237,220 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="class_model_impl.html#a24e46f6ee90908c0ed4e882094573800">ModelImpl</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="_model_8h_source.html#l00026">createFlow()</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_afde6c25ab942f2eec7aedeaf8eec53fd_icgraph.svg" width="587" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1adc3a9da8ae4ff6fd69b01e24889adb" name="a1adc3a9da8ae4ff6fd69b01e24889adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1adc3a9da8ae4ff6fd69b01e24889adb">&#9670;&#160;</a></span>createFlow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FLOW_TYPE, typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FLOW_TYPE * Model::createFlow </td>
+          <td>(</td>
+          <td class="paramtype">Args...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00026">26</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>                                        {</div>
+<div class="line"><span class="lineno">   27</span>        FLOW_TYPE* flow = <span class="keyword">new</span> FLOW_TYPE(args...);</div>
+<div class="line"><span class="lineno">   28</span>        <a class="code hl_function" href="#afde6c25ab942f2eec7aedeaf8eec53fd">add</a>(flow);</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">return</span> flow;</div>
+<div class="line"><span class="lineno">   30</span>    }</div>
+<div class="ttc" id="aclass_model_html_afde6c25ab942f2eec7aedeaf8eec53fd"><div class="ttname"><a href="#afde6c25ab942f2eec7aedeaf8eec53fd">Model::add</a></div><div class="ttdeci">virtual void add(System *system)=0</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#afde6c25ab942f2eec7aedeaf8eec53fd">add()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="funcional__tests_8cpp_source.html#l00098">complexFuncionalTest()</a>, <a class="el" href="funcional__tests_8cpp_source.html#l00048">exponentialFuncionalTest()</a>, and <a class="el" href="funcional__tests_8cpp_source.html#l00074">logisticalFuncionalTest()</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_a1adc3a9da8ae4ff6fd69b01e24889adb_cgraph.svg" width="272" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_a1adc3a9da8ae4ff6fd69b01e24889adb_icgraph.svg" width="454" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a761d898cd7975e92719915f122330886" name="a761d898cd7975e92719915f122330886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a761d898cd7975e92719915f122330886">&#9670;&#160;</a></span>createModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_model.html">Model</a> * Model::createModel </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00008">8</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    8</span>                                            {</div>
+<div class="line"><span class="lineno">    9</span>    Model* model = <span class="keyword">new</span> ModelImpl(name);</div>
+<div class="line"><span class="lineno">   10</span>    <a class="code hl_variable" href="_model_impl_8cpp.html#af157ed6e163b7e7e7af5c36d158e46b3">models</a>.push_back(model);</div>
+<div class="line"><span class="lineno">   11</span>    <span class="keywordflow">return</span> model;</div>
+<div class="line"><span class="lineno">   12</span>}</div>
+<div class="ttc" id="a_model_impl_8cpp_html_af157ed6e163b7e7e7af5c36d158e46b3"><div class="ttname"><a href="_model_impl_8cpp.html#af157ed6e163b7e7e7af5c36d158e46b3">models</a></div><div class="ttdeci">static vector&lt; Model * &gt; models</div><div class="ttdef"><b>Definition</b> <a href="_model_impl_8cpp_source.html#l00006">ModelImpl.cpp:6</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_model_impl_8cpp_source.html#l00006">models</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="funcional__tests_8cpp_source.html#l00098">complexFuncionalTest()</a>, <a class="el" href="funcional__tests_8cpp_source.html#l00048">exponentialFuncionalTest()</a>, and <a class="el" href="funcional__tests_8cpp_source.html#l00074">logisticalFuncionalTest()</a>.</p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_a761d898cd7975e92719915f122330886_icgraph.svg" width="460" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6b104d0394f9c52c334fe091f2a7ed8b" name="a6b104d0394f9c52c334fe091f2a7ed8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b104d0394f9c52c334fe091f2a7ed8b">&#9670;&#160;</a></span>createSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_system.html">System</a> * Model::createSystem </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_model_impl.html#a293f79485482b3b9e9d5121c89712b8e">ModelImpl</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="funcional__tests_8cpp_source.html#l00098">complexFuncionalTest()</a>, <a class="el" href="funcional__tests_8cpp_source.html#l00048">exponentialFuncionalTest()</a>, and <a class="el" href="funcional__tests_8cpp_source.html#l00074">logisticalFuncionalTest()</a>.</p>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_a6b104d0394f9c52c334fe091f2a7ed8b_icgraph.svg" width="470" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a25abe7087cc471a00d076aa75781ad48" name="a25abe7087cc471a00d076aa75781ad48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25abe7087cc471a00d076aa75781ad48">&#9670;&#160;</a></span>deleteModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::deleteModel </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00014">14</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>                                          {</div>
+<div class="line"><span class="lineno">   15</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="_model_impl_8cpp.html#af157ed6e163b7e7e7af5c36d158e46b3">models</a>.begin(); it != <a class="code hl_variable" href="_model_impl_8cpp.html#af157ed6e163b7e7e7af5c36d158e46b3">models</a>.end(); ++it) {</div>
+<div class="line"><span class="lineno">   16</span>        <span class="keywordflow">if</span> ((*it)-&gt;getName() == name) {</div>
+<div class="line"><span class="lineno">   17</span>            <span class="keyword">delete</span> *it;</div>
+<div class="line"><span class="lineno">   18</span>            <a class="code hl_variable" href="_model_impl_8cpp.html#af157ed6e163b7e7e7af5c36d158e46b3">models</a>.erase(it);</div>
+<div class="line"><span class="lineno">   19</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   20</span>        }</div>
+<div class="line"><span class="lineno">   21</span>    }</div>
+<div class="line"><span class="lineno">   22</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_model_impl_8cpp_source.html#l00006">models</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="funcional__tests_8cpp_source.html#l00098">complexFuncionalTest()</a>, <a class="el" href="funcional__tests_8cpp_source.html#l00048">exponentialFuncionalTest()</a>, and <a class="el" href="funcional__tests_8cpp_source.html#l00074">logisticalFuncionalTest()</a>.</p>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_a25abe7087cc471a00d076aa75781ad48_icgraph.svg" width="459" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa5365ab557ae47efffdf14ba7a46dac8" name="aa5365ab557ae47efffdf14ba7a46dac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5365ab557ae47efffdf14ba7a46dac8">&#9670;&#160;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual string Model::getName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_model_impl.html#a8353ed17c5199ee97a5bdda61ec8f63c">ModelImpl</a>.</p>
+
 </div>
 </div>
 <a id="a2c91b25ab51d25d3c7e6ec40e6f7f150" name="a2c91b25ab51d25d3c7e6ec40e6f7f150"></a>
@@ -258,10 +482,46 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="class_model_impl.html#aafde5d9c89272eba49bf7af150e7fc25">ModelImpl</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="funcional__tests_8cpp_source.html#l00098">complexFuncionalTest()</a>, <a class="el" href="funcional__tests_8cpp_source.html#l00048">exponentialFuncionalTest()</a>, and <a class="el" href="funcional__tests_8cpp_source.html#l00074">logisticalFuncionalTest()</a>.</p>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_a2c91b25ab51d25d3c7e6ec40e6f7f150_icgraph.svg" width="407" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="aa17012307c37e6527ae6b1d3fff540e0" name="aa17012307c37e6527ae6b1d3fff540e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa17012307c37e6527ae6b1d3fff540e0">&#9670;&#160;</a></span>setName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Model::setName </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_model_impl.html#a50a11c4d140a32470e41fa3ac952c6d2">ModelImpl</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_model_8h_source.html">Model.h</a></li>
+<li><a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

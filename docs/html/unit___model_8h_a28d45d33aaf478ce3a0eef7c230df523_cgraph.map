@@ -1,5 +1,7 @@
 <map id="unit_Model_assignmentOperator" name="unit_Model_assignmentOperator">
-<area shape="rect" id="Node000001" title="Test the assignment operator of Model." alt="" coords="5,5,214,32"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a24e46f6ee90908c0ed4e882094573800" title=" " alt="" coords="262,5,372,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,16,248,19,243,19,214,21"/>
+<area shape="rect" id="Node000001" title="Test the assignment operator of Model." alt="" coords="5,31,214,57"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a24e46f6ee90908c0ed4e882094573800" title=" " alt="" coords="300,5,410,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,31,288,25,283,26,215,36"/>
+<area shape="rect" id="Node000003" href="$class_model_impl.html#ac30e93e0b706a7a77b061b05139208e1" title=" " alt="" coords="262,56,449,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,52,248,58,243,58,214,57"/>
 </map>

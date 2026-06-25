@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['flowimpl_0',['FlowImpl',['../class_flow_impl.html#aa835ccb3c368c683aa95d660175a298b',1,'FlowImpl::FlowImpl()'],['../class_flow_impl.html#a83fb65623b0aa0ef91df0f530052bd98',1,'FlowImpl::FlowImpl(System *source, System *sink)'],['../class_flow_impl.html#ae2665bc8877a901497212e04719c1d61',1,'FlowImpl::FlowImpl(const FlowImpl &amp;other)']]]
+  ['deletemodel_0',['deleteModel',['../classModel.html#a25abe7087cc471a00d076aa75781ad48',1,'Model']]],
+  ['detach_1',['detach',['../classBody.html#ad481d0c8368db318795c9a0a8fdd3717',1,'Body::detach()'],['../classBody.html#ad481d0c8368db318795c9a0a8fdd3717',1,'Body::detach()']]]
 ];

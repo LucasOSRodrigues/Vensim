@@ -1,10 +1,18 @@
 <map id="LogisticFlow::operator=" name="LogisticFlow::operator=">
-<area shape="rect" id="Node000001" title="Assignment operator." alt="" coords="5,31,163,57"/>
-<area shape="rect" id="Node000002" href="$class_logistic_flow.html#ab0f7906cfe1a27e18a4f558124e53ee0" title="Default constructor." alt="" coords="211,5,386,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,32,198,30,192,31,163,37"/>
-<area shape="rect" id="Node000004" href="$class_flow_impl.html#a49655b3810ecbea9407f860122e20dc4" title=" " alt="" coords="230,56,367,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,51,217,59,211,60,163,56"/>
-<area shape="rect" id="Node000003" href="$class_flow_impl.html#aa835ccb3c368c683aa95d660175a298b" title=" " alt="" coords="434,31,569,57"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,27,422,34,416,34,386,32"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="367,58,416,55,421,54,368,63"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,163,65"/>
+<area shape="rect" id="Node000002" href="$class_logistic_flow.html#ab0f7906cfe1a27e18a4f558124e53ee0" title=" " alt="" coords="211,13,386,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,40,197,38,193,40,164,45"/>
+<area shape="rect" id="Node000005" href="$class_flow_impl.html#a49655b3810ecbea9407f860122e20dc4" title=" " alt="" coords="230,64,367,91"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="163,59,216,66,212,68,163,64"/>
+<area shape="rect" id="Node000003" href="$class_flow_impl.html#aa835ccb3c368c683aa95d660175a298b" title=" " alt="" coords="437,13,572,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,24,424,26,419,27,387,29"/>
+<area shape="rect" id="Node000004" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title=" " alt="" coords="623,5,768,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="573,24,610,26,605,27,573,29"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="355,61,435,43,430,45,357,66"/>
+<area shape="rect" id="Node000006" href="$class_flow_impl.html#a63453811afa24e0799e54e22161738a8" title=" " alt="" coords="437,64,572,91"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="367,75,424,77,419,78,368,80"/>
+<area shape="rect" id="Node000007" href="$class_flow_impl.html#aa44e9925502fc009fae397f0d78c3e90" title=" " alt="" coords="442,115,568,141"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="356,89,435,110,430,111,356,94"/>
+<area shape="rect" id="Node000008" href="$class_flow_impl.html#a06c8ffdcfd36b04ddad091d2c043f5d0" title=" " alt="" coords="434,165,575,192"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="322,89,373,119,435,151,450,160,445,159,433,156,371,124,321,94"/>
 </map>

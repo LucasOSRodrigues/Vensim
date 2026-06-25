@@ -9,6 +9,8 @@ class System {
 public:
     virtual ~System() {}
 
+    static System* createSystem(const string& name = "", double value = 0.0);
+
     virtual void setName(const string& name) = 0;
     virtual void setValue(double value) = 0;
 

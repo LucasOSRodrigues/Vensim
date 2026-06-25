@@ -11,6 +11,7 @@
 #include "unit_System.h"
 #include "unit_Model.h"
 #include "unit_Flow.h"
+#include "unit_HandleBody.h"
 
 using namespace std;
 
@@ -32,6 +33,10 @@ int main(void) {
         cout << "Running global function tests..." << endl;
         run_unit_test_globals();
         cout << "✓ Global function tests passed!" << endl;
+
+        cout << "Running Handle-Body template tests..." << endl;
+        run_unit_test_HandleBody();
+        cout << "✓ Handle-Body template tests passed!" << endl;
 
         cout << "Running System class tests..." << endl;
         run_unit_test_System();

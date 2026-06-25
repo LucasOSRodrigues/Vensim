@@ -1,24 +1,17 @@
 <map id="FlowImpl.h" name="FlowImpl.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="477,5,563,32"/>
-<area shape="rect" id="Node000002" href="$_complex_flow_8h.html" title="Definition of the ComplexFlow class." alt="" coords="182,80,293,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="460,36,288,82,286,77,465,34"/>
-<area shape="rect" id="Node000005" href="$_exponential_flow_8h.html" title="Definition of the ExponentialFlow class." alt="" coords="456,80,584,107"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="522,46,522,81,518,78,518,50"/>
-<area shape="rect" id="Node000007" href="$unit___flow_8cpp.html" title=" " alt="" coords="620,155,721,181"/>
-<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="551,39,598,78,635,118,664,155,659,153,631,122,594,82,549,44"/>
-<area shape="rect" id="Node000008" href="$_flow_impl_8cpp.html" title=" " alt="" coords="658,80,758,107"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="567,35,678,79,672,79,567,41"/>
-<area shape="rect" id="Node000009" href="$_logistic_flow_8h.html" title="Definition of the LogisticFlow class." alt="" coords="317,80,422,107"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="483,38,397,82,395,77,478,40"/>
-<area shape="rect" id="Node000003" href="$_complex_flow_8cpp.html" title="Implementation of the ComplexFlow class." alt="" coords="5,155,131,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="196,115,99,156,97,152,192,111"/>
-<area shape="rect" id="Node000004" href="$funcional__tests_8cpp.html" title="Implementation of functional tests for MySim framework." alt="" coords="297,155,431,181"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="273,112,344,154,339,154,272,117"/>
-<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="482,113,392,157,391,151,477,114"/>
-<area shape="rect" id="Node000006" href="$_exponential_flow_8cpp.html" title="Implementation of the ExponentialFlow class." alt="" coords="455,155,596,181"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="524,121,527,156,522,153,520,124"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="560,111,647,154,642,154,559,116"/>
-<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="369,121,367,156,363,153,365,124"/>
-<area shape="rect" id="Node000010" href="$_logistic_flow_8cpp.html" title="Implementation of the LogisticFlow class." alt="" coords="154,155,272,181"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="331,113,242,157,240,152,326,114"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="134,5,219,32"/>
+<area shape="rect" id="Node000002" href="$_flow_impl_8cpp.html" title=" " alt="" coords="5,80,105,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,43,78,81,75,77,144,38"/>
+<area shape="rect" id="Node000003" href="$flow__types_8h.html" title=" " alt="" coords="129,80,224,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,45,179,80,174,79,175,50"/>
+<area shape="rect" id="Node000008" href="$unit___flow_8cpp.html" title=" " alt="" coords="248,80,350,107"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="211,38,280,79,275,80,211,43"/>
+<area shape="rect" id="Node000004" href="$flow__types_8cpp.html" title=" " alt="" coords="52,155,162,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="156,116,121,156,117,152,152,120"/>
+<area shape="rect" id="Node000005" href="$funcional__tests_8h.html" title="Functional tests for the MySim framework." alt="" coords="186,155,306,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="199,115,236,154,231,154,198,120"/>
+<area shape="rect" id="Node000006" href="$funcional__tests_8cpp.html" title="Implementation of functional tests for MySim framework." alt="" coords="114,229,249,256"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="227,192,194,231,191,227,222,194"/>
+<area shape="rect" id="Node000007" href="$funcional_2main_8cpp.html" title=" " alt="" coords="272,229,347,256"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="268,191,301,230,296,228,266,196"/>
 </map>

@@ -1,13 +1,15 @@
 <map id="Flow" name="Flow">
-<area shape="rect" id="Node000001" title=" " alt="" coords="245,5,336,139"/>
-<area shape="rect" id="Node000002" href="$class_flow_impl.html" title=" " alt="" coords="244,187,337,427"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,151,293,188,288,186,290,156"/>
-<area shape="rect" id="Node000003" href="$class_complex_flow.html" title="Implements a flow with specific calculation rule." alt="" coords="5,475,125,651"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,370,139,476,127,490,123,487,135,473,235,366"/>
-<area shape="rect" id="Node000004" href="$class_exponential_flow.html" title="Implements a flow with exponential growth." alt="" coords="149,475,285,651"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="254,439,245,476,240,474,251,443"/>
-<area shape="rect" id="Node000005" href="$class_logistic_flow.html" title="Implements a logistic flow with population limit." alt="" coords="309,475,422,651"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="331,439,342,476,337,474,329,443"/>
-<area shape="rect" id="Node000006" href="$class_test_flow.html" title="Concrete implementation of Flow for testing purposes." alt="" coords="446,507,530,619"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="348,367,435,473,458,508,453,506,431,476,346,372"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="322,5,414,139"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html" title=" " alt="" coords="244,229,337,555"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="350,151,332,230,327,229,348,156"/>
+<area shape="rect" id="Node000007" href="$class_mock_flow.html" title="Mock implementation of Flow interface for testing." alt="" coords="361,187,530,597"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="388,150,398,187,393,187,387,156"/>
+<area shape="rect" id="Node000003" href="$class_complex_flow.html" title=" " alt="" coords="5,645,125,843"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="235,481,127,652,123,649,237,476"/>
+<area shape="rect" id="Node000004" href="$class_exponential_flow.html" title=" " alt="" coords="149,645,285,843"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="255,567,240,647,235,644,252,571"/>
+<area shape="rect" id="Node000005" href="$class_logistic_flow.html" title=" " alt="" coords="309,645,422,843"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="330,567,347,646,342,645,327,572"/>
+<area shape="rect" id="Node000006" href="$class_test_flow.html" title="Concrete implementation of Flow for testing purposes." alt="" coords="446,688,530,800"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="331,566,351,596,371,613,391,620,412,627,435,643,452,664,467,689,462,687,448,667,432,647,410,632,389,625,368,617,347,599,330,571"/>
 </map>

@@ -10,7 +10,7 @@ Inheritance diagram for Model\+Impl:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=155pt]{class_model_impl__inherit__graph}
+\includegraphics[height=550pt]{class_model_impl__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -19,13 +19,13 @@ Collaboration diagram for Model\+Impl:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=155pt]{class_model_impl__coll__graph}
+\includegraphics[height=550pt]{class_model_impl__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{class_model_impl_a081505846c37ce9928f2176d77db4bc8}{Model\+Impl}} ()
+\doxymbox{\hyperlink{class_model_impl_a18db22669456b44021e2714ed375c99c}{Model\+Impl}} (const string \&name="{}"{})
 \item 
 virtual \doxymbox{\hyperlink{class_model_impl_a427f422a6d356b94afbe3937d6452a2b}{\texorpdfstring{$\sim$}{\string~}\+Model\+Impl}} ()
 \item 
@@ -33,51 +33,100 @@ virtual \doxymbox{\hyperlink{class_model_impl_a427f422a6d356b94afbe3937d6452a2b}
 \item 
 \doxymbox{\hyperlink{class_model_impl}{Model\+Impl}} \& \doxymbox{\hyperlink{class_model_impl_aebfc947e745a94b9610aba097cd1d6f7}{operator=}} (const \doxymbox{\hyperlink{class_model_impl}{Model\+Impl}} \&other)
 \item 
+string \doxymbox{\hyperlink{class_model_impl_a8353ed17c5199ee97a5bdda61ec8f63c}{get\+Name}} () const override
+\item 
+void \doxymbox{\hyperlink{class_model_impl_a50a11c4d140a32470e41fa3ac952c6d2}{set\+Name}} (const string \&name) override
+\item 
 void \doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}system) override
 \item 
 void \doxymbox{\hyperlink{class_model_impl_a3e8843e5353f40ab30afcf19b4f13a67}{add}} (\doxymbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}flow) override
 \item 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_model_impl_a293f79485482b3b9e9d5121c89712b8e}{create\+System}} (const string \&name="{}"{}, double value=0.\+0) override
+\item 
 void \doxymbox{\hyperlink{class_model_impl_aafde5d9c89272eba49bf7af150e7fc25}{run}} (int begin, int end) override
+\item 
+size\+\_\+t \doxymbox{\hyperlink{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}{get\+System\+Count}} () const
+\item 
+size\+\_\+t \doxymbox{\hyperlink{class_model_impl_acc901227084cb052e42a5948ee674e74}{get\+Flow\+Count}} () const
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_model}{Model}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual \doxymbox{\hyperlink{class_model_af032d8433c87a0a3a431faf6563a1f03}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
+\item 
+{\footnotesize template$<$typename FLOW\+\_\+\+TYPE, typename... Args$>$ }\\FLOW\+\_\+\+TYPE \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_model_a1adc3a9da8ae4ff6fd69b01e24889adb}{create\+Flow}} (Args... args)
 \end{DoxyCompactItemize}
-\doxysubsubsection*{Private Attributes}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_handle}{Handle$<$ Model\+Body $>$}}}
 \begin{DoxyCompactItemize}
 \item 
-vector$<$ \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_model_impl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems}}
+\doxymbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{class_handle_addd59fdf43baa517a06d44e1125b5ab1}{\texorpdfstring{$\sim$}{\string~}\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_handle}{Handle}}$<$ \doxymbox{\hyperlink{class_model_body}{Model\+Body}} $>$ \& \doxymbox{\hyperlink{class_handle_a52e146e2a1427c8e7d3a692e9378185a}{operator=}} (const \doxymbox{\hyperlink{class_handle}{Handle}} \&hd)
+\begin{DoxyCompactList}\small\item\em assignment operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \doxymbox{\hyperlink{class_model}{Model}}}
+\begin{DoxyCompactItemize}
 \item 
-vector$<$ \doxymbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_model_impl_a9be1dcdb4753e5d78e0c817261297dcf}{flows}}
+static \doxymbox{\hyperlink{class_model}{Model}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_model_a761d898cd7975e92719915f122330886}{create\+Model}} (const string \&name="{}"{})
+\item 
+static void \doxymbox{\hyperlink{class_model_a25abe7087cc471a00d076aa75781ad48}{delete\+Model}} (const string \&name)
 \end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_handle}{Handle$<$ Model\+Body $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_model_body}{Model\+Body}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_handle_a8c7b8c15aa4f494a1eba3f3d5017ffda}{p\+Impl\+\_\+}}
+\begin{DoxyCompactList}\small\item\em referência para a implementação \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line \doxymbox{\hyperlink{_model_impl_8h_source_l00010}{10}} of file \doxymbox{\hyperlink{_model_impl_8h_source}{Model\+Impl.\+h}}.
+Definition at line \doxymbox{\hyperlink{_model_impl_8h_source_l00038}{38}} of file \doxymbox{\hyperlink{_model_impl_8h_source}{Model\+Impl.\+h}}.
 
 
 
 \label{class_model_impl_doc-constructors}
 \Hypertarget{class_model_impl_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{class_model_impl_a081505846c37ce9928f2176d77db4bc8}\index{ModelImpl@{ModelImpl}!ModelImpl@{ModelImpl}}
+\Hypertarget{class_model_impl_a18db22669456b44021e2714ed375c99c}\index{ModelImpl@{ModelImpl}!ModelImpl@{ModelImpl}}
 \index{ModelImpl@{ModelImpl}!ModelImpl@{ModelImpl}}
 \doxysubsubsection{\texorpdfstring{ModelImpl()}{ModelImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \label{class_model_impl_a081505846c37ce9928f2176d77db4bc8} 
-Model\+Impl::\+\+Model\+Impl (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily \label{class_model_impl_a18db22669456b44021e2714ed375c99c} 
+Model\+Impl::\+\+Model\+Impl (\begin{DoxyParamCaption}\item[{const string \&}]{name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
 
 
 
-Referenced by \doxymbox{\hyperlink{_model_impl_8cpp_source_l00007}{Model\+Impl()}}, \doxymbox{\hyperlink{_model_impl_8cpp_source_l00010}{operator=()}}, and \doxymbox{\hyperlink{class_model_impl_a427f422a6d356b94afbe3937d6452a2b}{\texorpdfstring{$\sim$}{\string~}\+Model\+Impl()}}.
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00075}{75}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
 
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \doxymbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle<ModelBody>}}()\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \doxymbox{\hyperlink{class_handle_a8c7b8c15aa4f494a1eba3f3d5017ffda}{pImpl\_}}-\/>setName(name);}
+\DoxyCodeLine{00077\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{handle_body_8h_source_l00034}{Handle$<$ Model\+Body $>$::\+\+Handle()}}, and \doxymbox{\hyperlink{handle_body_8h_source_l00071}{Handle$<$ Model\+Body $>$::\+p\+Impl\+\_\+}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{_model_impl_8cpp_source_l00081}{Model\+Impl()}}, \doxymbox{\hyperlink{_model_impl_8cpp_source_l00083}{operator=()}}, and \doxymbox{\hyperlink{class_model_impl_a427f422a6d356b94afbe3937d6452a2b}{\texorpdfstring{$\sim$}{\string~}\+Model\+Impl()}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_model_impl_a18db22669456b44021e2714ed375c99c_cgraph}
+\end{center}
+\end{figure}
 Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=346pt]{class_model_impl_a081505846c37ce9928f2176d77db4bc8_icgraph}
+\includegraphics[width=346pt]{class_model_impl_a18db22669456b44021e2714ed375c99c_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_model_impl_a427f422a6d356b94afbe3937d6452a2b}\index{ModelImpl@{ModelImpl}!````~ModelImpl@{\texorpdfstring{$\sim$}{\string~}ModelImpl}}
@@ -88,13 +137,13 @@ Model\+Impl::\+\texorpdfstring{$\sim$}{\string~}\+Model\+Impl (\begin{DoxyParamC
 
 
 
-References \doxymbox{\hyperlink{class_model_impl_a081505846c37ce9928f2176d77db4bc8}{Model\+Impl()}}.
+References \doxymbox{\hyperlink{_model_impl_8cpp_source_l00075}{Model\+Impl()}}.
 
 Here is the call graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=346pt]{class_model_impl_a427f422a6d356b94afbe3937d6452a2b_cgraph}
+\includegraphics[width=350pt]{class_model_impl_a427f422a6d356b94afbe3937d6452a2b_cgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_model_impl_a71036194d088aeb1830feea80c986c3a}\index{ModelImpl@{ModelImpl}!ModelImpl@{ModelImpl}}
@@ -105,22 +154,22 @@ Model\+Impl::\+\+Model\+Impl (\begin{DoxyParamCaption}\item[{const \doxymbox{\hy
 
 
 
-Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00007}{7}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00081}{81}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00008\ \ \ \ \ :\ \doxymbox{\hyperlink{class_model_impl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems}}(other.\doxymbox{\hyperlink{class_model_impl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems}}),\ \doxymbox{\hyperlink{class_model_impl_a9be1dcdb4753e5d78e0c817261297dcf}{flows}}(other.\doxymbox{\hyperlink{class_model_impl_a9be1dcdb4753e5d78e0c817261297dcf}{flows}})\ \{\}}
+\DoxyCodeLine{00081\ :\ \doxymbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle<ModelBody>}}(other)\ \{\}}
 
 \end{DoxyCode}
 
 
-References \doxymbox{\hyperlink{_model_impl_8h_source_l00013}{flows}}, \doxymbox{\hyperlink{class_model_impl_a081505846c37ce9928f2176d77db4bc8}{Model\+Impl()}}, and \doxymbox{\hyperlink{_model_impl_8h_source_l00012}{systems}}.
+References \doxymbox{\hyperlink{handle_body_8h_source_l00034}{Handle$<$ Model\+Body $>$::\+\+Handle()}}, and \doxymbox{\hyperlink{_model_impl_8cpp_source_l00075}{Model\+Impl()}}.
 
 Here is the call graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=340pt]{class_model_impl_a71036194d088aeb1830feea80c986c3a_cgraph}
+\includegraphics[width=350pt]{class_model_impl_a71036194d088aeb1830feea80c986c3a_cgraph}
 \end{center}
 \end{figure}
 
@@ -140,18 +189,16 @@ Implements \doxymbox{\hyperlink{class_model_ab7df81041f62f049cfc6e4d50dcaf721}{M
 
 
 
-Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00022}{22}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00091}{91}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00023\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl_a9be1dcdb4753e5d78e0c817261297dcf}{flows}}.push\_back(flow);}
-\DoxyCodeLine{00024\ \}}
+\DoxyCodeLine{00091\ \{\ \doxymbox{\hyperlink{class_handle_a8c7b8c15aa4f494a1eba3f3d5017ffda}{pImpl\_}}-\/>add(flow);\ \}}
 
 \end{DoxyCode}
 
 
-References \doxymbox{\hyperlink{_model_impl_8h_source_l00013}{flows}}.
+References \doxymbox{\hyperlink{handle_body_8h_source_l00071}{Handle$<$ Model\+Body $>$::\+p\+Impl\+\_\+}}.
 
 \Hypertarget{class_model_impl_a24e46f6ee90908c0ed4e882094573800}\index{ModelImpl@{ModelImpl}!add@{add}}
 \index{add@{add}!ModelImpl@{ModelImpl}}
@@ -165,28 +212,132 @@ Implements \doxymbox{\hyperlink{class_model_afde6c25ab942f2eec7aedeaf8eec53fd}{M
 
 
 
-Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00018}{18}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00090}{90}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems}}.push\_back(system);}
-\DoxyCodeLine{00020\ \}}
+\DoxyCodeLine{00090\ \{\ \doxymbox{\hyperlink{class_handle_a8c7b8c15aa4f494a1eba3f3d5017ffda}{pImpl\_}}-\/>add(system);\ \}}
 
 \end{DoxyCode}
 
 
-References \doxymbox{\hyperlink{_model_impl_8h_source_l00012}{systems}}.
+References \doxymbox{\hyperlink{handle_body_8h_source_l00071}{Handle$<$ Model\+Body $>$::\+p\+Impl\+\_\+}}.
 
 
 
-Referenced by \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00107}{complex\+Funcional\+Test()}}, \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00057}{exponential\+Funcional\+Test()}}, \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00082}{logistical\+Funcional\+Test()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00103}{unit\+\_\+\+Model\+\_\+add\+Flow()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00077}{unit\+\_\+\+Model\+\_\+add\+System()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00057}{unit\+\_\+\+Model\+\_\+assignment\+Operator()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00028}{unit\+\_\+\+Model\+\_\+copy\+Constructor()}}, and \doxymbox{\hyperlink{unit___model_8cpp_source_l00125}{unit\+\_\+\+Model\+\_\+run()}}.
+Referenced by \doxymbox{\hyperlink{unit___model_8cpp_source_l00104}{unit\+\_\+\+Model\+\_\+add\+Flow()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00079}{unit\+\_\+\+Model\+\_\+add\+System()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00057}{unit\+\_\+\+Model\+\_\+assignment\+Operator()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00028}{unit\+\_\+\+Model\+\_\+copy\+Constructor()}}, and \doxymbox{\hyperlink{unit___model_8cpp_source_l00124}{unit\+\_\+\+Model\+\_\+run()}}.
 
 Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_model_impl_a24e46f6ee90908c0ed4e882094573800_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_impl_a293f79485482b3b9e9d5121c89712b8e}\index{ModelImpl@{ModelImpl}!createSystem@{createSystem}}
+\index{createSystem@{createSystem}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{createSystem()}{createSystem()}}
+{\footnotesize\ttfamily \label{class_model_impl_a293f79485482b3b9e9d5121c89712b8e} 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} Model\+Impl::\+create\+System (\begin{DoxyParamCaption}\item[{const string \&}]{name}{ = {\ttfamily "{}"{}}, }\item[{double}]{value}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_model_a6b104d0394f9c52c334fe091f2a7ed8b}{Model}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00092}{92}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00092\ \{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_handle_a8c7b8c15aa4f494a1eba3f3d5017ffda}{pImpl\_}}-\/>createSystem(name,\ value);\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{handle_body_8h_source_l00071}{Handle$<$ Model\+Body $>$::\+p\+Impl\+\_\+}}.
+
+\Hypertarget{class_model_impl_acc901227084cb052e42a5948ee674e74}\index{ModelImpl@{ModelImpl}!getFlowCount@{getFlowCount}}
+\index{getFlowCount@{getFlowCount}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{getFlowCount()}{getFlowCount()}}
+{\footnotesize\ttfamily \label{class_model_impl_acc901227084cb052e42a5948ee674e74} 
+size\+\_\+t Model\+Impl::\+get\+Flow\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00095}{95}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00095\ \{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_handle_a8c7b8c15aa4f494a1eba3f3d5017ffda}{pImpl\_}}-\/>getFlowCount();\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{handle_body_8h_source_l00071}{Handle$<$ Model\+Body $>$::\+p\+Impl\+\_\+}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{unit___model_8cpp_source_l00104}{unit\+\_\+\+Model\+\_\+add\+Flow()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00028}{unit\+\_\+\+Model\+\_\+copy\+Constructor()}}, and \doxymbox{\hyperlink{unit___model_8cpp_source_l00015}{unit\+\_\+\+Model\+\_\+default\+Constructor()}}.
+
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_impl_acc901227084cb052e42a5948ee674e74_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_impl_a8353ed17c5199ee97a5bdda61ec8f63c}\index{ModelImpl@{ModelImpl}!getName@{getName}}
+\index{getName@{getName}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_model_impl_a8353ed17c5199ee97a5bdda61ec8f63c} 
+string Model\+Impl::\+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_model_aa5365ab557ae47efffdf14ba7a46dac8}{Model}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00088}{88}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00088\ \{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_handle_a8c7b8c15aa4f494a1eba3f3d5017ffda}{pImpl\_}}-\/>getName();\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{handle_body_8h_source_l00071}{Handle$<$ Model\+Body $>$::\+p\+Impl\+\_\+}}.
+
+\Hypertarget{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}\index{ModelImpl@{ModelImpl}!getSystemCount@{getSystemCount}}
+\index{getSystemCount@{getSystemCount}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{getSystemCount()}{getSystemCount()}}
+{\footnotesize\ttfamily \label{class_model_impl_ac30e93e0b706a7a77b061b05139208e1} 
+size\+\_\+t Model\+Impl::\+get\+System\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00094}{94}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00094\ \{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_handle_a8c7b8c15aa4f494a1eba3f3d5017ffda}{pImpl\_}}-\/>getSystemCount();\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{handle_body_8h_source_l00071}{Handle$<$ Model\+Body $>$::\+p\+Impl\+\_\+}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{unit___model_8cpp_source_l00104}{unit\+\_\+\+Model\+\_\+add\+Flow()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00079}{unit\+\_\+\+Model\+\_\+add\+System()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00057}{unit\+\_\+\+Model\+\_\+assignment\+Operator()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00028}{unit\+\_\+\+Model\+\_\+copy\+Constructor()}}, \doxymbox{\hyperlink{unit___model_8cpp_source_l00015}{unit\+\_\+\+Model\+\_\+default\+Constructor()}}, and \doxymbox{\hyperlink{unit___model_8cpp_source_l00124}{unit\+\_\+\+Model\+\_\+run()}}.
+
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_impl_ac30e93e0b706a7a77b061b05139208e1_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_model_impl_aebfc947e745a94b9610aba097cd1d6f7}\index{ModelImpl@{ModelImpl}!operator=@{operator=}}
@@ -197,28 +348,25 @@ Here is the caller graph for this function:\+\nopagebreak
 
 
 
-Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00010}{10}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00083}{83}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&other)\ \{}
-\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_model_impl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems}}\ =\ other.\doxymbox{\hyperlink{class_model_impl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems}};}
-\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_model_impl_a9be1dcdb4753e5d78e0c817261297dcf}{flows}}\ =\ other.\doxymbox{\hyperlink{class_model_impl_a9be1dcdb4753e5d78e0c817261297dcf}{flows}};}
-\DoxyCodeLine{00014\ \ \ \ \ \}}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00016\ \}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \doxymbox{\hyperlink{class_handle_a52e146e2a1427c8e7d3a692e9378185a}{Handle<ModelBody>::operator=}}(other);}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00086\ \}}
 
 \end{DoxyCode}
 
 
-References \doxymbox{\hyperlink{_model_impl_8h_source_l00013}{flows}}, \doxymbox{\hyperlink{class_model_impl_a081505846c37ce9928f2176d77db4bc8}{Model\+Impl()}}, and \doxymbox{\hyperlink{_model_impl_8h_source_l00012}{systems}}.
+References \doxymbox{\hyperlink{_model_impl_8cpp_source_l00075}{Model\+Impl()}}, and \doxymbox{\hyperlink{handle_body_8h_source_l00059}{Handle$<$ T $>$::\+operator=()}}.
 
 Here is the call graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=336pt]{class_model_impl_aebfc947e745a94b9610aba097cd1d6f7_cgraph}
+\includegraphics[width=350pt]{class_model_impl_aebfc947e745a94b9610aba097cd1d6f7_cgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_model_impl_aafde5d9c89272eba49bf7af150e7fc25}\index{ModelImpl@{ModelImpl}!run@{run}}
@@ -233,53 +381,21 @@ Implements \doxymbox{\hyperlink{class_model_a2c91b25ab51d25d3c7e6ec40e6f7f150}{M
 
 
 
-Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00026}{26}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00093}{93}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ time\ =\ begin;\ time\ <\ end;\ time++)\ \{}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ vector<double>\ values;}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ flow\ :\ \doxymbox{\hyperlink{class_model_impl_a9be1dcdb4753e5d78e0c817261297dcf}{flows}})\ \{}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ values.push\_back(flow-\/>execute());}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{class_model_impl_a9be1dcdb4753e5d78e0c817261297dcf}{flows}}.size();\ i++)\ \{}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ Flow*\ flow\ =\ \doxymbox{\hyperlink{class_model_impl_a9be1dcdb4753e5d78e0c817261297dcf}{flows}}[i];}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ System*\ source\ =\ flow-\/>\doxymbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{getSource}}();}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ System*\ sink\ =\ flow-\/>\doxymbox{\hyperlink{class_flow_a6848543de3b393e4ade8e20581b20b13}{getSink}}();}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ values[i];}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (source\ !=\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ source-\/>\doxymbox{\hyperlink{class_system_a7421d2e6970a0c4169a2febe254f2060}{setValue}}(source-\/>\doxymbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ -\/\ value);}
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sink\ !=\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sink-\/>\doxymbox{\hyperlink{class_system_a7421d2e6970a0c4169a2febe254f2060}{setValue}}(sink-\/>\doxymbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ +\ value);}
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00050\ \ \ \ \ \}}
-\DoxyCodeLine{00051\ \}}
+\DoxyCodeLine{00093\ \{\ \doxymbox{\hyperlink{class_handle_a8c7b8c15aa4f494a1eba3f3d5017ffda}{pImpl\_}}-\/>run(begin,\ end);\ \}}
 
 \end{DoxyCode}
 
 
-References \doxymbox{\hyperlink{_model_impl_8h_source_l00013}{flows}}, \doxymbox{\hyperlink{class_flow_a6848543de3b393e4ade8e20581b20b13}{Flow::\+get\+Sink()}}, \doxymbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{Flow::\+get\+Source()}}, \doxymbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{System::\+get\+Value()}}, and \doxymbox{\hyperlink{class_system_a7421d2e6970a0c4169a2febe254f2060}{System::\+set\+Value()}}.
+References \doxymbox{\hyperlink{handle_body_8h_source_l00071}{Handle$<$ Model\+Body $>$::\+p\+Impl\+\_\+}}.
 
 
 
-Referenced by \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00107}{complex\+Funcional\+Test()}}, \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00057}{exponential\+Funcional\+Test()}}, \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00082}{logistical\+Funcional\+Test()}}, and \doxymbox{\hyperlink{unit___model_8cpp_source_l00125}{unit\+\_\+\+Model\+\_\+run()}}.
+Referenced by \doxymbox{\hyperlink{unit___model_8cpp_source_l00124}{unit\+\_\+\+Model\+\_\+run()}}.
 
-Here is the call graph for this function:\+\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=290pt]{class_model_impl_aafde5d9c89272eba49bf7af150e7fc25_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -287,38 +403,28 @@ Here is the caller graph for this function:\+\nopagebreak
 \includegraphics[width=350pt]{class_model_impl_aafde5d9c89272eba49bf7af150e7fc25_icgraph}
 \end{center}
 \end{figure}
-
-
-\label{class_model_impl_doc-variable-members}
-\Hypertarget{class_model_impl_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{class_model_impl_a9be1dcdb4753e5d78e0c817261297dcf}\index{ModelImpl@{ModelImpl}!flows@{flows}}
-\index{flows@{flows}!ModelImpl@{ModelImpl}}
-\doxysubsubsection{\texorpdfstring{flows}{flows}}
-{\footnotesize\ttfamily \label{class_model_impl_a9be1dcdb4753e5d78e0c817261297dcf} 
-vector$<$\doxymbox{\hyperlink{class_flow}{Flow}}\texorpdfstring{$\ast$}{*}$>$ Model\+Impl::\+flows\hspace{0.3cm}{\ttfamily [private]}}
+\Hypertarget{class_model_impl_a50a11c4d140a32470e41fa3ac952c6d2}\index{ModelImpl@{ModelImpl}!setName@{setName}}
+\index{setName@{setName}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{class_model_impl_a50a11c4d140a32470e41fa3ac952c6d2} 
+void Model\+Impl::\+set\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Definition at line \doxymbox{\hyperlink{_model_impl_8h_source_l00013}{13}} of file \doxymbox{\hyperlink{_model_impl_8h_source}{Model\+Impl.\+h}}.
+Implements \doxymbox{\hyperlink{class_model_aa17012307c37e6527ae6b1d3fff540e0}{Model}}.
 
 
 
-Referenced by \doxymbox{\hyperlink{_model_impl_8cpp_source_l00022}{add()}}, \doxymbox{\hyperlink{_model_impl_8cpp_source_l00007}{Model\+Impl()}}, \doxymbox{\hyperlink{_model_impl_8cpp_source_l00010}{operator=()}}, and \doxymbox{\hyperlink{_model_impl_8cpp_source_l00026}{run()}}.
-
-\Hypertarget{class_model_impl_a767e2054ecaaa8d1401ef2c962adc3e2}\index{ModelImpl@{ModelImpl}!systems@{systems}}
-\index{systems@{systems}!ModelImpl@{ModelImpl}}
-\doxysubsubsection{\texorpdfstring{systems}{systems}}
-{\footnotesize\ttfamily \label{class_model_impl_a767e2054ecaaa8d1401ef2c962adc3e2} 
-vector$<$\doxymbox{\hyperlink{class_system}{System}}\texorpdfstring{$\ast$}{*}$>$ Model\+Impl::\+systems\hspace{0.3cm}{\ttfamily [private]}}
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00089}{89}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
 
 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00089\ \{\ \doxymbox{\hyperlink{class_handle_a8c7b8c15aa4f494a1eba3f3d5017ffda}{pImpl\_}}-\/>setName(name);\ \}}
 
-Definition at line \doxymbox{\hyperlink{_model_impl_8h_source_l00012}{12}} of file \doxymbox{\hyperlink{_model_impl_8h_source}{Model\+Impl.\+h}}.
+\end{DoxyCode}
 
 
-
-Referenced by \doxymbox{\hyperlink{_model_impl_8cpp_source_l00018}{add()}}, \doxymbox{\hyperlink{_model_impl_8cpp_source_l00007}{Model\+Impl()}}, and \doxymbox{\hyperlink{_model_impl_8cpp_source_l00010}{operator=()}}.
+References \doxymbox{\hyperlink{handle_body_8h_source_l00071}{Handle$<$ Model\+Body $>$::\+p\+Impl\+\_\+}}.
 
 
 

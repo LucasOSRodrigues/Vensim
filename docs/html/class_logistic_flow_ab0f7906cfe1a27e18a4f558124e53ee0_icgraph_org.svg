@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Default constructor.">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="305,-58 173.5,-58 173.5,-38 305,-38 305,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="239.25" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">LogisticFlow::LogisticFlow</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_logistic_flow.html#a5cb786f5e252395010b54b16440775cd" target="_top" xlink:title="Copy constructor.">
+<g id="a_Node000002"><a xlink:href="class_logistic_flow.html#a5cb786f5e252395010b54b16440775cd" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="134.5,-96 3,-96 3,-76 134.5,-76 134.5,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="68.75" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">LogisticFlow::LogisticFlow</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_logistic_flow.html#a2bf490b7a58b8312d3841b5d3b3955f5" target="_top" xlink:title="Assignment operator.">
+<g id="a_Node000003"><a xlink:href="class_logistic_flow.html#a2bf490b7a58b8312d3841b5d3b3955f5" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="127.75,-58 9.75,-58 9.75,-38 127.75,-38 127.75,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="68.75" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">LogisticFlow::operator=</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="class_logistic_flow.html#a39d18cc1ab327715c4b8e0377cff8435" target="_top" xlink:title="Virtual destructor.">
+<g id="a_Node000004"><a xlink:href="class_logistic_flow.html#a39d18cc1ab327715c4b8e0377cff8435" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="137.5,-20 0,-20 0,0 137.5,0 137.5,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="68.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">LogisticFlow::~LogisticFlow</text>
 </a>

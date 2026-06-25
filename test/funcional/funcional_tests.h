@@ -11,6 +11,11 @@
 #ifndef FUNCIONAL_TESTS_H
 #define FUNCIONAL_TESTS_H
 
+#include "../../src/Model.h"
+//#include "../../src/System.h"
+
+#include "flow_types.h"
+
 /**
  * @brief Functional test for exponential flow.
  *

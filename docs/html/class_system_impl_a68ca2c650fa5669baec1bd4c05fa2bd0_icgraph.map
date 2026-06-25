@@ -1,24 +1,28 @@
 <map id="SystemImpl::getName" name="SystemImpl::getName">
-<area shape="rect" id="Node000001" title=" " alt="" coords="565,132,718,159"/>
-<area shape="rect" id="Node000002" href="$unit___system_8cpp.html#ae1b2276713abfafdd55b3a70f2380c78" title="Test the assignment operator of System." alt="" coords="299,5,517,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="615,121,572,83,545,63,516,46,488,35,488,30,518,42,548,59,575,79,620,121"/>
-<area shape="rect" id="Node000005" href="$unit___system_8cpp.html#a4b504bd5c78b1a1cae785948cf0e58a3" title="Test the copy constructor of System." alt="" coords="310,56,507,83"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="594,126,516,97,476,86,476,81,518,92,599,125"/>
-<area shape="rect" id="Node000006" href="$unit___system_8cpp.html#aa0b06ac0db36fb098d1fb27a757caf16" title="Test the default constructor of System." alt="" coords="304,107,512,133"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="547,136,513,134,513,129,553,135"/>
-<area shape="rect" id="Node000007" href="$unit___system_8cpp.html#ac5707e927092753fdf9ffb275f209466" title="Test the getName method of System." alt="" coords="331,157,485,184"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="547,156,486,165,486,160,553,155"/>
-<area shape="rect" id="Node000008" href="$unit___system_8cpp.html#afc6a7207144c2f1f8a441a4d95023630" title="Test the parameterized constructor of System." alt="" coords="316,208,500,251"/>
-<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="598,164,518,199,484,210,483,205,516,193,593,166"/>
-<area shape="rect" id="Node000009" href="$unit___system_8cpp.html#ae92753cb0977ecd3217dc3540dc33e87" title="Test the setName method of System." alt="" coords="331,275,485,301"/>
-<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="623,170,578,220,550,245,519,265,486,278,485,273,516,260,547,240,575,216,618,172"/>
-<area shape="rect" id="Node000003" href="$unit___system_8cpp.html#aa41a15b7b91bd56d38b04018f568900b" title="Runs all unit tests for the SystemImpl class." alt="" coords="103,132,251,159"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="311,39,300,46,267,66,237,90,192,133,189,130,234,86,264,62,298,42,316,36"/>
-<area shape="rect" id="Node000004" href="$unit_2main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function that runs all unit tests." alt="" coords="5,132,55,159"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="85,147,56,148,54,143,89,144"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="322,88,300,97,209,134,206,129,298,92,327,86"/>
-<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="286,134,252,140,251,135,291,132"/>
-<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="313,161,252,156,251,151,318,160"/>
-<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="316,203,298,198,209,162,209,157,300,194,321,203"/>
-<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="314,270,298,265,262,241,230,212,187,161,189,156,234,208,265,237,300,260,319,271"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="565,183,718,209"/>
+<area shape="rect" id="Node000002" href="$class_system_impl.html#a11c027096cb0e824bf8306c33e0a3903" title=" " alt="" coords="331,5,485,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="623,168,581,107,551,74,516,46,486,33,486,27,519,42,554,70,585,104,628,169"/>
+<area shape="rect" id="Node000003" href="$class_system_impl.html#a096bb204d8011d9cce315346050ec038" title=" " alt="" coords="324,56,493,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="615,172,572,134,545,114,516,97,488,86,488,81,518,92,548,109,575,130,620,172"/>
+<area shape="rect" id="Node000004" href="$unit___system_8cpp.html#ae1b2276713abfafdd55b3a70f2380c78" title="Test the assignment operator of System." alt="" coords="299,107,517,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="594,176,516,148,476,137,476,131,518,143,599,176"/>
+<area shape="rect" id="Node000007" href="$unit___system_8cpp.html#a4b504bd5c78b1a1cae785948cf0e58a3" title="Test the copy constructor of System." alt="" coords="310,157,507,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="548,187,507,184,507,179,553,186"/>
+<area shape="rect" id="Node000008" href="$unit___system_8cpp.html#aa0b06ac0db36fb098d1fb27a757caf16" title="Test the default constructor of System." alt="" coords="304,208,512,235"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="548,207,514,213,512,207,553,205"/>
+<area shape="rect" id="Node000009" href="$unit___system_8cpp.html#ac5707e927092753fdf9ffb275f209466" title="Test the getName method of System." alt="" coords="331,259,485,285"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="599,215,518,249,477,261,475,256,516,244,594,217"/>
+<area shape="rect" id="Node000010" href="$unit___system_8cpp.html#afc6a7207144c2f1f8a441a4d95023630" title="Test the parameterized constructor of System." alt="" coords="316,309,500,352"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="619,219,574,262,519,300,493,311,491,306,516,295,571,258,614,222"/>
+<area shape="rect" id="Node000011" href="$unit___system_8cpp.html#ae92753cb0977ecd3217dc3540dc33e87" title="Test the setName method of System." alt="" coords="331,376,485,403"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="630,222,612,258,588,296,556,334,519,366,487,381,485,376,516,362,553,331,583,293,608,255,626,225"/>
+<area shape="rect" id="Node000005" href="$unit___system_8cpp.html#aa41a15b7b91bd56d38b04018f568900b" title="Runs all unit tests for the SystemImpl class." alt="" coords="103,233,251,260"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="311,140,300,148,267,168,237,191,192,235,189,231,234,187,264,163,298,143,316,137"/>
+<area shape="rect" id="Node000006" href="$unit_2main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function that runs all unit tests." alt="" coords="5,233,55,260"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="85,248,56,249,54,244,89,245"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="322,190,300,199,209,235,206,230,298,193,327,187"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="286,235,252,241,251,236,291,233"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="313,263,252,257,251,252,318,261"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="316,304,298,300,209,263,209,258,300,295,321,304"/>
+<area shape="poly" id="edge15_Node000011_Node000005" title=" " alt="" coords="314,372,298,366,262,342,230,313,187,263,189,258,234,310,265,338,300,362,319,372"/>
 </map>

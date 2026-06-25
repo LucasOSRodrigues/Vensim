@@ -1,29 +1,30 @@
 <map id="System::getValue" name="System::getValue">
-<area shape="rect" id="Node000001" title=" " alt="" coords="697,157,821,184"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#aafde5d9c89272eba49bf7af150e7fc25" title=" " alt="" coords="523,107,631,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="691,152,627,137,628,131,696,153"/>
-<area shape="rect" id="Node000010" href="$unit___flow_8cpp.html#a110aa9a56d6c37c3bb9766fdd0fac326" title="Test the getSink method of Flow." alt="" coords="513,157,641,184"/>
-<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="678,171,642,173,642,168,684,171"/>
-<area shape="rect" id="Node000012" href="$unit___flow_8cpp.html#a9ffcbd710bf5ffee61b55a88a0de70e1" title="Test the getSource method of Flow." alt="" coords="505,208,649,235"/>
-<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="696,188,628,210,627,205,691,189"/>
-<area shape="rect" id="Node000003" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Implementation of complex functional test." alt="" coords="298,5,449,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="543,97,503,72,456,46,428,35,428,30,458,42,506,68,548,97"/>
-<area shape="rect" id="Node000005" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Implementation of exponential functional test." alt="" coords="289,56,457,83"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="506,103,430,86,430,81,511,103"/>
-<area shape="rect" id="Node000006" href="$funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Implementation of logistic functional test." alt="" coords="296,107,450,133"/>
-<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="505,120,451,123,450,117,510,120"/>
-<area shape="rect" id="Node000007" href="$unit___model_8cpp.html#a47f444f7adf42d9fe780632ef2e324d6" title="Test the run(int, int) method of Model." alt="" coords="318,157,428,184"/>
-<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="511,136,429,160,428,154,505,138"/>
-<area shape="rect" id="Node000004" href="$funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="147,56,196,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="300,38,198,66,196,61,304,35"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="271,71,198,72,197,67,276,68"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="300,103,197,78,197,73,305,101"/>
-<area shape="rect" id="Node000008" href="$unit___model_8cpp.html#a8d0dce91a7dab9a56d174c7f4d5fc508" title="Runs all unit tests for the ModelImpl class." alt="" coords="103,157,241,184"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="301,171,242,173,241,168,306,170"/>
-<area shape="rect" id="Node000009" href="$unit_2main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function that runs all unit tests." alt="" coords="5,183,55,209"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="85,187,56,194,54,189,89,184"/>
-<area shape="rect" id="Node000011" href="$unit___flow_8cpp.html#a7a974b6da4f54da9fbeccfcc8c6e2d71" title="Runs all unit tests for the Flow class." alt="" coords="308,208,439,235"/>
-<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="508,188,430,210,429,205,503,189"/>
-<area shape="poly" id="edge13_Node000011_Node000009" title=" " alt="" coords="292,218,55,200,55,195,293,213"/>
-<area shape="poly" id="edge15_Node000012_Node000011" title=" " alt="" coords="487,221,439,224,439,219,492,221"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="501,208,626,235"/>
+<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Implementation of complex functional test." alt="" coords="292,5,443,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="550,192,535,160,514,120,486,80,452,46,434,35,433,30,455,42,490,77,519,117,540,158,555,194"/>
+<area shape="rect" id="Node000004" href="$class_complex_flow.html#a744cb3029e9335038f3f8c1da6daea4d" title=" " alt="" coords="290,56,445,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="544,195,506,146,480,119,452,97,430,86,430,81,455,92,484,115,510,142,549,195"/>
+<area shape="rect" id="Node000005" href="$class_exponential_flow.html#aafb074830c5c18138913cb10da3b8782" title=" " alt="" coords="282,107,453,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="531,198,495,173,452,148,425,137,424,131,455,143,498,168,537,198"/>
+<area shape="rect" id="Node000006" href="$class_logistic_flow.html#ae0d2de87d6dbb8cfc2af6db5cd22e884" title=" " alt="" coords="294,157,442,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="492,204,422,187,422,182,497,203"/>
+<area shape="rect" id="Node000007" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Implementation of exponential functional test." alt="" coords="284,208,452,235"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="483,222,453,224,452,219,488,221"/>
+<area shape="rect" id="Node000008" href="$funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Implementation of logistic functional test." alt="" coords="291,259,444,285"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="492,240,423,261,421,256,497,238"/>
+<area shape="rect" id="Node000009" href="$class_model_body.html#ae183de04905b150e06271f616872282a" title=" " alt="" coords="312,309,424,336"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="536,244,498,274,455,300,425,311,424,306,452,295,495,270,532,246"/>
+<area shape="rect" id="Node000010" href="$unit___flow_8cpp.html#a110aa9a56d6c37c3bb9766fdd0fac326" title="Test the getSink method of Flow." alt="" coords="304,360,432,387"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="548,246,510,300,484,327,455,350,431,362,429,357,452,346,480,323,506,297,544,249"/>
+<area shape="rect" id="Node000013" href="$unit___flow_8cpp.html#a9ffcbd710bf5ffee61b55a88a0de70e1" title="Test the getSource method of Flow." alt="" coords="296,411,439,437"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="554,248,540,285,519,325,490,366,455,401,434,413,433,408,452,397,486,363,514,323,535,283,550,251"/>
+<area shape="rect" id="Node000003" href="$funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="144,208,193,235"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="287,41,284,46,244,85,213,131,191,175,177,209,172,206,186,173,209,129,240,82,280,42,291,37"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="265,223,194,224,193,219,270,220"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="295,256,194,230,193,225,300,253"/>
+<area shape="rect" id="Node000011" href="$unit___flow_8cpp.html#a7a974b6da4f54da9fbeccfcc8c6e2d71" title="Runs all unit tests for the Flow class." alt="" coords="103,385,234,412"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="286,384,235,393,234,388,291,383"/>
+<area shape="rect" id="Node000012" href="$unit_2main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function that runs all unit tests." alt="" coords="5,385,55,412"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="85,400,55,401,55,396,90,397"/>
+<area shape="poly" id="edge15_Node000013_Node000011" title=" " alt="" coords="278,413,234,410,234,404,284,413"/>
 </map>

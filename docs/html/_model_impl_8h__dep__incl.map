@@ -1,9 +1,7 @@
 <map id="ModelImpl.h" name="ModelImpl.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="156,5,249,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="78,5,170,32"/>
 <area shape="rect" id="Node000002" href="$_model_impl_8cpp.html" title=" " alt="" coords="5,80,112,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,41,85,82,83,77,162,38"/>
-<area shape="rect" id="Node000003" href="$funcional__tests_8cpp.html" title="Implementation of functional tests for MySim framework." alt="" coords="135,80,270,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,46,205,81,200,78,201,50"/>
-<area shape="rect" id="Node000004" href="$unit___model_8cpp.html" title=" " alt="" coords="293,80,402,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="242,37,325,79,320,80,241,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,43,72,82,68,78,100,44"/>
+<area shape="rect" id="Node000003" href="$unit___model_8cpp.html" title=" " alt="" coords="136,80,245,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,41,182,80,176,79,145,46"/>
 </map>

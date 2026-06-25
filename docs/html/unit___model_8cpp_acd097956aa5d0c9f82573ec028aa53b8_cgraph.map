@@ -1,5 +1,9 @@
 <map id="unit_Model_addFlow" name="unit_Model_addFlow">
-<area shape="rect" id="Node000001" title="Test the add(Flow*) method of Model." alt="" coords="5,5,146,32"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a24e46f6ee90908c0ed4e882094573800" title=" " alt="" coords="194,5,304,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,16,181,19,176,19,146,21"/>
+<area shape="rect" id="Node000001" title="Test the add(Flow*) method of Model." alt="" coords="5,56,146,83"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a24e46f6ee90908c0ed4e882094573800" title=" " alt="" coords="232,5,342,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,53,219,34,215,37,135,58"/>
+<area shape="rect" id="Node000003" href="$class_model_impl.html#acc901227084cb052e42a5948ee674e74" title=" " alt="" coords="202,56,372,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,67,189,69,184,70,146,72"/>
+<area shape="rect" id="Node000004" href="$class_model_impl.html#ac30e93e0b706a7a77b061b05139208e1" title=" " alt="" coords="194,107,381,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="135,81,216,102,211,103,134,86"/>
 </map>

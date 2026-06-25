@@ -1,22 +1,61 @@
 \chapter{My\+Vensim }
 \hypertarget{index}{}\label{index}\index{MyVensim@{MyVensim}}
-\label{index_md__r_e_a_d_m_e}%
-\Hypertarget{index_md__r_e_a_d_m_e}%
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
 
 
-Projeto da disciplina Engenharia de Software I.\hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Compilar}{Compilar}}\label{index_autotoc_md1}
+Projeto da disciplina Engenharia de Software I.\hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Sprint 5 -\/ Arquitetura em camadas, componentização e fábricas}{Sprint 5 -\/ Arquitetura em camadas, componentização e fábricas}}\label{index_autotoc_md1}
+Esta versão organiza o projeto em camadas, sem exigir que o usuário da API conheça as classes concretas de implementação.
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Camada de interface/\+\+API:\+}} {\ttfamily \doxylink{System_8h}{System.\+h}}, {\ttfamily \doxylink{Flow_8h}{Flow.\+h}}, {\ttfamily \doxylink{Model_8h}{Model.\+h}} e {\ttfamily My\+Sim.\+h}.
+\item {\bfseries{Camada de implementação:\+}} {\ttfamily \doxylink{classSystemImpl}{System\+Impl}}, {\ttfamily \doxylink{classFlowImpl}{Flow\+Impl}} e {\ttfamily \doxylink{classModelImpl}{Model\+Impl}}.
+\item {\bfseries{Camada de aplicação/\+testes:\+}} arquivos dentro de {\ttfamily test/\+}.
+\end{DoxyItemize}
+
+A componentização foi feita por separação de responsabilidades em arquivos/\+classes de interface e implementação. Nesta versão, o projeto é compilado diretamente pelo {\ttfamily Makefile}, sem gerar DLL/\+\+SO.\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Fábricas}{Fábricas}}\label{index_autotoc_md2}
+O usuário deve preferir criar objetos pela API pública:\+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}src/MySim.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\doxymbox{\hyperlink{classModel}{Model}}*\ model\ =\ \doxymbox{\hyperlink{classModel_a761d898cd7975e92719915f122330886}{Model::createModel}}();}
+\DoxyCodeLine{\doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ model-\/>\doxymbox{\hyperlink{classModel_a6b104d0394f9c52c334fe091f2a7ed8b}{createSystem}}(\textcolor{stringliteral}{"{}S1"{}},\ 100.0);}
+\DoxyCodeLine{\doxymbox{\hyperlink{classSystem}{System}}*\ s2\ =\ model-\/>\doxymbox{\hyperlink{classModel_a6b104d0394f9c52c334fe091f2a7ed8b}{createSystem}}(\textcolor{stringliteral}{"{}S2"{}},\ 0.0);}
+\DoxyCodeLine{\doxymbox{\hyperlink{classFlow}{Flow}}*\ f\ =\ model-\/>\doxymbox{\hyperlink{classModel_a1adc3a9da8ae4ff6fd69b01e24889adb}{createFlow}}<MyFlow>(s1,\ s2);}
+
+\end{DoxyCode}
+
+
+Também existe a fábrica direta de {\ttfamily \doxylink{classSystem}{System}}:\+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\doxymbox{\hyperlink{classSystem}{System}}*\ s\ =\ \doxymbox{\hyperlink{classSystem_a50d6fca66b0e97b49442f5d0cdb6cff0}{System::createSystem}}(\textcolor{stringliteral}{"{}S"{}},\ 10.0);}
+
+\end{DoxyCode}
+\hypertarget{index_autotoc_md3}{}\doxysection{\texorpdfstring{Compilar}{Compilar}}\label{index_autotoc_md3}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{make}
 
 \end{DoxyCode}
-\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Executar todos os testes}{Executar todos os testes}}\label{index_autotoc_md2}
+\hypertarget{index_autotoc_md4}{}\doxysection{\texorpdfstring{Executar todos os testes}{Executar todos os testes}}\label{index_autotoc_md4}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{make\ tests}
 
 \end{DoxyCode}
-\hypertarget{index_autotoc_md3}{}\doxysection{\texorpdfstring{Limpar bins}{Limpar bins}}\label{index_autotoc_md3}
+\hypertarget{index_autotoc_md5}{}\doxysection{\texorpdfstring{Executar separadamente}{Executar separadamente}}\label{index_autotoc_md5}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ funcional\_test}
+\DoxyCodeLine{make\ unit\_test}
+
+\end{DoxyCode}
+\hypertarget{index_autotoc_md6}{}\doxysection{\texorpdfstring{Limpar}{Limpar}}\label{index_autotoc_md6}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{make\ clean}

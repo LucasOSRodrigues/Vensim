@@ -1,20 +1,20 @@
 all:
 	mkdir -p bin
-	g++ -Wall -Wextra -std=c++11 test/*.cpp test/funcional/*.cpp src/*.cpp -o bin/funcional_tests
-	g++ -Wall -Wextra -std=c++11 test/*.cpp test/unit/*.cpp src/*.cpp -o bin/unit_tests
+	g++ -Wall -Wextra -std=c++11 src/*.cpp test/funcional/*.cpp -o bin/funcional_tests
+	g++ -Wall -Wextra -std=c++11 src/*.cpp test/unit/*.cpp test/funcional/flow_types.cpp -o bin/unit_tests
 
 tests: all
 	./bin/funcional_tests
 	./bin/unit_tests
 
-funcional_test:
+funcional:
 	mkdir -p bin
-	g++ -Wall -Wextra -std=c++11 test/*.cpp test/funcional/*.cpp src/*.cpp -o bin/funcional_tests
+	g++ -Wall -Wextra -std=c++11 src/*.cpp test/funcional/*.cpp -o bin/funcional_tests
 	./bin/funcional_tests
 
-unit_test: 
+unit:
 	mkdir -p bin
-	g++ -Wall -Wextra -std=c++11 test/*.cpp test/unit/*.cpp src/*.cpp -o bin/unit_tests
+	g++ -Wall -Wextra -std=c++11 src/*.cpp test/unit/*.cpp test/funcional/flow_types.cpp -o bin/unit_tests
 	./bin/unit_tests
 
 clean:

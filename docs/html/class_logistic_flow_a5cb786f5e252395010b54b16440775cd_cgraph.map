@@ -1,8 +1,10 @@
 <map id="LogisticFlow::LogisticFlow" name="LogisticFlow::LogisticFlow">
-<area shape="rect" id="Node000001" title="Copy constructor." alt="" coords="5,5,181,32"/>
-<area shape="rect" id="Node000002" href="$class_flow_impl.html#aa835ccb3c368c683aa95d660175a298b" title=" " alt="" coords="452,5,587,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,16,437,16,436,21,181,21"/>
-<area shape="rect" id="Node000003" href="$class_logistic_flow.html#ab0f7906cfe1a27e18a4f558124e53ee0" title="Default constructor." alt="" coords="229,31,404,57"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,26,216,32,211,32,181,31"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="404,30,434,29,440,29,405,36"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,181,40"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html#aa835ccb3c368c683aa95d660175a298b" title=" " alt="" coords="452,13,587,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,24,437,24,436,29,181,29"/>
+<area shape="rect" id="Node000004" href="$class_logistic_flow.html#ab0f7906cfe1a27e18a4f558124e53ee0" title=" " alt="" coords="229,39,404,65"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="181,34,216,40,211,40,181,39"/>
+<area shape="rect" id="Node000003" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title=" " alt="" coords="635,5,780,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="588,24,623,27,617,27,588,29"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="404,38,434,37,440,37,405,44"/>
 </map>

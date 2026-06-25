@@ -13,13 +13,6 @@
 #include <iostream>
 
 #include "funcional_tests.h"
-#include "../../src/SystemImpl.h"
-#include "../../src/ModelImpl.h"
-#include "../ComplexFlow.h"
-#include "../ExponentialFlow.h"
-#include "../LogisticFlow.h"
-
-
 
 using namespace std;
 
@@ -56,13 +49,10 @@ void exponentialFuncionalTest() {
     // P inicial = 10, tempo = 10.
     // Esperado: 10 * 1.3^10 = aproximadamente 137.858491849.
 
-    System* pop = new SystemImpl("Populacao", 10);
-    Flow* nascimento = new ExponentialFlow(nullptr, pop);
+    Model* model = Model::createModel("Exponential Model");
 
-    Model* model = new ModelImpl();
-
-    model->add(pop);
-    model->add(nascimento);
+    System* pop = model->createSystem("Populacao", 10);
+    model->createFlow<ExponentialFlow>("nascimento", nullptr, pop);
 
     model->run(0, 10);
 
@@ -70,9 +60,7 @@ void exponentialFuncionalTest() {
 
     cout << "exponentialFuncionalTest OK" << endl;
 
-    delete nascimento;
-    delete pop;
-    delete model;
+    Model::deleteModel("Exponential Model");
 }
 
 /**
@@ -87,13 +75,10 @@ void logisticalFuncionalTest() {
     // P inicial = 10, Pmax = 70, tempo = 100.
     // Esperado: população próxima de 70.
 
-    System* pop = new SystemImpl("Populacao", 10);
-    Flow* nascimento = new LogisticFlow(nullptr, pop, 70);
+    Model* model = Model::createModel("Logistic Model");
 
-    Model* model = new ModelImpl();
-
-    model->add(pop);
-    model->add(nascimento);
+    System* pop = model->createSystem("Populacao", 10);
+    model->createFlow<LogisticFlow>("nascimento", nullptr, pop, 70);
 
     model->run(0, 100);
 
@@ -101,9 +86,7 @@ void logisticalFuncionalTest() {
 
     cout << "logisticalFuncionalTest OK" << endl;
 
-    delete nascimento;
-    delete pop;
-    delete model;
+    Model::deleteModel("Logistic Model");
 }
 /**
  * @brief Implementation of complex functional test.
@@ -113,33 +96,20 @@ void logisticalFuncionalTest() {
  * components. Simulates 100 time units and verifies all final values.
  */
 void complexFuncionalTest() {
-    System* q1 = new SystemImpl("Q1", 100.0);
-    System* q2 = new SystemImpl("Q2", 0.0);
-    System* q3 = new SystemImpl("Q3", 100.0);
-    System* q4 = new SystemImpl("Q4", 0.0);
-    System* q5 = new SystemImpl("Q5", 0.0);
+    Model* model = Model::createModel("Complex Model");
 
-    Flow* f = new ComplexFlow(q1, q2);
-    Flow* g = new ComplexFlow(q1, q3);
-    Flow* r = new ComplexFlow(q2, q5);
-    Flow* t = new ComplexFlow(q2, q3);
-    Flow* u = new ComplexFlow(q3, q4);
-    Flow* v = new ComplexFlow(q4, q1);
+    System* q1 = model->createSystem("Q1", 100.0);
+    System* q2 = model->createSystem("Q2", 0.0);
+    System* q3 = model->createSystem("Q3", 100.0);
+    System* q4 = model->createSystem("Q4", 0.0);
+    System* q5 = model->createSystem("Q5", 0.0);
 
-    Model* model = new ModelImpl;
-
-    model->add(q1);
-    model->add(q2);
-    model->add(q3);
-    model->add(q4);
-    model->add(q5);
-
-    model->add(f);
-    model->add(g);
-    model->add(r);
-    model->add(t);
-    model->add(u);
-    model->add(v);
+    model->createFlow<ComplexFlow>("f", q1, q2);
+    model->createFlow<ComplexFlow>("g", q1, q3);
+    model->createFlow<ComplexFlow>("r", q2, q5);
+    model->createFlow<ComplexFlow>("t", q2, q3);
+    model->createFlow<ComplexFlow>("u", q3, q4);
+    model->createFlow<ComplexFlow>("v", q4, q1);
 
     model->run(0, 100);
 
@@ -150,4 +120,6 @@ void complexFuncionalTest() {
     assert(round4(q5->getValue()) == round4(16.4612));
 
     cout << "complexFuncionalTest OK" << endl;
+
+    Model::deleteModel("Complex Model");
 }
