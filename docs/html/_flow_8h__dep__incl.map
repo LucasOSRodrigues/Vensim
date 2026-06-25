@@ -1,37 +1,38 @@
 <map id="Flow.h" name="Flow.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="817,5,877,32"/>
-<area shape="rect" id="Node000002" href="$_flow_impl_8h.html" title=" " alt="" coords="272,80,358,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="801,29,358,89,358,84,803,24"/>
-<area shape="rect" id="Node000012" href="$_model_8h.html" title=" " alt="" coords="813,80,881,107"/>
-<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="849,46,849,81,845,78,845,50"/>
-<area shape="rect" id="Node000015" href="$unit___model_8cpp.html" title=" " alt="" coords="894,229,1003,256"/>
-<area shape="poly" id="edge20_Node000001_Node000015" title=" " alt="" coords="869,42,895,79,914,120,929,163,948,230,943,228,924,165,909,122,890,81,867,47"/>
-<area shape="rect" id="Node000003" href="$_complex_flow_8h.html" title="Definition of the ComplexFlow class." alt="" coords="331,155,443,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="339,115,377,155,372,154,337,120"/>
-<area shape="rect" id="Node000006" href="$_exponential_flow_8h.html" title="Definition of the ExponentialFlow class." alt="" coords="179,155,307,181"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="294,117,257,156,254,152,289,119"/>
-<area shape="rect" id="Node000008" href="$unit___flow_8cpp.html" title=" " alt="" coords="23,229,124,256"/>
-<area shape="poly" id="edge13_Node000002_Node000008" title=" " alt="" coords="256,113,214,133,168,157,121,195,86,231,82,227,117,191,166,152,211,128,261,111"/>
-<area shape="rect" id="Node000009" href="$_flow_impl_8cpp.html" title=" " alt="" coords="5,155,105,181"/>
-<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="257,113,102,157,100,152,258,108"/>
-<area shape="rect" id="Node000010" href="$_logistic_flow_8h.html" title="Definition of the LogisticFlow class." alt="" coords="478,155,582,181"/>
-<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="367,109,495,154,489,154,366,115"/>
-<area shape="rect" id="Node000004" href="$_complex_flow_8cpp.html" title="Implementation of the ComplexFlow class." alt="" coords="314,229,439,256"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="385,195,380,231,376,227,381,198"/>
-<area shape="rect" id="Node000005" href="$funcional__tests_8cpp.html" title="Implementation of functional tests for MySim framework." alt="" coords="462,229,597,256"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="426,186,507,229,502,228,425,191"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="308,183,482,228,477,229,307,188"/>
-<area shape="rect" id="Node000007" href="$_exponential_flow_8cpp.html" title="Implementation of the ExponentialFlow class." alt="" coords="148,229,290,256"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="236,195,225,231,221,227,232,198"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="202,189,104,231,102,226,197,187"/>
-<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="532,195,532,231,528,227,528,199"/>
-<area shape="rect" id="Node000011" href="$_logistic_flow_8cpp.html" title="Implementation of the LogisticFlow class." alt="" coords="621,229,740,256"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="570,186,657,229,651,228,569,191"/>
-<area shape="rect" id="Node000013" href="$_model_impl_8h.html" title=" " alt="" coords="769,155,861,181"/>
-<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="837,119,822,156,819,152,833,122"/>
-<area shape="poly" id="edge19_Node000012_Node000015" title=" " alt="" coords="866,117,942,230,937,228,863,122"/>
-<area shape="poly" id="edge17_Node000013_Node000005" title=" " alt="" coords="756,185,580,231,579,226,751,185"/>
-<area shape="rect" id="Node000014" href="$_model_impl_8cpp.html" title=" " alt="" coords="763,229,870,256"/>
-<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="817,195,818,231,814,227,814,199"/>
-<area shape="poly" id="edge18_Node000013_Node000015" title=" " alt="" coords="852,186,928,229,922,228,851,191"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="539,5,598,32"/>
+<area shape="rect" id="Node000002" href="$_flow_impl_8h.html" title=" " alt="" coords="176,80,262,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="522,31,263,86,261,81,526,27"/>
+<area shape="rect" id="Node000010" href="$_mock_flow_8h.html" title=" " alt="" coords="471,80,562,107"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="553,43,527,82,524,78,548,46"/>
+<area shape="rect" id="Node000013" href="$unit___model_8cpp.html" title=" " alt="" coords="652,229,762,256"/>
+<area shape="poly" id="edge20_Node000001_Node000013" title=" " alt="" coords="612,37,642,55,669,78,694,113,707,154,712,195,710,230,706,227,707,195,702,155,689,115,665,82,639,59,611,42"/>
+<area shape="rect" id="Node000014" href="$_model_8h.html" title=" " alt="" coords="588,80,655,107"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="587,42,615,80,610,79,586,47"/>
+<area shape="rect" id="Node000003" href="$_flow_impl_8cpp.html" title=" " alt="" coords="5,155,105,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="175,116,85,156,82,152,178,111"/>
+<area shape="rect" id="Node000004" href="$flow__types_8h.html" title=" " alt="" coords="129,155,224,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="206,118,186,156,182,153,202,122"/>
+<area shape="rect" id="Node000009" href="$unit___flow_8cpp.html" title=" " alt="" coords="396,229,498,256"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="234,117,259,150,290,179,343,208,398,229,393,230,341,213,287,183,255,153,233,122"/>
+<area shape="rect" id="Node000005" href="$flow__types_8cpp.html" title=" " alt="" coords="119,229,228,256"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="177,195,177,230,172,228,174,199"/>
+<area shape="rect" id="Node000006" href="$funcional__tests_8h.html" title="Functional tests for the MySim framework." alt="" coords="252,229,372,256"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="214,186,291,228,286,229,213,192"/>
+<area shape="rect" id="Node000007" href="$funcional__tests_8cpp.html" title="Implementation of functional tests for MySim framework." alt="" coords="181,304,316,331"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="293,267,261,306,258,301,289,269"/>
+<area shape="rect" id="Node000008" href="$funcional_2main_8cpp.html" title=" " alt="" coords="339,304,414,331"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="335,266,368,304,363,303,333,270"/>
+<area shape="rect" id="Node000011" href="$_mock_flow_8cpp.html" title=" " alt="" coords="300,155,405,181"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="471,114,382,156,380,152,476,112"/>
+<area shape="rect" id="Node000012" href="$mocks_8h.html" title=" " alt="" coords="481,155,552,181"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="518,120,519,156,514,153,515,125"/>
+<area shape="poly" id="edge12_Node000012_Node000009" title=" " alt="" coords="496,191,460,231,458,227,492,194"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="564,185,676,229,671,229,564,190"/>
+<area shape="poly" id="edge18_Node000014_Node000006" title=" " alt="" coords="576,111,469,157,335,231,333,226,467,152,571,113"/>
+<area shape="poly" id="edge19_Node000014_Node000013" title=" " alt="" coords="650,115,683,153,699,193,707,230,703,227,694,195,678,156,648,120"/>
+<area shape="rect" id="Node000015" href="$_model_impl_8h.html" title=" " alt="" coords="576,155,668,181"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="623,120,624,156,619,153,620,125"/>
+<area shape="poly" id="edge17_Node000015_Node000013" title=" " alt="" coords="649,189,695,229,690,228,647,194"/>
+<area shape="rect" id="Node000016" href="$_model_impl_8cpp.html" title=" " alt="" coords="522,229,628,256"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="608,193,585,231,581,227,603,196"/>
 </map>

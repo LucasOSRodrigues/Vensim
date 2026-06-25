@@ -1,5 +1,10 @@
 <map id="ModelImpl::operator=" name="ModelImpl::operator=">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,150,32"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a081505846c37ce9928f2176d77db4bc8" title=" " alt="" coords="198,5,347,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,16,185,19,179,19,150,21"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,150,57"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a18db22669456b44021e2714ed375c99c" title=" " alt="" coords="198,5,347,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,32,185,30,179,31,150,37"/>
+<area shape="rect" id="Node000004" href="$class_handle.html#a52e146e2a1427c8e7d3a692e9378185a" title="assignment operator" alt="" coords="210,56,335,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,51,197,59,192,59,150,56"/>
+<area shape="rect" id="Node000003" href="$class_handle.html#a6a72028918adf79c0ff8d9996e5e4107" title=" " alt="" coords="395,23,546,65"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,26,382,32,377,32,348,31"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="335,59,377,56,382,55,336,64"/>
 </map>

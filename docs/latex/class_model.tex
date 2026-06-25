@@ -10,7 +10,7 @@ Inheritance diagram for Model:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=155pt]{class_model__inherit__graph}
+\includegraphics[width=178pt]{class_model__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -19,7 +19,7 @@ Collaboration diagram for Model:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=136pt]{class_model__coll__graph}
+\includegraphics[width=165pt]{class_model__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -27,18 +27,33 @@ Collaboration diagram for Model:\+\nopagebreak
 \item 
 virtual \doxymbox{\hyperlink{class_model_af032d8433c87a0a3a431faf6563a1f03}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
 \item 
+virtual string \doxymbox{\hyperlink{class_model_aa5365ab557ae47efffdf14ba7a46dac8}{get\+Name}} () const =0
+\item 
+virtual void \doxymbox{\hyperlink{class_model_aa17012307c37e6527ae6b1d3fff540e0}{set\+Name}} (const string \&name)=0
+\item 
 virtual void \doxymbox{\hyperlink{class_model_afde6c25ab942f2eec7aedeaf8eec53fd}{add}} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}system)=0
 \item 
 virtual void \doxymbox{\hyperlink{class_model_ab7df81041f62f049cfc6e4d50dcaf721}{add}} (\doxymbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}flow)=0
 \item 
+virtual \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_model_a6b104d0394f9c52c334fe091f2a7ed8b}{create\+System}} (const string \&name="{}"{}, double value=0.\+0)=0
+\item 
+{\footnotesize template$<$typename FLOW\+\_\+\+TYPE, typename... Args$>$ }\\FLOW\+\_\+\+TYPE \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_model_a1adc3a9da8ae4ff6fd69b01e24889adb}{create\+Flow}} (Args... args)
+\item 
 virtual void \doxymbox{\hyperlink{class_model_a2c91b25ab51d25d3c7e6ec40e6f7f150}{run}} (int begin, int end)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{class_model}{Model}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_model_a761d898cd7975e92719915f122330886}{create\+Model}} (const string \&name="{}"{})
+\item 
+static void \doxymbox{\hyperlink{class_model_a25abe7087cc471a00d076aa75781ad48}{delete\+Model}} (const string \&name)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line \doxymbox{\hyperlink{_model_8h_source_l00007}{7}} of file \doxymbox{\hyperlink{_model_8h_source}{Model.\+h}}.
+Definition at line \doxymbox{\hyperlink{_model_8h_source_l00010}{10}} of file \doxymbox{\hyperlink{_model_8h_source}{Model.\+h}}.
 
 
 
@@ -53,11 +68,11 @@ virtual Model::\+\texorpdfstring{$\sim$}{\string~}\+Model (\begin{DoxyParamCapti
 
 
 
-Definition at line \doxymbox{\hyperlink{_model_8h_source_l00009}{9}} of file \doxymbox{\hyperlink{_model_8h_source}{Model.\+h}}.
+Definition at line \doxymbox{\hyperlink{_model_8h_source_l00012}{12}} of file \doxymbox{\hyperlink{_model_8h_source}{Model.\+h}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00009\ \{\}}
+\DoxyCodeLine{00012\ \{\}}
 
 \end{DoxyCode}
 
@@ -85,6 +100,162 @@ virtual void Model::\+add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{c
 
 Implemented in \doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{Model\+Impl}}.
 
+
+
+Referenced by \doxymbox{\hyperlink{_model_8h_source_l00026}{create\+Flow()}}.
+
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_afde6c25ab942f2eec7aedeaf8eec53fd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_a1adc3a9da8ae4ff6fd69b01e24889adb}\index{Model@{Model}!createFlow@{createFlow}}
+\index{createFlow@{createFlow}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{createFlow()}{createFlow()}}
+{\footnotesize\ttfamily \label{class_model_a1adc3a9da8ae4ff6fd69b01e24889adb} 
+template$<$typename FLOW\+\_\+\+TYPE, typename... Args$>$ \\
+FLOW\+\_\+\+TYPE \texorpdfstring{$\ast$}{*} Model::\+create\+Flow (\begin{DoxyParamCaption}\item[{Args...}]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_model_8h_source_l00026}{26}} of file \doxymbox{\hyperlink{_model_8h_source}{Model.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ FLOW\_TYPE*\ flow\ =\ \textcolor{keyword}{new}\ FLOW\_TYPE(args...);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_model_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(flow);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ flow;}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{class_model_afde6c25ab942f2eec7aedeaf8eec53fd}{add()}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00098}{complex\+Funcional\+Test()}}, \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00048}{exponential\+Funcional\+Test()}}, and \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00074}{logistical\+Funcional\+Test()}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_model_a1adc3a9da8ae4ff6fd69b01e24889adb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a1adc3a9da8ae4ff6fd69b01e24889adb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_a761d898cd7975e92719915f122330886}\index{Model@{Model}!createModel@{createModel}}
+\index{createModel@{createModel}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily \label{class_model_a761d898cd7975e92719915f122330886} 
+\doxymbox{\hyperlink{class_model}{Model}} \texorpdfstring{$\ast$}{*} Model::\+create\+Model (\begin{DoxyParamCaption}\item[{const string \&}]{name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00008}{8}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00009\ \ \ \ \ Model*\ model\ =\ \textcolor{keyword}{new}\ ModelImpl(name);}
+\DoxyCodeLine{00010\ \ \ \ \ \doxymbox{\hyperlink{_model_impl_8cpp_af157ed6e163b7e7e7af5c36d158e46b3}{models}}.push\_back(model);}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordflow}{return}\ model;}
+\DoxyCodeLine{00012\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_model_impl_8cpp_source_l00006}{models}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00098}{complex\+Funcional\+Test()}}, \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00048}{exponential\+Funcional\+Test()}}, and \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00074}{logistical\+Funcional\+Test()}}.
+
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a761d898cd7975e92719915f122330886_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_a6b104d0394f9c52c334fe091f2a7ed8b}\index{Model@{Model}!createSystem@{createSystem}}
+\index{createSystem@{createSystem}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{createSystem()}{createSystem()}}
+{\footnotesize\ttfamily \label{class_model_a6b104d0394f9c52c334fe091f2a7ed8b} 
+virtual \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} Model::\+create\+System (\begin{DoxyParamCaption}\item[{const string \&}]{name}{ = {\ttfamily "{}"{}}, }\item[{double}]{value}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{class_model_impl_a293f79485482b3b9e9d5121c89712b8e}{Model\+Impl}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00098}{complex\+Funcional\+Test()}}, \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00048}{exponential\+Funcional\+Test()}}, and \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00074}{logistical\+Funcional\+Test()}}.
+
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a6b104d0394f9c52c334fe091f2a7ed8b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_a25abe7087cc471a00d076aa75781ad48}\index{Model@{Model}!deleteModel@{deleteModel}}
+\index{deleteModel@{deleteModel}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{deleteModel()}{deleteModel()}}
+{\footnotesize\ttfamily \label{class_model_a25abe7087cc471a00d076aa75781ad48} 
+void Model::\+delete\+Model (\begin{DoxyParamCaption}\item[{const string \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_model_impl_8cpp_source_l00014}{14}} of file \doxymbox{\hyperlink{_model_impl_8cpp_source}{Model\+Impl.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ it\ =\ \doxymbox{\hyperlink{_model_impl_8cpp_af157ed6e163b7e7e7af5c36d158e46b3}{models}}.begin();\ it\ !=\ \doxymbox{\hyperlink{_model_impl_8cpp_af157ed6e163b7e7e7af5c36d158e46b3}{models}}.end();\ ++it)\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((*it)-\/>getName()\ ==\ name)\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ *it;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{_model_impl_8cpp_af157ed6e163b7e7e7af5c36d158e46b3}{models}}.erase(it);}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00021\ \ \ \ \ \}}
+\DoxyCodeLine{00022\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_model_impl_8cpp_source_l00006}{models}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00098}{complex\+Funcional\+Test()}}, \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00048}{exponential\+Funcional\+Test()}}, and \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00074}{logistical\+Funcional\+Test()}}.
+
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a25abe7087cc471a00d076aa75781ad48_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_aa5365ab557ae47efffdf14ba7a46dac8}\index{Model@{Model}!getName@{getName}}
+\index{getName@{getName}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_model_aa5365ab557ae47efffdf14ba7a46dac8} 
+virtual string Model::\+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{class_model_impl_a8353ed17c5199ee97a5bdda61ec8f63c}{Model\+Impl}}.
+
 \Hypertarget{class_model_a2c91b25ab51d25d3c7e6ec40e6f7f150}\index{Model@{Model}!run@{run}}
 \index{run@{run}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{run()}{run()}}
@@ -97,6 +268,28 @@ Implemented in \doxymbox{\hyperlink{class_model_impl_aafde5d9c89272eba49bf7af150
 
 
 
-The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+Referenced by \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00098}{complex\+Funcional\+Test()}}, \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00048}{exponential\+Funcional\+Test()}}, and \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00074}{logistical\+Funcional\+Test()}}.
+
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a2c91b25ab51d25d3c7e6ec40e6f7f150_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_aa17012307c37e6527ae6b1d3fff540e0}\index{Model@{Model}!setName@{setName}}
+\index{setName@{setName}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{class_model_aa17012307c37e6527ae6b1d3fff540e0} 
+virtual void Model::\+set\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{class_model_impl_a50a11c4d140a32470e41fa3ac952c6d2}{Model\+Impl}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{_model_8h}{Model.\+h}}\end{DoxyCompactItemize}
+\doxymbox{\hyperlink{_model_8h}{Model.\+h}}\item 
+\doxymbox{\hyperlink{_model_impl_8cpp}{Model\+Impl.\+cpp}}\end{DoxyCompactItemize}

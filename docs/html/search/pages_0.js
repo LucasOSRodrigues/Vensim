@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bins_0',['Limpar bins',['../index.html#autotoc_md3',1,'']]]
+  ['5_20arquitetura_20em_20camadas_20componentização_20e_20fábricas_0',['Sprint 5 - Arquitetura em camadas, componentização e fábricas',['../index.html#autotoc_md1',1,'']]]
 ];

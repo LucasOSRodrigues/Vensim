@@ -35,7 +35,6 @@ void unit_Model_copyConstructor(void) {
     assert(copy.getSystemCount() == 1);
     assert(copy.getFlowCount() == 0);
 
-    delete s1;
 }
 
 /**
@@ -70,7 +69,6 @@ void unit_Model_assignmentOperator(void) {
     m2 = m2;
     assert(m2.getSystemCount() == 1);
 
-    delete s1;
 }
 
 /**
@@ -94,9 +92,6 @@ void unit_Model_addSystem(void) {
     m.add(s3);
     assert(m.getSystemCount() == 3);
 
-    delete s1;
-    delete s2;
-    delete s3;
 }
 
 /**
@@ -118,8 +113,6 @@ void unit_Model_addFlow(void) {
     assert(m.getSystemCount() == 2);
     assert(m.getFlowCount() == 0);
 
-    delete source;
-    delete sink;
 }
 
 /**
@@ -150,8 +143,6 @@ void unit_Model_run(void) {
     m.run(0, 100);
     assert(m.getSystemCount() == 2);
 
-    delete s1;
-    delete s2;
 }
 
 /**

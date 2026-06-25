@@ -1,5 +1,7 @@
 <map id="unit_Model_addSystem" name="unit_Model_addSystem">
-<area shape="rect" id="Node000001" title="Test the add(System*) method of Model." alt="" coords="5,5,163,32"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a24e46f6ee90908c0ed4e882094573800" title=" " alt="" coords="211,5,321,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,16,198,19,192,19,163,21"/>
+<area shape="rect" id="Node000001" title="Test the add(System*) method of Model." alt="" coords="5,31,163,57"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a24e46f6ee90908c0ed4e882094573800" title=" " alt="" coords="249,5,360,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,32,236,26,231,27,164,38"/>
+<area shape="rect" id="Node000003" href="$class_model_impl.html#ac30e93e0b706a7a77b061b05139208e1" title=" " alt="" coords="211,56,398,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,50,198,57,193,57,163,56"/>
 </map>

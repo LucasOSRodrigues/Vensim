@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['testflow_0',['TestFlow',['../class_test_flow.html#ac4a8a331b076964c8a82378ec0556f94',1,'TestFlow::TestFlow()'],['../class_test_flow.html#a5eece2293566ebe097f687853970264b',1,'TestFlow::TestFlow(System *source, System *sink)']]]
+  ['operator_3d_0',['operator=',['../classFlowImpl.html#a49655b3810ecbea9407f860122e20dc4',1,'FlowImpl::operator=()'],['../classHandle.html#a52e146e2a1427c8e7d3a692e9378185a',1,'Handle::operator=()'],['../classBody.html#a09b11f8f6f2273daafb8c49ba92da170',1,'Body::operator=()'],['../classHandle.html#a00310e5c28d6f9083fa8e528cc17de78',1,'Handle::operator=()'],['../classBody.html#a09b11f8f6f2273daafb8c49ba92da170',1,'Body::operator=()'],['../classModelImpl.html#aebfc947e745a94b9610aba097cd1d6f7',1,'ModelImpl::operator=()'],['../classSystemImpl.html#a11c027096cb0e824bf8306c33e0a3903',1,'SystemImpl::operator=()'],['../classExponentialFlow.html#a231385587bb12964a56e5e46ac2aa8e4',1,'ExponentialFlow::operator=()'],['../classLogisticFlow.html#a2bf490b7a58b8312d3841b5d3b3955f5',1,'LogisticFlow::operator=()'],['../classComplexFlow.html#a6be113d8e13ab3330692c4f681a11875',1,'ComplexFlow::operator=()']]]
 ];

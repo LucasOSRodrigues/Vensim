@@ -126,65 +126,90 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_model_im
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl__inherit__graph.svg" width="111" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Collaboration diagram for ModelImpl:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl__coll__graph.svg" width="111" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a081505846c37ce9928f2176d77db4bc8" id="r_a081505846c37ce9928f2176d77db4bc8"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a081505846c37ce9928f2176d77db4bc8">ModelImpl</a> ()</td></tr>
+<tr class="memitem:a18db22669456b44021e2714ed375c99c" id="r_a18db22669456b44021e2714ed375c99c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a18db22669456b44021e2714ed375c99c">ModelImpl</a> (const string &amp;name=&quot;&quot;)</td></tr>
 <tr class="memitem:a427f422a6d356b94afbe3937d6452a2b" id="r_a427f422a6d356b94afbe3937d6452a2b"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a427f422a6d356b94afbe3937d6452a2b">~ModelImpl</a> ()</td></tr>
 <tr class="memitem:a71036194d088aeb1830feea80c986c3a" id="r_a71036194d088aeb1830feea80c986c3a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a71036194d088aeb1830feea80c986c3a">ModelImpl</a> (const <a class="el" href="class_model_impl.html">ModelImpl</a> &amp;other)</td></tr>
 <tr class="memitem:aebfc947e745a94b9610aba097cd1d6f7" id="r_aebfc947e745a94b9610aba097cd1d6f7"><td class="memItemLeft"><a class="el" href="class_model_impl.html">ModelImpl</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aebfc947e745a94b9610aba097cd1d6f7">operator=</a> (const <a class="el" href="class_model_impl.html">ModelImpl</a> &amp;other)</td></tr>
+<tr class="memitem:a8353ed17c5199ee97a5bdda61ec8f63c" id="r_a8353ed17c5199ee97a5bdda61ec8f63c"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a8353ed17c5199ee97a5bdda61ec8f63c">getName</a> () const override</td></tr>
+<tr class="memitem:a50a11c4d140a32470e41fa3ac952c6d2" id="r_a50a11c4d140a32470e41fa3ac952c6d2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a50a11c4d140a32470e41fa3ac952c6d2">setName</a> (const string &amp;name) override</td></tr>
 <tr class="memitem:a24e46f6ee90908c0ed4e882094573800" id="r_a24e46f6ee90908c0ed4e882094573800"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a24e46f6ee90908c0ed4e882094573800">add</a> (<a class="el" href="class_system.html">System</a> *system) override</td></tr>
 <tr class="memitem:a3e8843e5353f40ab30afcf19b4f13a67" id="r_a3e8843e5353f40ab30afcf19b4f13a67"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3e8843e5353f40ab30afcf19b4f13a67">add</a> (<a class="el" href="class_flow.html">Flow</a> *flow) override</td></tr>
+<tr class="memitem:a293f79485482b3b9e9d5121c89712b8e" id="r_a293f79485482b3b9e9d5121c89712b8e"><td class="memItemLeft"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a293f79485482b3b9e9d5121c89712b8e">createSystem</a> (const string &amp;name=&quot;&quot;, double value=0.0) override</td></tr>
 <tr class="memitem:aafde5d9c89272eba49bf7af150e7fc25" id="r_aafde5d9c89272eba49bf7af150e7fc25"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aafde5d9c89272eba49bf7af150e7fc25">run</a> (int begin, int end) override</td></tr>
+<tr class="memitem:ac30e93e0b706a7a77b061b05139208e1" id="r_ac30e93e0b706a7a77b061b05139208e1"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#ac30e93e0b706a7a77b061b05139208e1">getSystemCount</a> () const</td></tr>
+<tr class="memitem:acc901227084cb052e42a5948ee674e74" id="r_acc901227084cb052e42a5948ee674e74"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#acc901227084cb052e42a5948ee674e74">getFlowCount</a> () const</td></tr>
 <tr class="inherit_header pub_methods_class_model"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_model')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_model.html">Model</a></td></tr>
 <tr class="memitem:af032d8433c87a0a3a431faf6563a1f03 inherit pub_methods_class_model" id="r_af032d8433c87a0a3a431faf6563a1f03"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="class_model.html#af032d8433c87a0a3a431faf6563a1f03">~Model</a> ()</td></tr>
+<tr class="memitem:a1adc3a9da8ae4ff6fd69b01e24889adb inherit pub_methods_class_model" id="r_a1adc3a9da8ae4ff6fd69b01e24889adb"><td class="memTemplParams" colspan="2">template&lt;typename FLOW_TYPE, typename... Args&gt; </td></tr>
+<tr class="memitem:a1adc3a9da8ae4ff6fd69b01e24889adb inherit pub_methods_class_model template"><td class="memItemLeft">FLOW_TYPE *&#160;</td><td class="memItemRight"><a class="el" href="class_model.html#a1adc3a9da8ae4ff6fd69b01e24889adb">createFlow</a> (Args... args)</td></tr>
+<tr class="inherit_header pub_methods_class_handle"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_handle')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_handle.html">Handle&lt; ModelBody &gt;</a></td></tr>
+<tr class="memitem:a6a72028918adf79c0ff8d9996e5e4107 inherit pub_methods_class_handle" id="r_a6a72028918adf79c0ff8d9996e5e4107"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_handle.html#a6a72028918adf79c0ff8d9996e5e4107">Handle</a> ()</td></tr>
+<tr class="memdesc:a6a72028918adf79c0ff8d9996e5e4107 inherit pub_methods_class_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <br /></td></tr>
+<tr class="memitem:addd59fdf43baa517a06d44e1125b5ab1 inherit pub_methods_class_handle" id="r_addd59fdf43baa517a06d44e1125b5ab1"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="class_handle.html#addd59fdf43baa517a06d44e1125b5ab1">~Handle</a> ()</td></tr>
+<tr class="memdesc:addd59fdf43baa517a06d44e1125b5ab1 inherit pub_methods_class_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="memitem:a52e146e2a1427c8e7d3a692e9378185a inherit pub_methods_class_handle" id="r_a52e146e2a1427c8e7d3a692e9378185a"><td class="memItemLeft"><a class="el" href="class_handle.html">Handle</a>&lt; <a class="el" href="class_model_body.html">ModelBody</a> &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="class_handle.html#a52e146e2a1427c8e7d3a692e9378185a">operator=</a> (const <a class="el" href="class_handle.html">Handle</a> &amp;hd)</td></tr>
+<tr class="memdesc:a52e146e2a1427c8e7d3a692e9378185a inherit pub_methods_class_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment operator  <br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a767e2054ecaaa8d1401ef2c962adc3e2" id="r_a767e2054ecaaa8d1401ef2c962adc3e2"><td class="memItemLeft">vector&lt; <a class="el" href="class_system.html">System</a> * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a767e2054ecaaa8d1401ef2c962adc3e2">systems</a></td></tr>
-<tr class="memitem:a9be1dcdb4753e5d78e0c817261297dcf" id="r_a9be1dcdb4753e5d78e0c817261297dcf"><td class="memItemLeft">vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a9be1dcdb4753e5d78e0c817261297dcf">flows</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_model"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_model')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Static Public Member Functions inherited from <a class="el" href="class_model.html">Model</a></td></tr>
+<tr class="memitem:a761d898cd7975e92719915f122330886 inherit pub_static_methods_class_model" id="r_a761d898cd7975e92719915f122330886"><td class="memItemLeft">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight"><a class="el" href="class_model.html#a761d898cd7975e92719915f122330886">createModel</a> (const string &amp;name=&quot;&quot;)</td></tr>
+<tr class="memitem:a25abe7087cc471a00d076aa75781ad48 inherit pub_static_methods_class_model" id="r_a25abe7087cc471a00d076aa75781ad48"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="class_model.html#a25abe7087cc471a00d076aa75781ad48">deleteModel</a> (const string &amp;name)</td></tr>
+<tr class="inherit_header pro_attribs_class_handle"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_handle')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="class_handle.html">Handle&lt; ModelBody &gt;</a></td></tr>
+<tr class="memitem:a8c7b8c15aa4f494a1eba3f3d5017ffda inherit pro_attribs_class_handle" id="r_a8c7b8c15aa4f494a1eba3f3d5017ffda"><td class="memItemLeft"><a class="el" href="class_model_body.html">ModelBody</a> *&#160;</td><td class="memItemRight"><a class="el" href="class_handle.html#a8c7b8c15aa4f494a1eba3f3d5017ffda">pImpl_</a></td></tr>
+<tr class="memdesc:a8c7b8c15aa4f494a1eba3f3d5017ffda inherit pro_attribs_class_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">referência para a implementação  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_model_impl_8h_source.html#l00010">10</a> of file <a class="el" href="_model_impl_8h_source.html">ModelImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_impl_8h_source.html#l00038">38</a> of file <a class="el" href="_model_impl_8h_source.html">ModelImpl.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a081505846c37ce9928f2176d77db4bc8" name="a081505846c37ce9928f2176d77db4bc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a081505846c37ce9928f2176d77db4bc8">&#9670;&#160;</a></span>ModelImpl() <span class="overload">[1/2]</span></h2>
+<a id="a18db22669456b44021e2714ed375c99c" name="a18db22669456b44021e2714ed375c99c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18db22669456b44021e2714ed375c99c">&#9670;&#160;</a></span>ModelImpl() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ModelImpl::ModelImpl </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="_model_impl_8cpp_source.html#l00007">ModelImpl()</a>, <a class="el" href="_model_impl_8cpp_source.html#l00010">operator=()</a>, and <a class="el" href="#a427f422a6d356b94afbe3937d6452a2b">~ModelImpl()</a>.</p>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00075">75</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>                                       : <a class="code hl_function" href="class_handle.html#a6a72028918adf79c0ff8d9996e5e4107">Handle&lt;ModelBody&gt;</a>() {</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_variable" href="class_handle.html#a8c7b8c15aa4f494a1eba3f3d5017ffda">pImpl_</a>-&gt;setName(name);</div>
+<div class="line"><span class="lineno">   77</span>}</div>
+<div class="ttc" id="aclass_handle_html_a6a72028918adf79c0ff8d9996e5e4107"><div class="ttname"><a href="class_handle.html#a6a72028918adf79c0ff8d9996e5e4107">Handle&lt; ModelBody &gt;::Handle</a></div><div class="ttdeci">Handle()</div><div class="ttdef"><b>Definition</b> <a href="handle_body_8h_source.html#l00017">handleBody.h:34</a></div></div>
+<div class="ttc" id="aclass_handle_html_a8c7b8c15aa4f494a1eba3f3d5017ffda"><div class="ttname"><a href="class_handle.html#a8c7b8c15aa4f494a1eba3f3d5017ffda">Handle&lt; ModelBody &gt;::pImpl_</a></div><div class="ttdeci">ModelBody * pImpl_</div><div class="ttdef"><b>Definition</b> <a href="handle_body_8h_source.html#l00071">handleBody.h:71</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="handle_body_8h_source.html#l00034">Handle&lt; ModelBody &gt;::Handle()</a>, and <a class="el" href="handle_body_8h_source.html#l00071">Handle&lt; ModelBody &gt;::pImpl_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_model_impl_8cpp_source.html#l00081">ModelImpl()</a>, <a class="el" href="_model_impl_8cpp_source.html#l00083">operator=()</a>, and <a class="el" href="#a427f422a6d356b94afbe3937d6452a2b">~ModelImpl()</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_a081505846c37ce9928f2176d77db4bc8_icgraph.svg" width="366" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_a18db22669456b44021e2714ed375c99c_cgraph.svg" width="360" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_a18db22669456b44021e2714ed375c99c_icgraph.svg" width="366" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -212,12 +237,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="#a081505846c37ce9928f2176d77db4bc8">ModelImpl()</a>.</p>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="_model_impl_8cpp_source.html#l00075">ModelImpl()</a>.</p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_a427f422a6d356b94afbe3937d6452a2b_cgraph.svg" width="366" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_a427f422a6d356b94afbe3937d6452a2b_cgraph.svg" width="566" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -237,17 +262,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00007">7</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    8</span>    : <a class="code hl_variable" href="#a767e2054ecaaa8d1401ef2c962adc3e2">systems</a>(other.<a class="code hl_variable" href="#a767e2054ecaaa8d1401ef2c962adc3e2">systems</a>), <a class="code hl_variable" href="#a9be1dcdb4753e5d78e0c817261297dcf">flows</a>(other.<a class="code hl_variable" href="#a9be1dcdb4753e5d78e0c817261297dcf">flows</a>) {}</div>
-<div class="ttc" id="aclass_model_impl_html_a767e2054ecaaa8d1401ef2c962adc3e2"><div class="ttname"><a href="#a767e2054ecaaa8d1401ef2c962adc3e2">ModelImpl::systems</a></div><div class="ttdeci">vector&lt; System * &gt; systems</div><div class="ttdef"><b>Definition</b> <a href="_model_impl_8h_source.html#l00012">ModelImpl.h:12</a></div></div>
-<div class="ttc" id="aclass_model_impl_html_a9be1dcdb4753e5d78e0c817261297dcf"><div class="ttname"><a href="#a9be1dcdb4753e5d78e0c817261297dcf">ModelImpl::flows</a></div><div class="ttdeci">vector&lt; Flow * &gt; flows</div><div class="ttdef"><b>Definition</b> <a href="_model_impl_8h_source.html#l00013">ModelImpl.h:13</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00081">81</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>: <a class="code hl_function" href="class_handle.html#a6a72028918adf79c0ff8d9996e5e4107">Handle&lt;ModelBody&gt;</a>(other) {}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_model_impl_8h_source.html#l00013">flows</a>, <a class="el" href="#a081505846c37ce9928f2176d77db4bc8">ModelImpl()</a>, and <a class="el" href="_model_impl_8h_source.html#l00012">systems</a>.</p>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="handle_body_8h_source.html#l00034">Handle&lt; ModelBody &gt;::Handle()</a>, and <a class="el" href="_model_impl_8cpp_source.html#l00075">ModelImpl()</a>.</p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_a71036194d088aeb1830feea80c986c3a_cgraph.svg" width="358" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_a71036194d088aeb1830feea80c986c3a_cgraph.svg" width="558" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -278,12 +301,10 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_model.html#ab7df81041f62f049cfc6e4d50dcaf721">Model</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00022">22</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>                              {</div>
-<div class="line"><span class="lineno">   23</span>    <a class="code hl_variable" href="#a9be1dcdb4753e5d78e0c817261297dcf">flows</a>.push_back(flow);</div>
-<div class="line"><span class="lineno">   24</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00091">91</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>{ <a class="code hl_variable" href="class_handle.html#a8c7b8c15aa4f494a1eba3f3d5017ffda">pImpl_</a>-&gt;add(flow); }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_model_impl_8h_source.html#l00013">flows</a>.</p>
+<p class="reference">References <a class="el" href="handle_body_8h_source.html#l00071">Handle&lt; ModelBody &gt;::pImpl_</a>.</p>
 
 </div>
 </div>
@@ -312,19 +333,145 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd">Model</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00018">18</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>                                  {</div>
-<div class="line"><span class="lineno">   19</span>    <a class="code hl_variable" href="#a767e2054ecaaa8d1401ef2c962adc3e2">systems</a>.push_back(system);</div>
-<div class="line"><span class="lineno">   20</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00090">90</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{ <a class="code hl_variable" href="class_handle.html#a8c7b8c15aa4f494a1eba3f3d5017ffda">pImpl_</a>-&gt;add(system); }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_model_impl_8h_source.html#l00012">systems</a>.</p>
+<p class="reference">References <a class="el" href="handle_body_8h_source.html#l00071">Handle&lt; ModelBody &gt;::pImpl_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="funcional__tests_8cpp_source.html#l00107">complexFuncionalTest()</a>, <a class="el" href="funcional__tests_8cpp_source.html#l00057">exponentialFuncionalTest()</a>, <a class="el" href="funcional__tests_8cpp_source.html#l00082">logisticalFuncionalTest()</a>, <a class="el" href="unit___model_8cpp_source.html#l00103">unit_Model_addFlow()</a>, <a class="el" href="unit___model_8cpp_source.html#l00077">unit_Model_addSystem()</a>, <a class="el" href="unit___model_8cpp_source.html#l00057">unit_Model_assignmentOperator()</a>, <a class="el" href="unit___model_8cpp_source.html#l00028">unit_Model_copyConstructor()</a>, and <a class="el" href="unit___model_8cpp_source.html#l00125">unit_Model_run()</a>.</p>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="unit___model_8cpp_source.html#l00104">unit_Model_addFlow()</a>, <a class="el" href="unit___model_8cpp_source.html#l00079">unit_Model_addSystem()</a>, <a class="el" href="unit___model_8cpp_source.html#l00057">unit_Model_assignmentOperator()</a>, <a class="el" href="unit___model_8cpp_source.html#l00028">unit_Model_copyConstructor()</a>, and <a class="el" href="unit___model_8cpp_source.html#l00124">unit_Model_run()</a>.</p>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_a24e46f6ee90908c0ed4e882094573800_icgraph.svg" width="662" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_a24e46f6ee90908c0ed4e882094573800_icgraph.svg" width="662" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a293f79485482b3b9e9d5121c89712b8e" name="a293f79485482b3b9e9d5121c89712b8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293f79485482b3b9e9d5121c89712b8e">&#9670;&#160;</a></span>createSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system.html">System</a> * ModelImpl::createSystem </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_model.html#a6b104d0394f9c52c334fe091f2a7ed8b">Model</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00092">92</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_handle.html#a8c7b8c15aa4f494a1eba3f3d5017ffda">pImpl_</a>-&gt;createSystem(name, value); }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="handle_body_8h_source.html#l00071">Handle&lt; ModelBody &gt;::pImpl_</a>.</p>
+
+</div>
+</div>
+<a id="acc901227084cb052e42a5948ee674e74" name="acc901227084cb052e42a5948ee674e74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc901227084cb052e42a5948ee674e74">&#9670;&#160;</a></span>getFlowCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ModelImpl::getFlowCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00095">95</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_handle.html#a8c7b8c15aa4f494a1eba3f3d5017ffda">pImpl_</a>-&gt;getFlowCount(); }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="handle_body_8h_source.html#l00071">Handle&lt; ModelBody &gt;::pImpl_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="unit___model_8cpp_source.html#l00104">unit_Model_addFlow()</a>, <a class="el" href="unit___model_8cpp_source.html#l00028">unit_Model_copyConstructor()</a>, and <a class="el" href="unit___model_8cpp_source.html#l00015">unit_Model_defaultConstructor()</a>.</p>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_acc901227084cb052e42a5948ee674e74_icgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a8353ed17c5199ee97a5bdda61ec8f63c" name="a8353ed17c5199ee97a5bdda61ec8f63c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8353ed17c5199ee97a5bdda61ec8f63c">&#9670;&#160;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ModelImpl::getName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_model.html#aa5365ab557ae47efffdf14ba7a46dac8">Model</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00088">88</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_handle.html#a8c7b8c15aa4f494a1eba3f3d5017ffda">pImpl_</a>-&gt;getName(); }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="handle_body_8h_source.html#l00071">Handle&lt; ModelBody &gt;::pImpl_</a>.</p>
+
+</div>
+</div>
+<a id="ac30e93e0b706a7a77b061b05139208e1" name="ac30e93e0b706a7a77b061b05139208e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac30e93e0b706a7a77b061b05139208e1">&#9670;&#160;</a></span>getSystemCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ModelImpl::getSystemCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00094">94</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_handle.html#a8c7b8c15aa4f494a1eba3f3d5017ffda">pImpl_</a>-&gt;getSystemCount(); }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="handle_body_8h_source.html#l00071">Handle&lt; ModelBody &gt;::pImpl_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="unit___model_8cpp_source.html#l00104">unit_Model_addFlow()</a>, <a class="el" href="unit___model_8cpp_source.html#l00079">unit_Model_addSystem()</a>, <a class="el" href="unit___model_8cpp_source.html#l00057">unit_Model_assignmentOperator()</a>, <a class="el" href="unit___model_8cpp_source.html#l00028">unit_Model_copyConstructor()</a>, <a class="el" href="unit___model_8cpp_source.html#l00015">unit_Model_defaultConstructor()</a>, and <a class="el" href="unit___model_8cpp_source.html#l00124">unit_Model_run()</a>.</p>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_ac30e93e0b706a7a77b061b05139208e1_icgraph.svg" width="100%" height="518"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -344,21 +491,19 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00010">10</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>                                                    {</div>
-<div class="line"><span class="lineno">   11</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) {</div>
-<div class="line"><span class="lineno">   12</span>        <a class="code hl_variable" href="#a767e2054ecaaa8d1401ef2c962adc3e2">systems</a> = other.<a class="code hl_variable" href="#a767e2054ecaaa8d1401ef2c962adc3e2">systems</a>;</div>
-<div class="line"><span class="lineno">   13</span>        <a class="code hl_variable" href="#a9be1dcdb4753e5d78e0c817261297dcf">flows</a> = other.<a class="code hl_variable" href="#a9be1dcdb4753e5d78e0c817261297dcf">flows</a>;</div>
-<div class="line"><span class="lineno">   14</span>    }</div>
-<div class="line"><span class="lineno">   15</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   16</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00083">83</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>                                                    {</div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_function" href="class_handle.html#a52e146e2a1427c8e7d3a692e9378185a">Handle&lt;ModelBody&gt;::operator=</a>(other);</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   86</span>}</div>
+<div class="ttc" id="aclass_handle_html_a52e146e2a1427c8e7d3a692e9378185a"><div class="ttname"><a href="class_handle.html#a52e146e2a1427c8e7d3a692e9378185a">Handle::operator=</a></div><div class="ttdeci">Handle&lt; T &gt; &amp; operator=(const Handle &amp;hd)</div><div class="ttdoc">assignment operator</div><div class="ttdef"><b>Definition</b> <a href="handle_body_8h_source.html#l00059">handleBody.h:59</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_model_impl_8h_source.html#l00013">flows</a>, <a class="el" href="#a081505846c37ce9928f2176d77db4bc8">ModelImpl()</a>, and <a class="el" href="_model_impl_8h_source.html#l00012">systems</a>.</p>
-<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="_model_impl_8cpp_source.html#l00075">ModelImpl()</a>, and <a class="el" href="handle_body_8h_source.html#l00059">Handle&lt; T &gt;::operator=()</a>.</p>
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_aebfc947e745a94b9610aba097cd1d6f7_cgraph.svg" width="352" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_aebfc947e745a94b9610aba097cd1d6f7_cgraph.svg" width="552" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -392,59 +537,23 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_model.html#a2c91b25ab51d25d3c7e6ec40e6f7f150">Model</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00026">26</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   26</span>                                      {</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> time = begin; time &lt; end; time++) {</div>
-<div class="line"><span class="lineno">   28</span>        vector&lt;double&gt; values;</div>
-<div class="line"><span class="lineno">   29</span> </div>
-<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> flow : <a class="code hl_variable" href="#a9be1dcdb4753e5d78e0c817261297dcf">flows</a>) {</div>
-<div class="line"><span class="lineno">   31</span>            values.push_back(flow-&gt;execute());</div>
-<div class="line"><span class="lineno">   32</span>        }</div>
-<div class="line"><span class="lineno">   33</span> </div>
-<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="#a9be1dcdb4753e5d78e0c817261297dcf">flows</a>.size(); i++) {</div>
-<div class="line"><span class="lineno">   35</span>            Flow* flow = <a class="code hl_variable" href="#a9be1dcdb4753e5d78e0c817261297dcf">flows</a>[i];</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>            System* source = flow-&gt;<a class="code hl_function" href="class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8">getSource</a>();</div>
-<div class="line"><span class="lineno">   38</span>            System* sink = flow-&gt;<a class="code hl_function" href="class_flow.html#a6848543de3b393e4ade8e20581b20b13">getSink</a>();</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>            <span class="keywordtype">double</span> value = values[i];</div>
-<div class="line"><span class="lineno">   41</span> </div>
-<div class="line"><span class="lineno">   42</span>            <span class="keywordflow">if</span> (source != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">   43</span>                source-&gt;<a class="code hl_function" href="class_system.html#a7421d2e6970a0c4169a2febe254f2060">setValue</a>(source-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() - value);</div>
-<div class="line"><span class="lineno">   44</span>            }</div>
-<div class="line"><span class="lineno">   45</span> </div>
-<div class="line"><span class="lineno">   46</span>            <span class="keywordflow">if</span> (sink != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">   47</span>                sink-&gt;<a class="code hl_function" href="class_system.html#a7421d2e6970a0c4169a2febe254f2060">setValue</a>(sink-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() + value);</div>
-<div class="line"><span class="lineno">   48</span>            }</div>
-<div class="line"><span class="lineno">   49</span>        }</div>
-<div class="line"><span class="lineno">   50</span>    }</div>
-<div class="line"><span class="lineno">   51</span>}</div>
-<div class="ttc" id="aclass_flow_html_a6848543de3b393e4ade8e20581b20b13"><div class="ttname"><a href="class_flow.html#a6848543de3b393e4ade8e20581b20b13">Flow::getSink</a></div><div class="ttdeci">virtual System * getSink() const =0</div></div>
-<div class="ttc" id="aclass_flow_html_abf0f3dbb285fe82e5ba6449de06b97c8"><div class="ttname"><a href="class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8">Flow::getSource</a></div><div class="ttdeci">virtual System * getSource() const =0</div></div>
-<div class="ttc" id="aclass_system_html_a41b673faa6c199eb8e4f204639fab4f2"><div class="ttname"><a href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">System::getValue</a></div><div class="ttdeci">virtual double getValue() const =0</div></div>
-<div class="ttc" id="aclass_system_html_a7421d2e6970a0c4169a2febe254f2060"><div class="ttname"><a href="class_system.html#a7421d2e6970a0c4169a2febe254f2060">System::setValue</a></div><div class="ttdeci">virtual void setValue(double value)=0</div></div>
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00093">93</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   93</span>{ <a class="code hl_variable" href="class_handle.html#a8c7b8c15aa4f494a1eba3f3d5017ffda">pImpl_</a>-&gt;run(begin, end); }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_model_impl_8h_source.html#l00013">flows</a>, <a class="el" href="class_flow.html#a6848543de3b393e4ade8e20581b20b13">Flow::getSink()</a>, <a class="el" href="class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8">Flow::getSource()</a>, <a class="el" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">System::getValue()</a>, and <a class="el" href="class_system.html#a7421d2e6970a0c4169a2febe254f2060">System::setValue()</a>.</p>
+<p class="reference">References <a class="el" href="handle_body_8h_source.html#l00071">Handle&lt; ModelBody &gt;::pImpl_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="funcional__tests_8cpp_source.html#l00107">complexFuncionalTest()</a>, <a class="el" href="funcional__tests_8cpp_source.html#l00057">exponentialFuncionalTest()</a>, <a class="el" href="funcional__tests_8cpp_source.html#l00082">logisticalFuncionalTest()</a>, and <a class="el" href="unit___model_8cpp_source.html#l00125">unit_Model_run()</a>.</p>
-<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="unit___model_8cpp_source.html#l00124">unit_Model_run()</a>.</p>
+<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_aafde5d9c89272eba49bf7af150e7fc25_cgraph.svg" width="291" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_aafde5d9c89272eba49bf7af150e7fc25_icgraph.svg" width="619" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_model_impl_aafde5d9c89272eba49bf7af150e7fc25_icgraph.svg" width="559" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a9be1dcdb4753e5d78e0c817261297dcf" name="a9be1dcdb4753e5d78e0c817261297dcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9be1dcdb4753e5d78e0c817261297dcf">&#9670;&#160;</a></span>flows</h2>
+<a id="a50a11c4d140a32470e41fa3ac952c6d2" name="a50a11c4d140a32470e41fa3ac952c6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a11c4d140a32470e41fa3ac952c6d2">&#9670;&#160;</a></span>setName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -453,45 +562,25 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;<a class="el" href="class_flow.html">Flow</a>*&gt; ModelImpl::flows</td>
+          <td class="memname">void ModelImpl::setName </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_impl_8h_source.html#l00013">13</a> of file <a class="el" href="_model_impl_8h_source.html">ModelImpl.h</a>.</p>
+<p>Implements <a class="el" href="class_model.html#aa17012307c37e6527ae6b1d3fff540e0">Model</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_model_impl_8cpp_source.html#l00022">add()</a>, <a class="el" href="_model_impl_8cpp_source.html#l00007">ModelImpl()</a>, <a class="el" href="_model_impl_8cpp_source.html#l00010">operator=()</a>, and <a class="el" href="_model_impl_8cpp_source.html#l00026">run()</a>.</p>
-
-</div>
-</div>
-<a id="a767e2054ecaaa8d1401ef2c962adc3e2" name="a767e2054ecaaa8d1401ef2c962adc3e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a767e2054ecaaa8d1401ef2c962adc3e2">&#9670;&#160;</a></span>systems</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;<a class="el" href="class_system.html">System</a>*&gt; ModelImpl::systems</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_model_impl_8h_source.html#l00012">12</a> of file <a class="el" href="_model_impl_8h_source.html">ModelImpl.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_model_impl_8cpp_source.html#l00018">add()</a>, <a class="el" href="_model_impl_8cpp_source.html#l00007">ModelImpl()</a>, and <a class="el" href="_model_impl_8cpp_source.html#l00010">operator=()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_impl_8cpp_source.html#l00089">89</a> of file <a class="el" href="_model_impl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>{ <a class="code hl_variable" href="class_handle.html#a8c7b8c15aa4f494a1eba3f3d5017ffda">pImpl_</a>-&gt;setName(name); }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="handle_body_8h_source.html#l00071">Handle&lt; ModelBody &gt;::pImpl_</a>.</p>
 
 </div>
 </div>

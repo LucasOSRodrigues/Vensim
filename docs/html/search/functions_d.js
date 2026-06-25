@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['_7ecomplexflow_0',['~ComplexFlow',['../class_complex_flow.html#a3ea63b4de8f10baefdbb71c52986cd74',1,'ComplexFlow']]],
-  ['_7eexponentialflow_1',['~ExponentialFlow',['../class_exponential_flow.html#a47f85f24c8a74a00b025541e3ed950eb',1,'ExponentialFlow']]],
-  ['_7eflow_2',['~Flow',['../class_flow.html#a325d284a50ca3274b126b21f5c39b9af',1,'Flow']]],
-  ['_7eflowimpl_3',['~FlowImpl',['../class_flow_impl.html#a2d91539593b336aee4a19048f8a82e8c',1,'FlowImpl']]],
-  ['_7elogisticflow_4',['~LogisticFlow',['../class_logistic_flow.html#a39d18cc1ab327715c4b8e0377cff8435',1,'LogisticFlow']]],
-  ['_7emodel_5',['~Model',['../class_model.html#af032d8433c87a0a3a431faf6563a1f03',1,'Model']]],
-  ['_7emodelimpl_6',['~ModelImpl',['../class_model_impl.html#a427f422a6d356b94afbe3937d6452a2b',1,'ModelImpl']]],
-  ['_7esystem_7',['~System',['../class_system.html#a2fc0f34023977cab9b628aa9f734d88c',1,'System']]],
-  ['_7esystemimpl_8',['~SystemImpl',['../class_system_impl.html#a0cd451779458a7bd7c224a48ed163a9e',1,'SystemImpl']]]
+  ['setexecutereturnvalue_0',['setExecuteReturnValue',['../classMockFlow.html#a5ca171bed6a5cf22f40daeda94eaaa66',1,'MockFlow']]],
+  ['setname_1',['setName',['../classFlowBody.html#ac7fc7b99defa6cfb89d1daf610eacdc8',1,'FlowBody::setName()'],['../classFlowImpl.html#adf63ab1ba9a38dd6af3d1c1a98126084',1,'FlowImpl::setName()'],['../classModel.html#aa17012307c37e6527ae6b1d3fff540e0',1,'Model::setName()'],['../classModelBody.html#a9245dba278b8f997546e85b2240865a1',1,'ModelBody::setName()'],['../classModelImpl.html#a50a11c4d140a32470e41fa3ac952c6d2',1,'ModelImpl::setName()'],['../classSystem.html#afc362e8275b428a94c214826c60a01bc',1,'System::setName()'],['../classSystemBody.html#aa9cf5f164ccbfcb6458972db7e2c843b',1,'SystemBody::setName()'],['../classSystemImpl.html#a0b975a45ebdee7c20d4cc84697e0688e',1,'SystemImpl::setName()'],['../classMockSystem.html#ab4143f73084f12a63d2c7d936a57847b',1,'MockSystem::setName()']]],
+  ['setsink_2',['setSink',['../classFlowBody.html#a116984c18f89192ff35d0549d7cf61db',1,'FlowBody::setSink()'],['../classFlowImpl.html#a9a590a6e6f271a42d48dc22ef437f64c',1,'FlowImpl::setSink()'],['../classMockFlow.html#ab9a3d5abcebe1c994207ca5ed6911ee7',1,'MockFlow::setSink()']]],
+  ['setsource_3',['setSource',['../classFlowBody.html#aa50a239e37120f248e8f819e0310a088',1,'FlowBody::setSource()'],['../classFlowImpl.html#a2690ee44103e90261b91635955122a5d',1,'FlowImpl::setSource()'],['../classMockFlow.html#aad74b7a0934a79fcc2a25e67bbfeaf0f',1,'MockFlow::setSource()']]],
+  ['setvalue_4',['setValue',['../classSystem.html#a7421d2e6970a0c4169a2febe254f2060',1,'System::setValue()'],['../classSystemBody.html#ab2cfe1da302b87bc1d7ad0661f3313b0',1,'SystemBody::setValue()'],['../classSystemImpl.html#a3ebff8dd869e1fab281375d5c2ef8362',1,'SystemImpl::setValue()'],['../classMockSystem.html#aea8099f74e7f021d91b4ef89978b7473',1,'MockSystem::setValue()'],['../classTestBody.html#ab7e04f788867ab9eb01bffcbf45434d5',1,'TestBody::setValue()'],['../classTestHandle.html#a8c80d77d0ca5cf05ab3cdb43e70c9c4f',1,'TestHandle::setValue()']]],
+  ['systembody_5',['SystemBody',['../classSystemBody.html#a147c54091a4184a5cfb99215702d86eb',1,'SystemBody::SystemBody()'],['../classSystemBody.html#ac314c191f29238078d20b9de78389acc',1,'SystemBody::SystemBody(const string &amp;name, double value)']]],
+  ['systemimpl_6',['SystemImpl',['../classSystemImpl.html#a6e8460199ac54949b08ecb315fce168b',1,'SystemImpl::SystemImpl()'],['../classSystemImpl.html#a34277fedbb54be7f896a8dff329e7b9e',1,'SystemImpl::SystemImpl(const string &amp;name, double value)'],['../classSystemImpl.html#a096bb204d8011d9cce315346050ec038',1,'SystemImpl::SystemImpl(const SystemImpl &amp;other)']]]
 ];

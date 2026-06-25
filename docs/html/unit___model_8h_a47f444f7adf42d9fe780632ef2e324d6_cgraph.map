@@ -1,15 +1,9 @@
 <map id="unit_Model_run" name="unit_Model_run">
 <area shape="rect" id="Node000001" title="Test the run(int, int) method of Model." alt="" coords="5,56,115,83"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a24e46f6ee90908c0ed4e882094573800" title=" " alt="" coords="163,31,273,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,58,149,54,145,57,116,63"/>
-<area shape="rect" id="Node000003" href="$class_model_impl.html#aafde5d9c89272eba49bf7af150e7fc25" title=" " alt="" coords="164,81,272,108"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="115,75,151,83,146,85,116,81"/>
-<area shape="rect" id="Node000004" href="$class_flow.html#a6848543de3b393e4ade8e20581b20b13" title=" " alt="" coords="332,5,434,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="248,78,272,67,320,42,331,40,335,37,322,46,274,72,251,83"/>
-<area shape="rect" id="Node000005" href="$class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title=" " alt="" coords="325,56,441,83"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="271,84,313,80,307,81,273,89"/>
-<area shape="rect" id="Node000006" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title=" " alt="" coords="321,107,445,133"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="272,100,309,108,303,108,272,106"/>
-<area shape="rect" id="Node000007" href="$class_system.html#a7421d2e6970a0c4169a2febe254f2060" title=" " alt="" coords="321,157,445,184"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="246,106,322,143,336,151,331,151,320,148,245,111"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a24e46f6ee90908c0ed4e882094573800" title=" " alt="" coords="201,5,312,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,53,189,35,185,38,116,58"/>
+<area shape="rect" id="Node000003" href="$class_model_impl.html#ac30e93e0b706a7a77b061b05139208e1" title=" " alt="" coords="163,56,350,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="115,67,150,68,145,70,116,72"/>
+<area shape="rect" id="Node000004" href="$class_model_impl.html#aafde5d9c89272eba49bf7af150e7fc25" title=" " alt="" coords="203,107,310,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="115,81,190,101,185,103,114,86"/>
 </map>

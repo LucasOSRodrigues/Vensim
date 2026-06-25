@@ -1,7 +1,11 @@
 <map id="LogisticFlow" name="LogisticFlow">
-<area shape="rect" id="Node000001" title="Implements a logistic flow with population limit." alt="" coords="5,475,118,651"/>
-<area shape="rect" id="Node000002" href="$class_flow_impl.html" title=" " alt="" coords="15,187,108,427"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,439,64,475,59,475,61,444"/>
-<area shape="rect" id="Node000003" href="$class_flow.html" title=" " alt="" coords="16,5,107,139"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="62,151,64,187,59,187,62,157"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="36,853,149,1051"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html" title=" " alt="" coords="46,479,139,804"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,816,95,854,90,853,92,821"/>
+<area shape="rect" id="Node000003" href="$class_flow.html" title=" " alt="" coords="5,296,96,429"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="63,442,71,479,65,479,63,447"/>
+<area shape="rect" id="Node000004" href="$class_handle.html" title=" " alt="" coords="120,307,254,419"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="163,435,141,506,136,504,164,430"/>
+<area shape="rect" id="Node000005" href="$class_handle.html" title="The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;..." alt="" coords="143,5,230,224"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="187,237,189,307,184,307,186,242"/>
 </map>

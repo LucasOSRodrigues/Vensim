@@ -1,5 +1,13 @@
 <map id="SystemImpl" name="SystemImpl">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,208,115,469"/>
-<area shape="rect" id="Node000002" href="$class_system.html" title=" " alt="" coords="18,5,103,160"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,172,63,208,58,208,60,177"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="23,917,133,1157"/>
+<area shape="rect" id="Node000002" href="$class_system.html" title=" " alt="" coords="5,692,118,868"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,881,73,918,68,917,68,886"/>
+<area shape="rect" id="Node000003" href="$class_handle.html" title=" " alt="" coords="142,724,293,836"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,847,135,938,130,935,179,851"/>
+<area shape="rect" id="Node000004" href="$class_system_body.html" title=" " alt="" coords="87,401,202,620"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="169,617,184,667,196,708,191,708,179,669,168,622"/>
+<area shape="rect" id="Node000005" href="$class_body.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="101,5,188,352"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="145,365,147,402,142,401,144,370"/>
+<area shape="rect" id="Node000006" href="$class_handle.html" title="The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;..." alt="" coords="226,401,313,620"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="247,632,231,725,226,723,245,637"/>
 </map>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['operator_3d_0',['operator=',['../class_flow_impl.html#a49655b3810ecbea9407f860122e20dc4',1,'FlowImpl::operator=()'],['../class_model_impl.html#aebfc947e745a94b9610aba097cd1d6f7',1,'ModelImpl::operator=()'],['../class_system_impl.html#a11c027096cb0e824bf8306c33e0a3903',1,'SystemImpl::operator=()'],['../class_complex_flow.html#a6be113d8e13ab3330692c4f681a11875',1,'ComplexFlow::operator=()'],['../class_exponential_flow.html#a231385587bb12964a56e5e46ac2aa8e4',1,'ExponentialFlow::operator=()'],['../class_logistic_flow.html#a2bf490b7a58b8312d3841b5d3b3955f5',1,'LogisticFlow::operator=()']]],
-  ['os_20testes_1',['Executar todos os testes',['../index.html#autotoc_md2',1,'']]]
+  ['limpar_0',['Limpar',['../index.html#autotoc_md6',1,'']]],
+  ['logisticalfuncionaltest_1',['logisticalFuncionalTest',['../funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29',1,'logisticalFuncionalTest():&#160;funcional_tests.cpp'],['../funcional__tests_8h.html#a60914db64bde71b56d69320797266c29',1,'logisticalFuncionalTest():&#160;funcional_tests.cpp']]],
+  ['logisticflow_2',['LogisticFlow',['../classLogisticFlow.html',1,'LogisticFlow'],['../classLogisticFlow.html#ab0f7906cfe1a27e18a4f558124e53ee0',1,'LogisticFlow::LogisticFlow()'],['../classLogisticFlow.html#a4b30935bd972aff12bf16b3ee3f54e00',1,'LogisticFlow::LogisticFlow(System *source, System *sink, double pmax)'],['../classLogisticFlow.html#aaab6bdcfdd34996d6d9716f858ef6305',1,'LogisticFlow::LogisticFlow(const string &amp;name, System *source, System *sink, double pmax)'],['../classLogisticFlow.html#a5cb786f5e252395010b54b16440775cd',1,'LogisticFlow::LogisticFlow(const LogisticFlow &amp;other)']]]
 ];

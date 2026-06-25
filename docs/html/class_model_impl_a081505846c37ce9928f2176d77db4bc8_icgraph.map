@@ -1,9 +1,0 @@
-<map id="ModelImpl::ModelImpl" name="ModelImpl::ModelImpl">
-<area shape="rect" id="Node000001" title=" " alt="" coords="211,56,360,83"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a71036194d088aeb1830feea80c986c3a" title=" " alt="" coords="9,5,159,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,53,140,35,140,30,217,50"/>
-<area shape="rect" id="Node000003" href="$class_model_impl.html#aebfc947e745a94b9610aba097cd1d6f7" title=" " alt="" coords="12,56,156,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="192,70,157,72,156,67,197,69"/>
-<area shape="rect" id="Node000004" href="$class_model_impl.html#a427f422a6d356b94afbe3937d6452a2b" title=" " alt="" coords="5,107,163,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="217,87,141,109,139,103,212,88"/>
-</map>

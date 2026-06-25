@@ -1,13 +1,5 @@
 var searchData=
 [
-  ['setname_0',['setName',['../class_system.html#afc362e8275b428a94c214826c60a01bc',1,'System::setName()'],['../class_system_impl.html#a0b975a45ebdee7c20d4cc84697e0688e',1,'SystemImpl::setName()']]],
-  ['setvalue_1',['setValue',['../class_system.html#a7421d2e6970a0c4169a2febe254f2060',1,'System::setValue()'],['../class_system_impl.html#a3ebff8dd869e1fab281375d5c2ef8362',1,'SystemImpl::setValue()']]],
-  ['sink_2',['sink',['../class_flow_impl.html#a80eb28a6148042f568e59b748839e124',1,'FlowImpl']]],
-  ['source_3',['source',['../class_flow_impl.html#a950987351656a518a1057b64c5f85af8',1,'FlowImpl']]],
-  ['system_4',['System',['../class_system.html',1,'']]],
-  ['system_2eh_5',['System.h',['../_system_8h.html',1,'']]],
-  ['systemimpl_6',['SystemImpl',['../class_system_impl.html',1,'SystemImpl'],['../class_system_impl.html#a6e8460199ac54949b08ecb315fce168b',1,'SystemImpl::SystemImpl()'],['../class_system_impl.html#a34277fedbb54be7f896a8dff329e7b9e',1,'SystemImpl::SystemImpl(const string &amp;name, double value)'],['../class_system_impl.html#a096bb204d8011d9cce315346050ec038',1,'SystemImpl::SystemImpl(const SystemImpl &amp;other)']]],
-  ['systemimpl_2ecpp_7',['SystemImpl.cpp',['../_system_impl_8cpp.html',1,'']]],
-  ['systemimpl_2eh_8',['SystemImpl.h',['../_system_impl_8h.html',1,'']]],
-  ['systems_9',['systems',['../class_model_impl.html#a767e2054ecaaa8d1401ef2c962adc3e2',1,'ModelImpl']]]
+  ['operator_3d_0',['operator=',['../classFlowImpl.html#a49655b3810ecbea9407f860122e20dc4',1,'FlowImpl::operator=()'],['../classHandle.html#a52e146e2a1427c8e7d3a692e9378185a',1,'Handle::operator=()'],['../classBody.html#a09b11f8f6f2273daafb8c49ba92da170',1,'Body::operator=()'],['../classHandle.html#a00310e5c28d6f9083fa8e528cc17de78',1,'Handle::operator=()'],['../classBody.html#a09b11f8f6f2273daafb8c49ba92da170',1,'Body::operator=()'],['../classModelImpl.html#aebfc947e745a94b9610aba097cd1d6f7',1,'ModelImpl::operator=()'],['../classSystemImpl.html#a11c027096cb0e824bf8306c33e0a3903',1,'SystemImpl::operator=()'],['../classExponentialFlow.html#a231385587bb12964a56e5e46ac2aa8e4',1,'ExponentialFlow::operator=()'],['../classLogisticFlow.html#a2bf490b7a58b8312d3841b5d3b3955f5',1,'LogisticFlow::operator=()'],['../classComplexFlow.html#a6be113d8e13ab3330692c4f681a11875',1,'ComplexFlow::operator=()']]],
+  ['os_20testes_1',['Executar todos os testes',['../index.html#autotoc_md4',1,'']]]
 ];

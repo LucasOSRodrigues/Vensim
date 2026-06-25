@@ -1,5 +1,9 @@
 <map id="unit_Model_copyConstructor" name="unit_Model_copyConstructor">
-<area shape="rect" id="Node000001" title="Test the copy constructor of Model." alt="" coords="5,5,193,32"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a24e46f6ee90908c0ed4e882094573800" title=" " alt="" coords="241,5,351,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,16,228,19,222,19,193,21"/>
+<area shape="rect" id="Node000001" title="Test the copy constructor of Model." alt="" coords="5,56,193,83"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a24e46f6ee90908c0ed4e882094573800" title=" " alt="" coords="279,5,390,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,53,266,32,262,35,165,58"/>
+<area shape="rect" id="Node000003" href="$class_model_impl.html#acc901227084cb052e42a5948ee674e74" title=" " alt="" coords="249,56,420,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,67,236,69,231,70,194,72"/>
+<area shape="rect" id="Node000004" href="$class_model_impl.html#ac30e93e0b706a7a77b061b05139208e1" title=" " alt="" coords="241,107,428,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,81,257,102,252,104,164,86"/>
 </map>

@@ -1,13 +1,22 @@
 var annotated_dup =
 [
-    [ "ComplexFlow", "class_complex_flow.html", "class_complex_flow" ],
-    [ "ExponentialFlow", "class_exponential_flow.html", "class_exponential_flow" ],
-    [ "Flow", "class_flow.html", "class_flow" ],
-    [ "FlowImpl", "class_flow_impl.html", "class_flow_impl" ],
-    [ "LogisticFlow", "class_logistic_flow.html", "class_logistic_flow" ],
-    [ "Model", "class_model.html", "class_model" ],
-    [ "ModelImpl", "class_model_impl.html", "class_model_impl" ],
-    [ "System", "class_system.html", "class_system" ],
-    [ "SystemImpl", "class_system_impl.html", "class_system_impl" ],
-    [ "TestFlow", "class_test_flow.html", "class_test_flow" ]
+    [ "Body", "classBody.html", "classBody" ],
+    [ "ComplexFlow", "classComplexFlow.html", "classComplexFlow" ],
+    [ "ExponentialFlow", "classExponentialFlow.html", "classExponentialFlow" ],
+    [ "Flow", "classFlow.html", "classFlow" ],
+    [ "FlowBody", "classFlowBody.html", "classFlowBody" ],
+    [ "FlowImpl", "classFlowImpl.html", "classFlowImpl" ],
+    [ "Handle", "classHandle.html", "classHandle" ],
+    [ "LogisticFlow", "classLogisticFlow.html", "classLogisticFlow" ],
+    [ "MockFlow", "classMockFlow.html", "classMockFlow" ],
+    [ "MockSystem", "classMockSystem.html", "classMockSystem" ],
+    [ "Model", "classModel.html", "classModel" ],
+    [ "ModelBody", "classModelBody.html", "classModelBody" ],
+    [ "ModelImpl", "classModelImpl.html", "classModelImpl" ],
+    [ "System", "classSystem.html", "classSystem" ],
+    [ "SystemBody", "classSystemBody.html", "classSystemBody" ],
+    [ "SystemImpl", "classSystemImpl.html", "classSystemImpl" ],
+    [ "TestBody", "classTestBody.html", "classTestBody" ],
+    [ "TestFlow", "classTestFlow.html", "classTestFlow" ],
+    [ "TestHandle", "classTestHandle.html", "classTestHandle" ]
 ];

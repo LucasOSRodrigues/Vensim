@@ -1,5 +1,5 @@
 <map id="Model" name="Model">
-<area shape="rect" id="Node000001" title=" " alt="" coords="18,5,93,139"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html" title=" " alt="" coords="5,187,105,405"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,151,58,187,53,187,55,157"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="14,5,127,267"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html" title=" " alt="" coords="5,315,135,619"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,279,73,315,68,315,70,284"/>
 </map>

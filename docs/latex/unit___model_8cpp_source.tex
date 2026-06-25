@@ -4,29 +4,29 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <assert.h>}}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{unit___model_8h}{unit\_Model.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_model_8h}{../../src/Model.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_model_impl_8h}{../../src/ModelImpl.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_system_8h}{../../src/System.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_system_impl_8h}{../../src/SystemImpl.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{mocks_8h}{mocks.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_model_8h}{../../src/Model.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_model_impl_8h}{../../src/ModelImpl.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_system_8h}{../../src/System.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_flow_8h}{../../src/Flow.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00008}00008\ }
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00015}\doxymbox{\hyperlink{unit___model_8cpp_aa99c9c522bfe075f216f975c3edb7f81}{00015}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit___model_8cpp_aa99c9c522bfe075f216f975c3edb7f81}{unit\_Model\_defaultConstructor}}(\textcolor{keywordtype}{void})\ \{}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00016}00016\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl}{ModelImpl}}\ m;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00017}00017\ \ \ \ \ \textcolor{comment}{//\ The\ model\ should\ be\ created\ without\ errors}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{comment}{//\ (no\ direct\ way\ to\ verify\ it's\ empty\ without\ getters,\ but\ we\ test\ it\ doesn't\ crash)}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00019}00019\ \ \ \ \ assert(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00017}00017\ \ \ \ \ \textcolor{comment}{//\ The\ model\ should\ be\ created\ with\ zero\ systems\ and\ flows}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00018}00018\ \ \ \ \ assert(m.\doxymbox{\hyperlink{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}{getSystemCount}}()\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00019}00019\ \ \ \ \ assert(m.\doxymbox{\hyperlink{class_model_impl_acc901227084cb052e42a5948ee674e74}{getFlowCount}}()\ ==\ 0);}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00020}00020\ \}}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00021}00021\ }
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00028}\doxymbox{\hyperlink{unit___model_8cpp_a5504169b35177d0717c8074ef376d19a}{00028}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit___model_8cpp_a5504169b35177d0717c8074ef376d19a}{unit\_Model\_copyConstructor}}(\textcolor{keywordtype}{void})\ \{}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00029}00029\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl}{ModelImpl}}\ original;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00030}00030\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Tank1"{}},\ 100.0);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00030}00030\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_mock_system}{MockSystem}}(\textcolor{stringliteral}{"{}Tank1"{}},\ 100.0);}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00031}00031\ \ \ \ \ original.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(s1);}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00032}00032\ }
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00033}00033\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl}{ModelImpl}}\ copy(original);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{comment}{//\ Verify\ the\ copy\ doesn't\ crash\ and\ works}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00035}00035\ \ \ \ \ assert(\textcolor{keyword}{true});}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00036}00036\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{comment}{//\ Verify\ the\ copy\ has\ the\ same\ number\ of\ systems}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00035}00035\ \ \ \ \ assert(copy.\doxymbox{\hyperlink{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}{getSystemCount}}()\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00036}00036\ \ \ \ \ assert(copy.\doxymbox{\hyperlink{class_model_impl_acc901227084cb052e42a5948ee674e74}{getFlowCount}}()\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00037}00037\ }
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00038}00038\ \}}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00039}00039\ }
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00045}\doxymbox{\hyperlink{unit___model_8cpp_ab348ace4d56947bf92a931650a17b240}{00045}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit___model_8cpp_ab348ace4d56947bf92a931650a17b240}{unit\_Model\_destructor}}(\textcolor{keywordtype}{void})\ \{}
@@ -37,86 +37,85 @@
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00050}00050\ }
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00057}\doxymbox{\hyperlink{unit___model_8cpp_a28d45d33aaf478ce3a0eef7c230df523}{00057}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit___model_8cpp_a28d45d33aaf478ce3a0eef7c230df523}{unit\_Model\_assignmentOperator}}(\textcolor{keywordtype}{void})\ \{}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00058}00058\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl}{ModelImpl}}\ m1;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00059}00059\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Tank1"{}},\ 50.0);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00059}00059\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_mock_system}{MockSystem}}(\textcolor{stringliteral}{"{}Tank1"{}},\ 50.0);}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00060}00060\ \ \ \ \ m1.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(s1);}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00061}00061\ }
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00062}00062\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl}{ModelImpl}}\ m2;}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00063}00063\ \ \ \ \ m2\ =\ m1;}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00064}00064\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00065}00065\ \ \ \ \ \textcolor{comment}{//\ Test\ self-\/assignment}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00066}00066\ \ \ \ \ m2\ =\ m2;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00067}00067\ \ \ \ \ assert(\textcolor{keyword}{true});}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00068}00068\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00069}00069\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00070}00070\ \}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00065}00065\ \ \ \ \ \textcolor{comment}{//\ Verify\ assignment\ copied\ the\ system}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00066}00066\ \ \ \ \ assert(m2.\doxymbox{\hyperlink{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}{getSystemCount}}()\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00068}00068\ \ \ \ \ \textcolor{comment}{//\ Test\ self-\/assignment\ (should\ not\ change\ anything)}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00069}00069\ \ \ \ \ m2\ =\ m2;}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00070}00070\ \ \ \ \ assert(m2.\doxymbox{\hyperlink{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}{getSystemCount}}()\ ==\ 1);}
 \DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00071}00071\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00077}\doxymbox{\hyperlink{unit___model_8cpp_a39e7e87980783d1e476ece51114c8903}{00077}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit___model_8cpp_a39e7e87980783d1e476ece51114c8903}{unit\_Model\_addSystem}}(\textcolor{keywordtype}{void})\ \{}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00078}00078\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl}{ModelImpl}}\ m;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00079}00079\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00080}00080\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Tank1"{}},\ 100.0);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00081}00081\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s2\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Tank2"{}},\ 50.0);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00082}00082\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s3\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Tank3"{}},\ 75.0);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00083}00083\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00084}00084\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(s1);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00085}00085\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(s2);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00086}00086\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(s3);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00087}00087\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00088}00088\ \ \ \ \ \textcolor{comment}{//\ Verify\ systems\ were\ added\ (model\ should\ not\ crash\ during\ run)}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00089}00089\ \ \ \ \ assert(\textcolor{keyword}{true});}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00090}00090\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00092}00092\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00093}00093\ \ \ \ \ \textcolor{keyword}{delete}\ s3;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00094}00094\ \}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00095}00095\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00103}\doxymbox{\hyperlink{unit___model_8cpp_acd097956aa5d0c9f82573ec028aa53b8}{00103}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit___model_8cpp_acd097956aa5d0c9f82573ec028aa53b8}{unit\_Model\_addFlow}}(\textcolor{keywordtype}{void})\ \{}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00104}00104\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl}{ModelImpl}}\ m;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00105}00105\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ source\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Source"{}},\ 100.0);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00106}00106\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ sink\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Sink"{}},\ 0.0);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00107}00107\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00108}00108\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(source);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00109}00109\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(sink);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00110}00110\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00111}00111\ \ \ \ \ \textcolor{comment}{//\ Note:\ Flow\ is\ abstract,\ so\ we\ cannot\ create\ instances\ directly}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00112}00112\ \ \ \ \ \textcolor{comment}{//\ This\ test\ verifies\ the\ model\ structure\ is\ correct}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00113}00113\ \ \ \ \ assert(\textcolor{keyword}{true});}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00114}00114\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00115}00115\ \ \ \ \ \textcolor{keyword}{delete}\ source;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00116}00116\ \ \ \ \ \textcolor{keyword}{delete}\ sink;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00117}00117\ \}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00118}00118\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00125}\doxymbox{\hyperlink{unit___model_8cpp_a47f444f7adf42d9fe780632ef2e324d6}{00125}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit___model_8cpp_a47f444f7adf42d9fe780632ef2e324d6}{unit\_Model\_run}}(\textcolor{keywordtype}{void})\ \{}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00126}00126\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl}{ModelImpl}}\ m;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00127}00127\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00128}00128\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Tank1"{}},\ 100.0);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00129}00129\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s2\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_system_impl}{SystemImpl}}(\textcolor{stringliteral}{"{}Tank2"{}},\ 0.0);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00130}00130\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00131}00131\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(s1);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00132}00132\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(s2);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00133}00133\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00134}00134\ \ \ \ \ \textcolor{comment}{//\ Test\ running\ simulation\ with\ valid\ interval}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00135}00135\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_aafde5d9c89272eba49bf7af150e7fc25}{run}}(0,\ 10);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00136}00136\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00137}00137\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ begin\ ==\ end\ (no\ iterations)}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00138}00138\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_aafde5d9c89272eba49bf7af150e7fc25}{run}}(5,\ 5);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00139}00139\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00140}00140\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ larger\ time\ interval}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00141}00141\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_aafde5d9c89272eba49bf7af150e7fc25}{run}}(0,\ 100);}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00142}00142\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00143}00143\ \ \ \ \ assert(\textcolor{keyword}{true});}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00144}00144\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00145}00145\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00146}00146\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00147}00147\ \}}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00148}00148\ }
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00152}\doxymbox{\hyperlink{unit___model_8cpp_a8d0dce91a7dab9a56d174c7f4d5fc508}{00152}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit___model_8cpp_a8d0dce91a7dab9a56d174c7f4d5fc508}{run\_unit\_test\_Model}}(\textcolor{keywordtype}{void})\ \{}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00153}00153\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_aa99c9c522bfe075f216f975c3edb7f81}{unit\_Model\_defaultConstructor}}();}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00154}00154\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_a5504169b35177d0717c8074ef376d19a}{unit\_Model\_copyConstructor}}();}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00155}00155\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_ab348ace4d56947bf92a931650a17b240}{unit\_Model\_destructor}}();}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00156}00156\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_a28d45d33aaf478ce3a0eef7c230df523}{unit\_Model\_assignmentOperator}}();}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00157}00157\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_a39e7e87980783d1e476ece51114c8903}{unit\_Model\_addSystem}}();}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00158}00158\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_acd097956aa5d0c9f82573ec028aa53b8}{unit\_Model\_addFlow}}();}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00159}00159\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_a47f444f7adf42d9fe780632ef2e324d6}{unit\_Model\_run}}();}
-\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00160}00160\ \}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00072}00072\ \}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00079}\doxymbox{\hyperlink{unit___model_8cpp_a39e7e87980783d1e476ece51114c8903}{00079}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit___model_8cpp_a39e7e87980783d1e476ece51114c8903}{unit\_Model\_addSystem}}(\textcolor{keywordtype}{void})\ \{}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00080}00080\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl}{ModelImpl}}\ m;}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00082}00082\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_mock_system}{MockSystem}}(\textcolor{stringliteral}{"{}Tank1"{}},\ 100.0);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00083}00083\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s2\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_mock_system}{MockSystem}}(\textcolor{stringliteral}{"{}Tank2"{}},\ 50.0);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00084}00084\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s3\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_mock_system}{MockSystem}}(\textcolor{stringliteral}{"{}Tank3"{}},\ 75.0);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00086}00086\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(s1);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00087}00087\ \ \ \ \ assert(m.\doxymbox{\hyperlink{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}{getSystemCount}}()\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00089}00089\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(s2);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00090}00090\ \ \ \ \ assert(m.\doxymbox{\hyperlink{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}{getSystemCount}}()\ ==\ 2);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00092}00092\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(s3);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00093}00093\ \ \ \ \ assert(m.\doxymbox{\hyperlink{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}{getSystemCount}}()\ ==\ 3);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00095}00095\ \}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00104}\doxymbox{\hyperlink{unit___model_8cpp_acd097956aa5d0c9f82573ec028aa53b8}{00104}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit___model_8cpp_acd097956aa5d0c9f82573ec028aa53b8}{unit\_Model\_addFlow}}(\textcolor{keywordtype}{void})\ \{}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00105}00105\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl}{ModelImpl}}\ m;}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00106}00106\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ source\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_mock_system}{MockSystem}}(\textcolor{stringliteral}{"{}Source"{}},\ 100.0);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00107}00107\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ sink\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_mock_system}{MockSystem}}(\textcolor{stringliteral}{"{}Sink"{}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00109}00109\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(source);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00110}00110\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(sink);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00112}00112\ \ \ \ \ \textcolor{comment}{//\ Verify\ initial\ state\ before\ adding\ flows}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00113}00113\ \ \ \ \ assert(m.\doxymbox{\hyperlink{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}{getSystemCount}}()\ ==\ 2);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00114}00114\ \ \ \ \ assert(m.\doxymbox{\hyperlink{class_model_impl_acc901227084cb052e42a5948ee674e74}{getFlowCount}}()\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00116}00116\ \}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00124}\doxymbox{\hyperlink{unit___model_8cpp_a47f444f7adf42d9fe780632ef2e324d6}{00124}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit___model_8cpp_a47f444f7adf42d9fe780632ef2e324d6}{unit\_Model\_run}}(\textcolor{keywordtype}{void})\ \{}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00125}00125\ \ \ \ \ \doxymbox{\hyperlink{class_model_impl}{ModelImpl}}\ m;}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00127}00127\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_mock_system}{MockSystem}}(\textcolor{stringliteral}{"{}Tank1"{}},\ 100.0);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00128}00128\ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ s2\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_mock_system}{MockSystem}}(\textcolor{stringliteral}{"{}Tank2"{}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00129}00129\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00130}00130\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(s1);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00131}00131\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_a24e46f6ee90908c0ed4e882094573800}{add}}(s2);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00133}00133\ \ \ \ \ \textcolor{comment}{//\ Test\ running\ simulation\ with\ valid\ interval}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00134}00134\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_aafde5d9c89272eba49bf7af150e7fc25}{run}}(0,\ 10);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00135}00135\ \ \ \ \ \textcolor{comment}{//\ Verify\ systems\ are\ still\ accessible\ after\ run}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00136}00136\ \ \ \ \ assert(m.\doxymbox{\hyperlink{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}{getSystemCount}}()\ ==\ 2);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00138}00138\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ begin\ ==\ end\ (no\ iterations)}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00139}00139\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_aafde5d9c89272eba49bf7af150e7fc25}{run}}(5,\ 5);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00140}00140\ \ \ \ \ assert(m.\doxymbox{\hyperlink{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}{getSystemCount}}()\ ==\ 2);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00142}00142\ \ \ \ \ \textcolor{comment}{//\ Test\ with\ larger\ time\ interval}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00143}00143\ \ \ \ \ m.\doxymbox{\hyperlink{class_model_impl_aafde5d9c89272eba49bf7af150e7fc25}{run}}(0,\ 100);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00144}00144\ \ \ \ \ assert(m.\doxymbox{\hyperlink{class_model_impl_ac30e93e0b706a7a77b061b05139208e1}{getSystemCount}}()\ ==\ 2);}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00145}00145\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00146}00146\ \}}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00147}00147\ }
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00151}\doxymbox{\hyperlink{unit___model_8cpp_a8d0dce91a7dab9a56d174c7f4d5fc508}{00151}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit___model_8cpp_a8d0dce91a7dab9a56d174c7f4d5fc508}{run\_unit\_test\_Model}}(\textcolor{keywordtype}{void})\ \{}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00152}00152\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_aa99c9c522bfe075f216f975c3edb7f81}{unit\_Model\_defaultConstructor}}();}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00153}00153\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_a5504169b35177d0717c8074ef376d19a}{unit\_Model\_copyConstructor}}();}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00154}00154\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_ab348ace4d56947bf92a931650a17b240}{unit\_Model\_destructor}}();}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00155}00155\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_a28d45d33aaf478ce3a0eef7c230df523}{unit\_Model\_assignmentOperator}}();}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00156}00156\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_a39e7e87980783d1e476ece51114c8903}{unit\_Model\_addSystem}}();}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00157}00157\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_acd097956aa5d0c9f82573ec028aa53b8}{unit\_Model\_addFlow}}();}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00158}00158\ \ \ \ \ \doxymbox{\hyperlink{unit___model_8cpp_a47f444f7adf42d9fe780632ef2e324d6}{unit\_Model\_run}}();}
+\DoxyCodeLine{\Hypertarget{unit___model_8cpp_source_l00159}00159\ \}}
 
 \end{DoxyCode}

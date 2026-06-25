@@ -3,7 +3,6 @@
 #include "mocks.h"
 #include "../../src/FlowImpl.h"
 #include "../../src/System.h"
-#include "../ExponentialFlow.h"
 
 /**
  * @brief Concrete implementation of Flow for testing purposes.
